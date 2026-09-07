@@ -1,0 +1,825 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed":"#25005a","tertiary-container":"#712ae2","on-tertiary":"#ffffff","surface-container":"#efedf0","secondary-container":"#82f5c1","tertiary-fixed":"#eaddff","on-secondary":"#ffffff","background":"#faf9fb","surface-container-highest":"#e3e2e4","surface-container-high":"#e9e8ea","tertiary-fixed-dim":"#d2bbff","inverse-primary":"#b7c4ff","error":"#ba1a1a","on-primary-fixed":"#001551","surface-variant":"#e3e2e4","on-surface":"#0f172a","surface":"#faf9fb","on-primary-fixed-variant":"#0039b5","surface-bright":"#faf9fb","surface-container-lowest":"#ffffff","error-container":"#ffdad6","primary-fixed-dim":"#b7c4ff","on-primary-container":"#cad3ff","on-secondary-fixed-variant":"#005137","secondary":"#006c4a","on-primary":"#ffffff","on-error":"#ffffff","on-secondary-fixed":"#002114","on-tertiary-fixed-variant":"#5a00c6","inverse-on-surface":"#f2f0f3","outline-variant":"#c4c5d7","on-secondary-container":"#00714e","secondary-fixed":"#85f8c4","surface-dim":"#dbd9dc","on-background":"#0f172a","secondary-fixed-dim":"#68dba9","outline":"#747686","primary-container":"#1d4ed8","on-surface-variant":"#434655","inverse-surface":"#2f3032","on-tertiary-container":"#dfccff","on-error-container":"#93000a","surface-tint":"#2151da","surface-container-low":"#f5f3f5","primary":"#0037b0","primary-fixed":"#dce1ff","tertiary":"#5700c0"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-2xl":"3rem","space-xs":"0.5rem","space-lg":"1.5rem","space-xl":"2rem","panel-margin":"1.5rem","space-sm":"0.75rem","space-md":"1rem","col-gutter":"1rem","space-2xs":"0.25rem","space-3xl":"4.5rem","space-3xs":"0.125rem"},"fontFamily":{"headline-sm":["Newsreader"],"display-hero":["Newsreader"],"label-ui":["Geist"],"code-metric":["JetBrains Mono"],"body-default":["Geist"],"headline-lg":["Newsreader"],"body-editorial":["Newsreader"],"display-hero-mobile":["Newsreader"],"code-formula":["JetBrains Mono"],"headline-lg-mobile":["Newsreader"],"body-dense":["Geist"],"headline-md":["Newsreader"]},"fontSize":{"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"400"}],"label-ui":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"code-metric":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"body-default":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"500"}],"body-editorial":["18px",{"lineHeight":"30px","fontWeight":"400"}],"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"400"}],"code-formula":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"500"}],"body-dense":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"500"}]}}}}</script></head><body class="bg-background font-body-default text-on-surface min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container-low"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">hub</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">SANDHANA</span><span class="font-label-ui text-[10px] uppercase tracking-widest text-on-surface-variant font-medium -mt-1">सन्धान · OS 4.1</span></div></div><span class="px-space-2xs py-space-3xs rounded bg-surface-container font-code-metric text-code-metric text-on-surface-variant">v4.8r</span></div><div class="px-space-md py-space-xs"><div class="p-space-xs rounded-lg bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex flex-col gap-space-2xs"><span class="font-code-metric text-[10px] uppercase text-on-surface-variant tracking-wider font-semibold">Investigation Registry</span><div class="flex items-center justify-between"><span class="font-code-metric text-code-metric text-primary font-semibold">#INV-2024-098</span><span class="w-2 h-2 rounded-full bg-secondary"></span></div><span class="font-body-dense text-body-dense text-on-surface truncate">Axion-Photon Coupling Variance</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-xs"><span class="px-space-xs font-code-metric text-[10px] uppercase text-on-surface-variant tracking-wider font-semibold block mb-space-2xs">Core Workbenches</span><nav class="flex flex-col gap-space-3xs" data-active-classes="bg-primary text-on-primary font-medium rounded-lg"><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg font-body-dense text-body-dense text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="investigation-command-center" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span>Investigation Command Center</a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg font-body-dense text-body-dense text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="agent-council-orchestration" href="#"><span class="material-symbols-outlined text-[18px]">groups</span>Agent Council &amp; Orchestration</a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg font-body-dense text-body-dense text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="hypothesis-tournament-falsification" href="#"><span class="material-symbols-outlined text-[18px]">military_tech</span>Hypothesis Tournament</a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg font-body-dense text-body-dense text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="evidence-knowledge-graph" href="#"><span class="material-symbols-outlined text-[18px]">account_tree</span>Evidence &amp; Knowledge Graph</a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg font-body-dense text-body-dense text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="computational-laboratory" href="#"><span class="material-symbols-outlined text-[18px]">science</span>Computational Laboratory</a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg font-body-dense text-body-dense bg-primary text-on-primary font-medium transition-colors" data-path="equation-editor-formal-derivations" href="#"><span class="material-symbols-outlined text-[18px]">functions</span>Equation Editor &amp; Derivations</a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg font-body-dense text-body-dense text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="experiment-designer" href="#"><span class="material-symbols-outlined text-[18px]">tune</span>Experiment Designer</a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg font-body-dense text-body-dense text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="results-comparison" href="#"><span class="material-symbols-outlined text-[18px]">compare_arrows</span>Results &amp; Comparison</a></nav><div class="my-space-xs pt-space-xs"><span class="px-space-xs font-code-metric text-[10px] uppercase text-on-surface-variant tracking-wider font-semibold block mb-space-2xs">Publication &amp; Audit</span><nav class="flex flex-col gap-space-3xs" data-active-classes="bg-primary text-on-primary font-medium rounded-lg"><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg font-body-dense text-body-dense text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="research-report-latex" href="#"><span class="material-symbols-outlined text-[18px]">description</span>Research Report (LaTeX)</a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg font-body-dense text-body-dense text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="audit-log-provenance" href="#"><span class="material-symbols-outlined text-[18px]">verified</span>Audit Log &amp; Provenance</a><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg font-body-dense text-body-dense text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="research-notebook" href="#"><span class="material-symbols-outlined text-[18px]">menu_book</span>Research Notebook</a></nav></div></div></div><div class="p-space-sm bg-surface-container m-space-sm rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex flex-col gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-2xs"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-code-metric text-code-metric text-on-surface font-semibold">14 Agents Simulated</span></div><span class="font-code-metric text-[10px] uppercase px-space-2xs py-space-3xs rounded bg-surface-container-high text-on-surface-variant font-medium">Cycle 03</span></div><div class="flex items-center justify-between pt-space-2xs"><div class="flex flex-col"><span class="font-label-ui text-label-ui text-on-surface font-medium">Dr. R. Chandrasekhar</span><span class="font-code-metric text-[10px] text-on-surface-variant">Principal Investigator</span></div><span class="material-symbols-outlined text-primary text-[18px]">security</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-bright/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-2xs bg-surface-container-low px-space-sm py-space-2xs rounded-lg"><span class="font-code-metric text-code-metric text-on-surface-variant">TARGET:</span><button class="flex items-center gap-space-2xs font-code-metric text-code-metric text-primary hover:text-on-primary-fixed-variant transition-colors font-medium"><span class="material-symbols-outlined text-[16px]">folder_special</span>#INV-2024-098<span class="material-symbols-outlined text-[14px]">expand_more</span></button></div><div class="relative flex items-center"><span class="material-symbols-outlined text-on-surface-variant absolute left-space-xs text-[18px]">search</span><input class="h-9 w-80 pl-8 pr-12 rounded-lg bg-surface-container-low font-body-dense text-body-dense text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest" placeholder="Search theories, derivations, datasets..." type="text"><div class="absolute right-space-xs flex items-center gap-space-3xs px-space-2xs py-space-3xs rounded bg-surface-container font-code-metric text-[10px] text-on-surface-variant font-semibold"><span class="">⌘</span><span class="">K</span></div></div></div><div class="flex items-center gap-space-sm"><div class="flex items-center gap-space-2xs px-space-xs py-space-2xs rounded bg-secondary-fixed/30 text-secondary"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="font-code-metric text-code-metric font-semibold tracking-wide uppercase">Demo Mode</span></div><div class="flex items-center gap-space-2xs px-space-xs py-space-2xs rounded bg-amber-100 text-amber-900 border border-amber-300"><span class="material-symbols-outlined text-[15px] text-amber-700">gavel</span><span class="font-code-metric text-code-metric font-semibold uppercase tracking-wide">Pending Gate: L3 Sign-Off</span></div><div class="h-6 w-px bg-surface-container-highest mx-space-2xs"></div><button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[18px]">notifications</span></button><button class="w-8 h-8 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors"><span class="material-symbols-outlined text-[18px]">terminal</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-background px-space-lg py-space-md min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Context & Global Equation Architecture Banner -->
+<header class="w-full flex flex-col gap-space-xs mb-space-md">
+<!-- Canonical Representation & Warning Banner -->
+<div class="p-space-xs rounded-lg bg-surface-container border border-surface-container-highest flex flex-col gap-space-2xs text-body-dense">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0">hub</span>
+<span class="font-code-metric text-[11px] text-on-surface leading-tight">
+<strong class="font-bold text-primary">Canonical Representation Architecture:</strong> Internal semantic AST is the canonical mathematical representation, while LaTeX, MathML, SVG, and PNG are interchange or rendering projections.
+</span>
+</div>
+<span class="px-space-xs py-space-3xs rounded bg-surface-container-high text-on-surface-variant font-code-metric text-[10px] tracking-wide font-semibold shrink-0">Visual Authoring &amp; WYSIWYG: [Prototype Only]</span>
+</div>
+<div class="p-space-2xs rounded bg-amber-50/90 border border-amber-200/80 flex items-center justify-between gap-space-xs text-[11px] font-code-metric text-amber-900">
+<div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-amber-600 text-[16px] shrink-0">warning</span><span class=""><strong>Fidelity Telemetry:</strong> Displays synchronization status, conversion results, and warnings; validation applies only to supported representations and explicitly tested conversions. (1 warning: semantic tensor index contraction requires explicit Ricci/Einstein convention in Content MathML export).</span></div>
+<span class="text-[10px] uppercase font-semibold text-amber-700 bg-amber-200/60 px-space-2xs py-0.5 rounded shrink-0">Warning Flagged</span>
+</div>
+</div>
+<!-- Breadcrumb & Investigation Context Pin -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-lowest p-space-sm rounded-lg shadow-sm border border-slate-200">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-[18px] text-primary">account_tree</span>
+<div class="flex items-center gap-space-2xs text-body-dense text-on-surface-variant min-w-0 truncate">
+<span class="">Investigation Workspace</span>
+<span class="text-outline">/</span>
+<span class="">Model Construction</span>
+<span class="text-outline">/</span>
+<span class="text-on-surface font-medium font-code-metric text-[12px] bg-surface-container px-space-2xs py-space-3xs rounded">Formal Equation Editor</span>
+</div>
+</div>
+<!-- Investigation Pin & Status Chip -->
+<div class="flex items-center gap-space-xs">
+<div class="flex items-center gap-space-2xs bg-surface-container-low px-space-xs py-space-2xs rounded text-body-dense border border-slate-200">
+<span class="font-code-metric text-code-metric font-semibold text-primary">#INV-2024-098</span>
+<span class="text-outline">•</span>
+<span class="font-body-dense text-on-surface text-body-dense font-medium truncate max-w-xs">Ballistic Aerodynamic Drag &amp; Optimal Launch Angle</span>
+</div>
+<span class="px-space-xs py-space-3xs rounded bg-secondary-fixed/40 text-on-secondary-container font-code-metric text-code-metric font-semibold flex items-center gap-space-3xs border border-secondary/20"><span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span>AST SYNCHRONIZATION [PROTOTYPE ONLY — PRODUCTION PARSER PENDING INTEGRATION]</span>
+</div>
+</div>
+<!-- Title Bar & Operating Status -->
+<div class="flex flex-col gap-space-xs bg-surface-container-low p-space-md rounded-xl shadow-sm border border-slate-200">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-3xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Mathematical Equation Editor &amp; Derivation Workbench</h1>
+<span class="px-space-xs py-space-3xs rounded bg-surface-container-high text-on-surface-variant font-code-metric text-[10px] tracking-wide font-semibold">Visual Authoring &amp; WYSIWYG: [Prototype Only]</span>
+</div>
+<!-- Prominent Status Label -->
+<div class="inline-flex items-center gap-space-xs px-space-xs py-space-2xs rounded bg-blue-50/80 border border-blue-200 text-primary">
+<span class="material-symbols-outlined text-[15px] text-primary">verified</span>
+<span class="font-code-metric text-[11px] font-medium leading-tight">
+MathType-style structured equation and derivation interface — production mathematical engine and solver integration pending validation.
+</span>
+</div>
+</div>
+<!-- Workbench Switcher & Target Injection Selector -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<!-- Mode Tabs -->
+<div class="inline-flex p-space-3xs bg-surface-container rounded-lg font-label-ui text-label-ui border border-slate-200">
+<button class="px-space-sm py-space-2xs rounded-lg bg-surface-container-lowest text-primary font-semibold shadow-sm flex items-center gap-space-2xs transition-all" id="btn-mode-visual">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>Visual Editor
+</button>
+<button class="px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:text-on-surface flex items-center gap-space-2xs transition-all" id="btn-mode-latex">
+<span class="material-symbols-outlined text-[16px]">code</span>LaTeX Source
+</button>
+<button class="px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:text-on-surface flex items-center gap-space-2xs transition-all" id="btn-mode-mathml">
+<span class="material-symbols-outlined text-[16px]">terminal</span>MathML / Tree
+</button>
+</div>
+<!-- Target Destination Dropdown Pill -->
+<div class="relative inline-flex items-center">
+<div class="flex items-center gap-space-2xs bg-surface-container-lowest px-space-sm py-space-2xs rounded-lg shadow-sm font-label-ui text-label-ui border border-slate-200">
+<span class="text-on-surface-variant">Staging target:</span>
+<select class="bg-transparent text-primary font-semibold focus:outline-none cursor-pointer pr-space-xs">
+<option selected="">Model Formulation (Active Staging) ▼</option>
+<option>Research Question Context</option>
+<option>Hypothesis H1 Formulation</option>
+<option>ODE Model B Definition</option>
+<option>Experiment Parameter Bounds</option>
+<option>LaTeX Report Sec 3.2</option>
+<option>Living Notebook #NOTE-042</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!-- Production Engine Notice -->
+<div class="p-space-xs rounded-lg bg-surface-container border border-surface-container-highest flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-outline shrink-0 mt-0.5">info</span>
+<span class="font-code-metric text-[11px] text-on-surface-variant leading-relaxed">
+The production implementation is intended to use structured AST parsing; the current prototype represents this capability in the interface.
+</span>
+</div>
+</div>
+</header>
+<!-- 2-Column Primary Working Environment -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md items-start">
+<!-- LEFT/CENTER PRIMARY WORKBENCH (8 of 12 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- MathType-Style Mathematical Template Ribbon Toolbar -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col">
+<!-- Ribbon Category Tabs -->
+<div class="flex items-center gap-space-3xs overflow-x-auto bg-surface-container-low px-space-sm pt-space-xs pb-0 scrollbar-none font-label-ui text-label-ui border-b border-slate-200">
+<button class="px-space-sm py-space-2xs rounded-t bg-surface-container-lowest text-primary font-semibold shadow-[0_-2px_4px_rgba(0,0,0,0.02)] whitespace-nowrap">Basic Math</button>
+<button class="px-space-sm py-space-2xs rounded-t text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors">Fractions &amp; Division</button>
+<button class="px-space-sm py-space-2xs rounded-t text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors">Scripts &amp; Indices</button>
+<button class="px-space-sm py-space-2xs rounded-t text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors">Radicals &amp; Roots</button>
+<button class="px-space-sm py-space-2xs rounded-t text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors">Calculus &amp; Del</button>
+<button class="px-space-sm py-space-2xs rounded-t text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors">Large Operators</button>
+<button class="px-space-sm py-space-2xs rounded-t text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors">Matrices &amp; Tensors</button>
+<button class="px-space-sm py-space-2xs rounded-t text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors">Greek &amp; Symbols</button>
+<button class="px-space-sm py-space-2xs rounded-t text-on-surface-variant hover:bg-surface-container hover:text-on-surface whitespace-nowrap transition-colors">Continuum Mechanics</button>
+</div>
+<!-- Ribbon Interactive Palettes -->
+<div class="p-space-sm bg-surface-container-lowest grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-space-xs">
+<!-- Fraction templates -->
+<div class="flex flex-col gap-space-3xs bg-surface-container-low/60 p-space-2xs rounded-lg border border-slate-100">
+<span class="font-code-metric text-[9px] uppercase tracking-wider text-on-surface-variant font-semibold px-space-3xs">Fractions</span>
+<div class="grid grid-cols-2 gap-space-3xs">
+<button class="group h-11 rounded bg-surface-container-lowest hover:bg-primary-fixed/30 flex flex-col items-center justify-center p-1 transition-all border border-slate-200/60" title="Standard vertical fraction">
+<span class="w-3 h-2 rounded-xs bg-surface-container-highest group-hover:bg-primary/40 block mb-0.5"></span>
+<span class="w-5 h-[1.5px] bg-on-surface/70 block"></span>
+<span class="w-3 h-2 rounded-xs bg-surface-container-highest group-hover:bg-primary/40 block mt-0.5"></span>
+</button>
+<button class="group h-11 rounded bg-surface-container-lowest hover:bg-primary-fixed/30 flex flex-col items-center justify-center font-headline-sm text-[12px] text-on-surface leading-tight transition-all border border-slate-200/60" title="Partial derivative d/dx">
+<span class="">∂y</span>
+<span class="w-4 h-[1px] bg-on-surface/70 block"></span>
+<span class="">∂x</span>
+</button>
+</div>
+</div>
+<!-- Script & Tensor templates -->
+<div class="flex flex-col gap-space-3xs bg-surface-container-low/60 p-space-2xs rounded-lg border border-slate-100">
+<span class="font-code-metric text-[9px] uppercase tracking-wider text-on-surface-variant font-semibold px-space-3xs">Scripts</span>
+<div class="grid grid-cols-2 gap-space-3xs">
+<button class="group h-11 rounded bg-surface-container-lowest hover:bg-primary-fixed/30 flex items-center justify-center gap-0.5 transition-all border border-slate-200/60" title="Superscript power">
+<span class="w-3.5 h-3.5 rounded-xs bg-surface-container-highest group-hover:bg-primary/40"></span>
+<span class="w-2 h-2 rounded-xs bg-primary/60 -mt-2"></span>
+</button>
+<button class="group h-11 rounded bg-surface-container-lowest hover:bg-primary-fixed/30 flex items-center justify-center gap-0.5 transition-all border border-slate-200/60" title="Subscript &amp; Superscript">
+<span class="w-3.5 h-3.5 rounded-xs bg-surface-container-highest group-hover:bg-primary/40"></span>
+<div class="flex flex-col gap-0.5">
+<span class="w-2 h-1.5 rounded-xs bg-primary/60"></span>
+<span class="w-2 h-1.5 rounded-xs bg-primary/60"></span>
+</div>
+</button>
+</div>
+</div>
+<!-- Radicals -->
+<div class="flex flex-col gap-space-3xs bg-surface-container-low/60 p-space-2xs rounded-lg border border-slate-100">
+<span class="font-code-metric text-[9px] uppercase tracking-wider text-on-surface-variant font-semibold px-space-3xs">Radicals</span>
+<div class="grid grid-cols-2 gap-space-3xs">
+<button class="h-11 rounded bg-surface-container-lowest hover:bg-primary-fixed/30 flex items-center justify-center font-headline-sm text-headline-sm text-on-surface group transition-all border border-slate-200/60" title="Square Root">
+<span class="text-[16px] mr-0.5">√</span>
+<span class="w-3 h-3 rounded-xs bg-surface-container-highest group-hover:bg-primary/40"></span>
+</button>
+<button class="h-11 rounded bg-surface-container-lowest hover:bg-primary-fixed/30 flex items-center justify-center font-headline-sm text-headline-sm text-on-surface group transition-all border border-slate-200/60" title="Root with index n">
+<span class="text-[9px] font-code-metric -mt-2 mr-[-2px] text-primary font-semibold">n</span>
+<span class="text-[15px]">√</span>
+<span class="w-3 h-3 rounded-xs bg-surface-container-highest group-hover:bg-primary/40"></span>
+</button>
+</div>
+</div>
+<!-- Calculus Operators -->
+<div class="flex flex-col gap-space-3xs bg-surface-container-low/60 p-space-2xs rounded-lg border border-slate-100">
+<span class="font-code-metric text-[9px] uppercase tracking-wider text-on-surface-variant font-semibold px-space-3xs">Calculus</span>
+<div class="grid grid-cols-2 gap-space-3xs">
+<button class="h-11 rounded bg-surface-container-lowest hover:bg-primary-fixed/30 flex items-center justify-center font-headline-sm text-headline-sm text-on-surface group transition-all border border-slate-200/60" title="Definite Integral with limits">
+<div class="flex flex-col items-center leading-none text-[8px] font-code-metric text-on-surface-variant">
+<span class="">b</span>
+<span class="text-[16px] my-[-2px] text-on-surface">∫</span>
+<span class="">a</span>
+</div>
+<span class="w-2.5 h-3 rounded-xs bg-surface-container-highest group-hover:bg-primary/40 ml-1"></span>
+</button>
+<button class="h-11 rounded bg-surface-container-lowest hover:bg-primary-fixed/30 flex items-center justify-center font-headline-sm text-[15px] font-semibold text-on-surface group transition-all border border-slate-200/60" title="Gradient ∇ and Laplacian ∇²">
+<span class="">∇²</span>
+</button>
+</div>
+</div>
+<!-- Large Sum / Prod -->
+<div class="flex flex-col gap-space-3xs bg-surface-container-low/60 p-space-2xs rounded-lg border border-slate-100">
+<span class="font-code-metric text-[9px] uppercase tracking-wider text-on-surface-variant font-semibold px-space-3xs">Operators</span>
+<div class="grid grid-cols-2 gap-space-3xs">
+<button class="h-11 rounded bg-surface-container-lowest hover:bg-primary-fixed/30 flex items-center justify-center font-headline-sm text-[16px] text-on-surface group transition-all border border-slate-200/60" title="Summation with bounds">
+<div class="flex flex-col items-center leading-none text-[8px] font-code-metric text-on-surface-variant">
+<span class="">n</span>
+<span class="text-[15px] my-[-2px]">∑</span>
+<span class="">i=1</span>
+</div>
+</button>
+<button class="h-11 rounded bg-surface-container-lowest hover:bg-primary-fixed/30 flex items-center justify-center font-headline-sm text-[16px] text-on-surface group transition-all border border-slate-200/60" title="Product Operator">
+<span class="text-[17px]">∏</span>
+</button>
+</div>
+</div>
+<!-- Matrices & Tensors -->
+<div class="flex flex-col gap-space-3xs bg-surface-container-low/60 p-space-2xs rounded-lg border border-slate-100">
+<span class="font-code-metric text-[9px] uppercase tracking-wider text-on-surface-variant font-semibold px-space-3xs">Matrices</span>
+<div class="grid grid-cols-2 gap-space-3xs">
+<button class="h-11 rounded bg-surface-container-lowest hover:bg-primary-fixed/30 flex items-center justify-center font-code-metric text-[12px] text-on-surface group px-1 transition-all border border-slate-200/60" title="2x2 Bracket Matrix">
+<span class="text-on-surface-variant text-[14px]">[</span>
+<div class="grid grid-cols-2 gap-0.5 mx-0.5">
+<span class="w-1.5 h-1.5 rounded-xs bg-surface-container-highest group-hover:bg-primary/60"></span>
+<span class="w-1.5 h-1.5 rounded-xs bg-surface-container-highest group-hover:bg-primary/60"></span>
+<span class="w-1.5 h-1.5 rounded-xs bg-surface-container-highest group-hover:bg-primary/60"></span>
+<span class="w-1.5 h-1.5 rounded-xs bg-surface-container-highest group-hover:bg-primary/60"></span>
+</div>
+<span class="text-on-surface-variant text-[14px]">]</span>
+</button>
+<button class="h-11 rounded bg-surface-container-lowest hover:bg-primary-fixed/30 flex items-center justify-center font-code-metric text-[12px] text-on-surface group px-1 transition-all border border-slate-200/60" title="2x1 Column Vector">
+<span class="text-on-surface-variant text-[14px]">(</span>
+<div class="flex flex-col gap-0.5 mx-0.5">
+<span class="w-1.5 h-1.5 rounded-xs bg-surface-container-highest group-hover:bg-primary/60"></span>
+<span class="w-1.5 h-1.5 rounded-xs bg-surface-container-highest group-hover:bg-primary/60"></span>
+</div>
+<span class="text-on-surface-variant text-[14px]">)</span>
+</button>
+</div>
+</div>
+<!-- Delimiters & Cases -->
+<div class="flex flex-col gap-space-3xs bg-surface-container-low/60 p-space-2xs rounded-lg border border-slate-100">
+<span class="font-code-metric text-[9px] uppercase tracking-wider text-on-surface-variant font-semibold px-space-3xs">Delimiters</span>
+<div class="grid grid-cols-2 gap-space-3xs">
+<button class="h-11 rounded bg-surface-container-lowest hover:bg-primary-fixed/30 flex items-center justify-center font-headline-sm text-[13px] text-on-surface group transition-all border border-slate-200/60" title="Norm / Magnitude ||x||">
+<span class="">‖</span>
+<span class="w-2.5 h-2.5 rounded-xs bg-surface-container-highest group-hover:bg-primary/40 mx-0.5"></span>
+<span class="">‖</span>
+</button>
+<button class="h-11 rounded bg-surface-container-lowest hover:bg-primary-fixed/30 flex items-center justify-center font-headline-sm text-[15px] text-on-surface group transition-all border border-slate-200/60" title="Piecewise System Bracket {">
+<span class="">{</span>
+<div class="flex flex-col gap-0.5 ml-0.5">
+<span class="w-2.5 h-1.5 rounded-xs bg-surface-container-highest group-hover:bg-primary/40"></span>
+<span class="w-2.5 h-1.5 rounded-xs bg-surface-container-highest group-hover:bg-primary/40"></span>
+</div>
+</button>
+</div>
+</div>
+<!-- Continuum & Quick Greek -->
+<div class="flex flex-col gap-space-3xs bg-surface-container-low/60 p-space-2xs rounded-lg border border-slate-100">
+<span class="font-code-metric text-[9px] uppercase tracking-wider text-on-surface-variant font-semibold px-space-3xs">Continuum</span>
+<div class="grid grid-cols-2 gap-space-3xs">
+<button class="h-11 rounded bg-surface-container-lowest hover:bg-primary-fixed/30 flex items-center justify-center font-headline-sm text-[13px] text-on-surface transition-all border border-slate-200/60" title="Kinematic Viscosity ν &amp; Density ρ">
+<span class="">ρ, ν</span>
+</button>
+<button class="h-11 rounded bg-surface-container-lowest hover:bg-primary-fixed/30 flex flex-col items-center justify-center text-[13px] text-on-surface group transition-all border border-slate-200/60" title="Vector Arrow Accent">
+<span class="text-[10px] leading-none text-primary">→</span>
+<span class="font-headline-sm font-bold -mt-0.5">v</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Symbol Strip -->
+<div class="bg-surface-container-high/60 px-space-sm py-space-2xs flex items-center gap-space-xs overflow-x-auto text-body-dense text-on-surface font-headline-sm scrollbar-none border-t border-slate-200">
+<span class="font-code-metric text-[10px] text-on-surface-variant font-semibold uppercase tracking-wider shrink-0 mr-space-2xs">Symbols:</span>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">α</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">β</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">γ</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">δ</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">ε</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">θ</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">λ</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">μ</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">ν</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">ρ</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">σ</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">τ</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">φ</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">ψ</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">ω</button>
+<span class="h-4 w-px bg-outline-variant shrink-0 mx-1"></span>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">∇</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">∂</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">∞</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">≈</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">≠</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">≡</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">±</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">×</button>
+<button class="px-2 py-0.5 hover:bg-surface-container-lowest rounded transition-colors text-[14px]">·</button>
+</div>
+</section>
+<!-- VISUAL EQUATION CANVAS -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col">
+<!-- Canvas Control Header -->
+<div class="px-space-md py-space-xs bg-surface-container-low flex flex-wrap items-center justify-between gap-space-xs font-label-ui text-label-ui border-b border-slate-200">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shrink-0"></span>
+<div class="flex flex-col min-w-0"><span class="font-headline-sm text-[14px] text-on-surface font-semibold">Example: Reduced-Order Point-Mass Projectile Model with Quadratic Aerodynamic Drag</span><span class="font-code-metric text-[11px] text-on-surface-variant">Derived from classical incompressible fluid considerations • Status: Reduced-order particle model (not direct PDE solution)</span></div>
+</div>
+<div class="flex items-center gap-space-xs">
+<!-- Numbering Toggle -->
+<label class="inline-flex items-center gap-space-2xs cursor-pointer text-body-dense text-on-surface-variant hover:text-on-surface">
+<input checked="" class="w-3.5 h-3.5 accent-primary rounded" type="checkbox">
+<span class="font-code-metric text-code-metric">Numbered (1.2)</span>
+</label>
+<span class="h-4 w-px bg-surface-container-highest"></span>
+<!-- Inline vs Block Display Toggle -->
+<div class="inline-flex bg-surface-container p-0.5 rounded text-[11px] font-code-metric border border-slate-200">
+<button class="px-space-2xs py-space-3xs rounded text-on-surface-variant">Inline</button>
+<button class="px-space-2xs py-space-3xs rounded bg-surface-container-lowest text-primary font-semibold shadow-xs">Block Display</button>
+</div>
+<button class="w-7 h-7 rounded hover:bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" title="Equation settings">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Structured Assumptions Panel (Clean, Explicit Scientific List) -->
+<div class="p-space-sm bg-surface-container-low/70 border-b border-slate-200 flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-[10px] uppercase font-bold text-primary tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">inventory_2</span>Explicit Derivation Assumptions &amp; Conditions
+</span>
+<span class="font-code-metric text-[10px] text-on-surface-variant">Pre-condition verification: Passed (8/8)</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-space-2xs text-[11px] font-code-metric"><div class="bg-surface-container-lowest p-space-2xs rounded border border-slate-200/80 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span><span class="">• Parent: Incompressible reference flow &amp; Newtonian fluid (constant ρ₀, ν)</span></div><div class="bg-surface-container-lowest p-space-2xs rounded border border-slate-200/80 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span><span class="">• Rigid point-mass body</span></div><div class="bg-surface-container-lowest p-space-2xs rounded border border-slate-200/80 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span><span class="">• Constant drag coefficient (C_d)</span></div><div class="bg-surface-container-lowest p-space-2xs rounded border border-slate-200/80 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span><span class="">• Prescribed cross-sectional area (A)</span></div><div class="bg-surface-container-lowest p-space-2xs rounded border border-slate-200/80 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span><span class="">• Uniform gravitational field (-g ĵ)</span></div><div class="bg-surface-container-lowest p-space-2xs rounded border border-slate-200/80 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span><span class="">• No wind &amp; negligible lift</span></div><div class="bg-surface-container-lowest p-space-2xs rounded border border-slate-200/80 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span><span class="">• Initial conditions: Launch velocity v₀, θ ∈ [0, π/2]</span></div><div class="bg-surface-container-lowest p-space-2xs rounded border border-slate-200/80 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span><span class="">• Model status: Reduced-order model (not direct PDE solution)</span></div></div>
+</div>
+<!-- Academic Rendering Sheet -->
+<div class="relative bg-surface-container-lowest p-space-xl min-h-[300px] flex flex-col justify-center select-none overflow-x-auto">
+<div class="absolute inset-x-8 top-1/2 -translate-y-8 h-px bg-surface-container-high pointer-events-none opacity-60"></div>
+<!-- Equation Display Container -->
+<div class="relative z-10 font-body-editorial text-[25px] leading-[1.7] text-on-surface px-space-md py-space-sm flex flex-col gap-space-md">
+<!-- Line 1: Fluid Navier-Stokes momentum equation -->
+<div class="flex items-center flex-wrap gap-x-2 gap-y-3">
+<!-- Partial time derivative term -->
+<div class="inline-flex flex-col items-center justify-center align-middle mx-1 group cursor-pointer hover:bg-surface-container/50 px-1 py-0.5 rounded transition-all">
+<span class="border-b-[1.5px] border-on-surface px-1 pb-0.5 font-normal italic flex items-center">
+<span class="font-headline-sm">∂</span><span class="font-headline-sm font-bold not-italic ml-0.5">u</span>
+</span>
+<span class="pt-0.5 font-normal italic flex items-center">
+<span class="font-headline-sm">∂</span><span class="font-headline-sm not-italic ml-0.5">t</span>
+</span>
+</div>
+<span class="">+</span>
+<!-- Convective acceleration term -->
+<div class="inline-flex items-center mx-1 px-1 py-0.5 rounded hover:bg-surface-container/50 transition-all cursor-pointer">
+<span class="">(</span>
+<span class="font-headline-sm font-bold">u</span>
+<span class="mx-1 text-[20px]">·</span>
+<span class="font-headline-sm">∇</span>
+<span class="">)</span>
+<span class="font-headline-sm font-bold ml-1">u</span>
+</div>
+<span class="font-medium">=</span>
+<!-- Pressure gradient term -->
+<span class="">−</span>
+<div class="inline-flex flex-col items-center justify-center align-middle mx-1 px-1 py-0.5 rounded hover:bg-surface-container/50 transition-all cursor-pointer">
+<span class="border-b-[1.5px] border-on-surface px-1 pb-0.5">1</span>
+<span class="pt-0.5 italic flex items-center font-headline-sm">
+ρ<sub class="text-[14px] not-italic ml-0.5">0</sub>
+</span>
+</div>
+<div class="inline-flex items-center ml-0.5">
+<span class="font-headline-sm">∇</span><span class="italic ml-0.5">p</span>
+</div>
+<span class="">+</span>
+<!-- Viscous dissipation term -->
+<div class="inline-flex items-center mx-1 px-1 py-0.5 rounded hover:bg-surface-container/50 transition-all cursor-pointer">
+<span class="italic mr-1">ν</span>
+<span class="font-headline-sm">∇</span><sup class="text-[14px] not-italic -mt-2">2</sup>
+<span class="font-headline-sm font-bold ml-1">u</span>
+</div>
+<span class="">−</span>
+<!-- Aerodynamic drag term -->
+<div class="inline-flex flex-col items-center justify-center align-middle mx-1 px-1 py-0.5 rounded hover:bg-surface-container/50 transition-all cursor-pointer">
+<span class="border-b-[1.5px] border-on-surface px-1 pb-0.5">1</span>
+<span class="pt-0.5 italic flex items-center">
+2<span class="ml-0.5">m</span>
+</span>
+</div>
+<span class="italic">ρ<sub class="text-[14px] not-italic">0</sub></span>
+<span class="italic ml-1">C<sub class="text-[13px] not-italic">d</sub></span>
+<span class="italic ml-1">A</span>
+<span class="mx-1">‖</span><span class="font-headline-sm font-bold">u</span><span class="mx-1">‖</span>
+<span class="font-headline-sm font-bold">u</span>
+<!-- Equation Reference Tag -->
+<div class="ml-auto text-on-surface-variant font-headline-sm text-[16px] italic">
+(1.2a)
+</div>
+</div>
+<!-- Line 2 (Aligned Multi-line step for projectile trajectory coordinates) -->
+<div class="flex items-center flex-wrap gap-x-2 gap-y-3 pl-8">
+<span class="font-medium mr-2">=</span>
+<!-- Gravity vector component -->
+<span class="">−</span>
+<span class="italic">g</span>
+<span class="inline-flex flex-col items-center font-headline-sm font-bold leading-none mx-1">
+<span class="text-[10px] leading-none text-on-surface-variant">^</span>
+<span class="">j</span>
+</span>
+<span class="">−</span>
+<!-- Selected Active AST Node -->
+<div class="relative group">
+<div class="inline-flex flex-col items-center justify-center align-middle bg-primary-fixed/25 p-1 rounded-md ring-2 ring-primary transition-all cursor-text shadow-sm">
+<!-- Numerator slot -->
+<div class="border-b-[1.5px] border-primary px-2 pb-0.5 flex items-center gap-0.5">
+<span class="italic">ρ<sub class="text-[14px] not-italic">0</sub></span>
+<span class="italic ml-1">C<sub class="text-[13px] not-italic">d</sub></span>
+<span class="italic ml-1">A</span>
+</div>
+<!-- Denominator slot -->
+<div class="pt-0.5 px-2 flex items-center justify-center text-primary font-bold">
+<span class="italic">2m</span>
+<span class="w-[2px] h-5 bg-primary ml-0.5 animate-pulse"></span>
+</div>
+</div>
+<!-- Interactive Float Tooltip -->
+<div class="absolute -top-9 left-1/2 -translate-x-1/2 bg-inverse-surface text-inverse-on-surface px-space-xs py-space-3xs rounded shadow-md font-code-metric text-[11px] whitespace-nowrap z-20 flex items-center gap-space-2xs pointer-events-none">
+<span class="font-bold text-primary-fixed">Fraction</span>
+<span class="text-outline-variant">•</span>
+<span class="">Num: ρ₀·C_d·A</span>
+<span class="text-outline-variant">•</span>
+<span class="">Denom: 2m [Cursor In]</span>
+<span class="text-outline-variant">•</span>
+<kbd class="bg-surface-container-highest/20 px-1 rounded text-[9px] uppercase">Tab ⇥ to Jump</kbd>
+</div>
+</div>
+<!-- Velocity norm radical term -->
+<div class="inline-flex items-center mx-1 group cursor-pointer hover:bg-surface-container/50 px-1 py-0.5 rounded transition-all">
+<span class="text-[28px] font-light leading-none -mr-0.5 text-on-surface">√</span>
+<div class="border-t-[1.5px] border-on-surface pt-0.5 px-1 flex items-center text-[22px]">
+<span class="italic">v<sub class="text-[13px] not-italic">x</sub></span><sup class="text-[13px] not-italic -mt-2">2</sup>
+<span class="mx-1 text-[18px]">+</span>
+<span class="italic">v<sub class="text-[13px] not-italic">y</sub></span><sup class="text-[13px] not-italic -mt-2">2</sup>
+</div>
+</div>
+<!-- Vector velocity v -->
+<span class="font-headline-sm font-bold ml-1">v</span>
+<!-- Equation Reference Tag -->
+<div class="ml-auto text-on-surface-variant font-headline-sm text-[16px] italic">
+(1.2b)
+</div>
+</div>
+</div>
+<!-- Append Step Button -->
+<div class="mt-space-md pt-space-xs flex items-center justify-center">
+<button class="flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-lg bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-primary-fixed/20 transition-all font-label-ui text-label-ui border border-slate-200">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+<span class="">Append Derived Step (= Aligned)</span>
+</button>
+</div>
+</div>
+<!-- Canvas Helper Bar -->
+<div class="px-space-md py-space-xs bg-surface-container-low flex flex-wrap items-center justify-between gap-space-xs font-code-metric text-[11px] text-on-surface-variant border-t border-slate-200">
+<div class="flex items-center gap-space-2xs overflow-x-auto min-w-0">
+<span class="material-symbols-outlined text-[15px] text-primary shrink-0">account_tree</span>
+<span class="text-primary font-semibold shrink-0">AST Tree:</span>
+<span class="truncate">root &gt; aligned_system &gt; eq[2] &gt; rhs &gt; term[2] &gt; fraction &gt; <span class="text-primary font-bold underline bg-primary-fixed/40 px-1 rounded">denominator [2m]</span></span>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="flex items-center gap-1"><kbd class="bg-surface-container-highest px-1 py-0.5 rounded text-[10px]">Ctrl</kbd>+<kbd class="bg-surface-container-highest px-1 py-0.5 rounded text-[10px]">F</kbd> Fraction</span>
+<span class="flex items-center gap-1"><kbd class="bg-surface-container-highest px-1 py-0.5 rounded text-[10px]">Ctrl</kbd>+<kbd class="bg-surface-container-highest px-1 py-0.5 rounded text-[10px]">H</kbd> Super</span>
+<span class="flex items-center gap-1"><kbd class="bg-surface-container-highest px-1 py-0.5 rounded text-[10px]">Ctrl</kbd>+<kbd class="bg-surface-container-highest px-1 py-0.5 rounded text-[10px]">L</kbd> Sub</span>
+<span class="flex items-center gap-1"><kbd class="bg-surface-container-highest px-1 py-0.5 rounded text-[10px]">Tab</kbd> Next slot</span>
+</div>
+</div>
+</section>
+<!-- DUAL SOURCE & INTERCHANGE DRAWER -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm border border-slate-200 p-space-md flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">code_blocks</span>
+<h3 class="font-headline-sm text-[16px] text-on-surface font-semibold">Interchange Representations &amp; Multi-Format Export</h3>
+</div>
+<div class="flex items-center gap-space-2xs text-label-ui font-label-ui">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-secondary font-semibold uppercase text-[10px] tracking-wider">Internal AST Canonical Core</span>
+</div>
+</div>
+<!-- LaTeX Source Panel with Precise Technical Clarification -->
+<div class="relative bg-surface-container-low p-space-sm rounded-lg font-code-formula text-code-formula text-on-surface overflow-x-auto selection:bg-primary-fixed border border-slate-200">
+<div class="text-[11px] font-code-metric text-on-surface-variant font-medium mb-1.5 flex flex-col gap-0.5">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-primary uppercase text-[10px]">LaTeX Source</span>
+<span class="text-[10px] bg-surface-container px-1.5 py-0.5 rounded text-on-surface">Scientific Typeset Projection</span>
+</div>
+<p class="text-[11px] text-on-surface-variant leading-tight">
+<strong>LaTeX:</strong> Editable scientific source rendered through KaTeX or an equivalent typesetting engine; optionally parsed by a symbolic backend such as SymPy.
+</p>
+</div>
+<pre class="leading-relaxed bg-surface-container-lowest p-space-xs rounded border border-slate-200"><code>\begin{aligned}
+  \frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla)\mathbf{u} &amp;= -\frac{1}{\rho_0} \nabla p + \nu \nabla^2 \mathbf{u} - \frac{1}{2m}\rho_0 C_d A \|\mathbf{u}\|\mathbf{u} \\
+  &amp;= -g\hat{\mathbf{j}} - \frac{\rho_0 C_d A}{2m} \sqrt{v_x^2 + v_y^2}\,\mathbf{v}
+\end{aligned}</code></pre>
+</div>
+<!-- Clarified Export Formats Grid -->
+<div class="flex flex-col gap-space-2xs pt-space-xs">
+<span class="font-code-metric text-[10px] uppercase text-on-surface-variant tracking-wider font-semibold">Multi-Format Projections &amp; Interchange Specifications</span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-2xs">
+<!-- Format 1: LaTeX -->
+<div class="p-space-xs rounded-lg bg-surface-container-low border border-slate-200 flex items-start justify-between gap-space-xs">
+<div class="flex flex-col min-w-0">
+<span class="font-label-ui text-[12px] font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">code</span>LaTeX
+</span>
+<p class="font-code-metric text-[11px] text-on-surface-variant leading-tight mt-0.5">Editable scientific source (typeset via KaTeX, parsed symbolically via SymPy)</p>
+</div>
+<button class="px-space-xs py-1 rounded bg-surface-container-lowest hover:bg-surface-container text-primary font-code-metric text-[11px] font-semibold shrink-0 border border-slate-200 shadow-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>Copy
+</button>
+</div>
+<!-- Format 2: Presentation MathML -->
+<div class="p-space-xs rounded-lg bg-surface-container-low border border-slate-200 flex items-start justify-between gap-space-xs">
+<div class="flex flex-col min-w-0">
+<span class="font-label-ui text-[12px] font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">web</span>Presentation MathML
+</span>
+<p class="font-code-metric text-[11px] text-on-surface-variant leading-tight mt-0.5">Structured visual interchange format</p>
+</div>
+<button class="px-space-xs py-1 rounded bg-surface-container-lowest hover:bg-surface-container text-tertiary font-code-metric text-[11px] font-semibold shrink-0 border border-slate-200 shadow-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>Copy
+</button>
+</div>
+<!-- Format 3: Content MathML -->
+<div class="p-space-xs rounded-lg bg-surface-container-low border border-slate-200 flex items-start justify-between gap-space-xs">
+<div class="flex flex-col min-w-0">
+<span class="font-label-ui text-[12px] font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">account_tree</span>Content MathML
+</span>
+<p class="font-code-metric text-[11px] text-on-surface-variant leading-tight mt-0.5">Semantic mathematical representation, where supported</p>
+</div>
+<button class="px-space-xs py-1 rounded bg-surface-container-lowest hover:bg-surface-container text-tertiary font-code-metric text-[11px] font-semibold shrink-0 border border-slate-200 shadow-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>Copy
+</button>
+</div>
+<!-- Format 4: SVG -->
+<div class="p-space-xs rounded-lg bg-surface-container-low border border-slate-200 flex items-start justify-between gap-space-xs">
+<div class="flex flex-col min-w-0">
+<span class="font-label-ui text-[12px] font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">polyline</span>SVG
+</span>
+<p class="font-code-metric text-[11px] text-on-surface-variant leading-tight mt-0.5">Resolution-independent vector rendering</p>
+</div>
+<button class="px-space-xs py-1 rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface font-code-metric text-[11px] font-semibold shrink-0 border border-slate-200 shadow-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">download</span>Export
+</button>
+</div>
+<!-- Format 5: PNG with 600 DPI option -->
+<div class="p-space-xs rounded-lg bg-surface-container-low border border-slate-200 flex items-start justify-between gap-space-xs">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-ui text-[12px] font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">image</span>PNG
+</span>
+<span class="px-1 py-0.2 bg-secondary-fixed/40 text-on-secondary-container rounded font-code-metric text-[9px] font-bold">600 DPI Option</span>
+</div>
+<p class="font-code-metric text-[11px] text-on-surface-variant leading-tight mt-0.5">Raster rendering with selectable resolution, including a 600-DPI option</p>
+</div>
+<div class="inline-flex items-center gap-1 shrink-0">
+<select class="bg-surface-container-lowest border border-slate-200 text-on-surface font-code-metric text-[10px] rounded px-1 py-1">
+<option selected="">600 DPI</option>
+<option>300 DPI</option>
+<option>150 DPI</option>
+</select>
+<button class="px-space-xs py-1 rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface font-code-metric text-[11px] font-semibold border border-slate-200 shadow-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">download</span>PNG
+</button>
+</div>
+</div>
+<!-- Format 6: PDF -->
+<div class="p-space-xs rounded-lg bg-surface-container-low border border-slate-200 flex items-start justify-between gap-space-xs">
+<div class="flex flex-col min-w-0">
+<span class="font-label-ui text-[12px] font-semibold text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">picture_as_pdf</span>PDF
+</span>
+<p class="font-code-metric text-[11px] text-on-surface-variant leading-tight mt-0.5">Publication-oriented document output</p>
+</div>
+<button class="px-space-xs py-1 rounded bg-surface-container-lowest hover:bg-surface-container text-primary font-code-metric text-[11px] font-semibold shrink-0 border border-slate-200 shadow-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">download</span>PDF
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 3-Layer Mathematical Implementation Architecture -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm border border-slate-200 p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">layers</span>
+<h3 class="font-headline-sm text-[16px] text-on-surface font-semibold">3-Layer Mathematical Implementation Architecture</h3>
+</div>
+<span class="px-space-2xs py-space-3xs rounded bg-surface-container font-code-metric text-[10px] text-on-surface-variant font-semibold">Decoupled Rendering vs Solver Compilation</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-space-2xs border border-surface-container-highest">
+<div class="flex items-center justify-between"><span class="font-code-metric text-[11px] font-bold text-primary">LAYER 1: Visual Editor</span><span class="material-symbols-outlined text-[16px] text-primary">draw</span></div>
+<span class="font-label-ui text-[12px] font-semibold text-on-surface">User-Facing MathType Construction</span>
+<p class="font-body-dense text-[12px] text-on-surface-variant leading-relaxed">Point-and-click palettes, structural slots, visual caret navigation, and template insertion for human authors and review.</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-space-2xs border border-surface-container-highest">
+<div class="flex items-center justify-between"><span class="font-code-metric text-[11px] font-bold text-tertiary">LAYER 2: Mathematical Rep</span><span class="material-symbols-outlined text-[16px] text-tertiary">account_tree</span></div>
+<span class="font-label-ui text-[12px] font-semibold text-on-surface">Structured AST, LaTeX &amp; MathML</span>
+<p class="font-body-dense text-[12px] text-on-surface-variant leading-relaxed">Bidirectional translation between canonical AST, LaTeX scientific source, MathML markup, and graph schemas with fidelity warnings.</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-space-2xs border border-surface-container-highest"><div class="flex items-center justify-between"><span class="font-code-metric text-[11px] font-bold text-secondary">LAYER 3: Scientific Execution</span><span class="material-symbols-outlined text-[16px] text-secondary">memory</span></div><span class="font-label-ui text-[12px] font-semibold text-on-surface">Symbolic Manipulation &amp; Numerical Solving</span><span class="font-code-metric text-[10px] text-amber-800 font-semibold bg-amber-100 px-1 py-0.5 rounded">[Pending Integration &amp; Human Approval]</span><p class="font-body-dense text-[12px] text-on-surface-variant leading-relaxed">Automated unit verification, boundary/initial condition checks, and Julia/SymPy kernel compilation with mandatory human gate.</p></div>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container text-body-dense text-[12px] text-on-surface-variant flex items-start gap-space-xs border border-slate-200">
+<span class="material-symbols-outlined text-[16px] text-outline shrink-0 mt-0.5">rule</span>
+<span class="font-code-metric text-[11px]">
+<strong>Solver Compilation Boundary:</strong> Not every displayed equation is an ODE and not every valid equation can be compiled directly into a numerical solver. Compilation requires supported grammar, explicitly defined parameters, initial and boundary conditions, verified unit metadata, solver selection, and human approval sign-off.
+</span>
+</div>
+</section>
+</div>
+<!-- RIGHT SIDEBAR / INSPECTOR & REFERENCE MANAGER (4 of 12 cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Insertion & Cross-Reference Manager Card -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm border border-slate-200 p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">system_update_alt</span>
+<h2 class="font-headline-sm text-[16px] text-on-surface font-semibold">Insertion &amp; Linkage</h2>
+</div>
+<span class="px-space-2xs py-space-3xs rounded bg-surface-container text-on-surface-variant font-code-metric text-[10px] font-semibold">BIND_ID #EQ-098-B2</span>
+</div>
+<!-- Primary Action Button: Stage for Model Formulation -->
+<button class="w-full h-10 px-space-md rounded bg-primary text-on-primary font-label-ui text-label-ui font-semibold flex items-center justify-center gap-space-xs hover:bg-on-primary-fixed-variant transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">rule_folder</span>
+<span class="">Stage for Model Formulation (Active)</span>
+</button>
+<!-- Separation of Equation Rendering from Solver Compilation Notice -->
+<div class="p-space-xs rounded-lg bg-surface-container-low border border-slate-200 flex flex-col gap-space-3xs text-[11px] font-code-metric">
+<div class="flex items-center justify-between">
+<span class="text-primary font-semibold uppercase text-[10px]">Staging Workflow Status</span>
+<span class="px-space-2xs py-0.5 rounded bg-amber-100 text-amber-800 font-semibold text-[10px]">Pending L3 Human Gate Approval</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+<strong>Model Formulation</strong> — stages eligible equations for symbolic analysis or solver-code generation after grammar validation, parameter definition, unit specification, initial and boundary conditions, solver selection, and human approval.
+</p>
+<div class="flex items-center gap-1.5 text-on-surface text-[10px] pt-1 border-t border-slate-200">
+<span class="material-symbols-outlined text-[14px] text-outline">verified_user</span>
+<span class="">Requirement: L3 Principal Investigator Gate Sign-Off prior to solver execution</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded-lg flex items-center justify-between border border-slate-200">
+<div class="flex flex-col">
+<span class="font-code-metric text-[10px] uppercase text-on-surface-variant tracking-wider font-semibold">LaTeX Ref Tag</span>
+<code class="font-code-metric text-[12px] text-primary font-semibold">\eqref{eq:navier_stokes_drag}</code>
+</div>
+<button class="p-space-2xs rounded bg-surface-container hover:bg-surface-container-highest text-on-surface transition-colors" title="Copy cross-reference">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-2xs pt-space-2xs">
+<span class="font-code-metric text-[10px] uppercase text-on-surface-variant tracking-wider font-semibold">Active Pipeline Subscribers</span>
+<div class="p-space-xs rounded-lg bg-surface-container-low flex items-start gap-space-xs border border-slate-200/80">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-dense text-body-dense text-on-surface font-semibold truncate">Model B: Numerical ODE Solver</span>
+<span class="font-code-metric text-[11px] text-on-surface-variant">Staged as 2D governing vector dynamic</span>
+</div>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low flex items-start gap-space-xs border border-slate-200/80">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-dense text-body-dense text-on-surface font-semibold truncate">LaTeX Report (Sec 3: Governing Eq)</span>
+<span class="font-code-metric text-[11px] text-on-surface-variant">Embedded figure &amp; equation reference projection</span>
+</div>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low flex items-start gap-space-xs border border-slate-200/80">
+<span class="material-symbols-outlined text-[18px] text-outline shrink-0 mt-0.5">radio_button_unchecked</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-dense text-body-dense text-on-surface font-semibold truncate">Hypothesis H1 Formulation</span>
+<span class="font-code-metric text-[11px] text-on-surface-variant">Pending sync review by Agent Council</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Variable & Parameter Bindings Inspector -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm border border-slate-200 p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">tune</span>
+<h2 class="font-headline-sm text-[15px] text-on-surface font-semibold">Variable &amp; Unit Semantics Inspector</h2>
+</div>
+<span class="font-code-metric text-[10px] text-secondary font-semibold bg-secondary-fixed/30 px-space-2xs py-space-3xs rounded">AST Bound: 5/5</span>
+</div>
+<!-- Dimensional Homogeneity Status with Corrected Wording -->
+<div class="p-space-xs rounded-lg bg-secondary-fixed/20 border border-secondary/20 flex flex-col gap-space-2xs"><div class="flex items-start justify-between gap-space-xs"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[20px] text-secondary shrink-0 mt-0.5">verified</span><div class="flex flex-col"><span class="font-label-ui text-label-ui font-semibold text-on-secondary-container">Dimensional Homogeneity Verification</span><span class="font-code-metric text-[10px] text-amber-800 font-semibold">[Partially Implemented — Formal Check Passed, Pending Scientific Validation]</span></div></div></div><div class="p-space-xs rounded bg-surface-container-lowest text-[11px] font-code-metric text-on-surface flex flex-col gap-1.5 border border-slate-200/80 shadow-xs"><div class="flex items-center justify-between pb-1 border-b border-slate-200"><span class="text-on-surface-variant font-semibold">• LHS Acceleration:</span><span class="font-bold text-primary">[r̈] = [dv/dt] = L · T⁻²</span></div><div class="flex items-center justify-between pb-1 border-b border-slate-200"><span class="text-on-surface-variant font-semibold">• RHS Gravity Force / Unit Mass:</span><span class="font-bold text-primary">[−g ȷ̂] = L · T⁻²</span></div><div class="flex flex-col gap-0.5 pb-1 border-b border-slate-200"><div class="flex items-center justify-between"><span class="text-on-surface-variant font-semibold">• RHS Aerodynamic Drag / Unit Mass:</span><span class="font-bold text-primary">[(ρ₀ C_d A / 2m) ‖ṙ‖ ṙ]</span></div><div class="text-[10px] text-on-surface-variant bg-surface-container-low p-1 rounded font-code-formula leading-tight">[(kg·m⁻³ · 1 · m² / kg) · (m·s⁻¹) · (m·s⁻¹)]<br>= [(m⁻¹) · (m²·s⁻²)] = <strong class="text-secondary font-bold">L · T⁻²</strong></div></div><div class="flex items-center gap-1.5 text-secondary text-[11px] font-semibold pt-0.5"><span class="material-symbols-outlined text-[15px]">check_circle</span><span class="">Formal verification: LHS acceleration and RHS terms dimensionally match: L · T⁻² (Acceleration). Target dimension verified.</span></div></div></div>
+<!-- Retained and Highlighted Epistemic Boundary Notice -->
+<div class="p-space-xs rounded-lg bg-amber-50 border border-amber-200 flex items-start gap-space-xs"><span class="material-symbols-outlined text-[16px] text-amber-700 shrink-0 mt-0.5">shield</span><div class="flex flex-col text-[11px] leading-relaxed text-amber-900 font-code-metric"><strong class="font-bold text-amber-950 uppercase text-[10px] tracking-wider">Crucial Epistemic Invariant:</strong>A correctly rendered, dimensionally consistent equation is not necessarily a physically correct or empirically validated model. Dimensional consistency and formal mathematical grammar do not establish physical correctness, empirical accuracy, causal validity, or model adequacy.</div></div>
+<!-- Variable Bindings List -->
+<div class="flex flex-col gap-space-2xs text-body-dense">
+<div class="p-space-xs rounded-lg bg-surface-container-low flex items-center justify-between border border-slate-200/60">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm italic font-bold text-primary text-[15px] w-5 text-center">u, v</span>
+<div class="flex flex-col">
+<span class="text-body-dense text-on-surface font-medium">Velocity State Vector</span>
+<span class="font-code-metric text-[11px] text-on-surface-variant">Unit: [m/s] • Bounds [0, 150]</span>
+</div>
+</div>
+<span class="font-code-metric text-code-metric text-on-surface bg-surface-container px-space-2xs py-space-3xs rounded">State Var</span>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low flex items-center justify-between border border-slate-200/60">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm italic font-bold text-primary text-[15px] w-5 text-center">ρ₀</span>
+<div class="flex flex-col">
+<span class="text-body-dense text-on-surface font-medium">Fluid Air Density</span>
+<span class="font-code-metric text-[11px] text-on-surface-variant">Unit: [kg/m³]</span>
+</div>
+</div>
+<span class="font-code-metric text-code-metric text-primary font-semibold bg-surface-container px-space-2xs py-space-3xs rounded">1.225</span>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low flex items-center justify-between border border-slate-200/60">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm italic font-bold text-primary text-[15px] w-5 text-center">C<sub>d</sub></span>
+<div class="flex flex-col">
+<span class="text-body-dense text-on-surface font-medium">Drag Form Coefficient</span>
+<span class="font-code-metric text-[11px] text-on-surface-variant">Dimensionless</span>
+</div>
+</div>
+<span class="font-code-metric text-code-metric text-primary font-semibold bg-surface-container px-space-2xs py-space-3xs rounded">0.470</span>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low flex items-center justify-between border border-slate-200/60">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm italic font-bold text-primary text-[15px] w-5 text-center">m</span>
+<div class="flex flex-col">
+<span class="text-body-dense text-on-surface font-medium">Projectile Mass</span>
+<span class="font-code-metric text-[11px] text-on-surface-variant">Unit: [kg]</span>
+</div>
+</div>
+<span class="font-code-metric text-code-metric text-primary font-semibold bg-surface-container px-space-2xs py-space-3xs rounded">2.50 kg</span>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low flex items-center justify-between border border-slate-200/60">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm italic font-bold text-primary text-[15px] w-5 text-center">A</span>
+<div class="flex flex-col">
+<span class="text-body-dense text-on-surface font-medium">Cross-Sectional Area</span>
+<span class="font-code-metric text-[11px] text-on-surface-variant">Unit: [m²] (π·r²)</span>
+</div>
+</div>
+<span class="font-code-metric text-code-metric text-primary font-semibold bg-surface-container px-space-2xs py-space-3xs rounded">0.0182 m²</span>
+</div>
+</div>
+</section>
+<!-- Comprehensive Equation Transformation Provenance Panel -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm border border-slate-200 p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">history_edu</span>
+<h2 class="font-headline-sm text-[16px] text-on-surface font-semibold">Transformation Provenance</h2>
+</div>
+<span class="px-space-2xs py-space-3xs rounded bg-surface-container text-primary font-code-metric text-[10px] font-semibold">#EQ-098-B2 (v2.4)</span>
+</div>
+<!-- Epistemic Classification Badges -->
+<div class="flex flex-col gap-1">
+<span class="font-code-metric text-[10px] uppercase text-on-surface-variant tracking-wider font-semibold">Epistemic Classification</span>
+<div class="flex flex-wrap gap-1"><span class="px-space-2xs py-0.5 rounded bg-primary text-on-primary font-code-metric text-[10px] font-semibold shadow-xs">Source-derived (Active)</span><span class="px-space-2xs py-0.5 rounded bg-primary text-on-primary font-code-metric text-[10px] font-semibold shadow-xs">Symbolically transformed (Active)</span><span class="px-space-2xs py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric text-[10px]">User-authored</span><span class="px-space-2xs py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric text-[10px]">AI-proposed</span><span class="px-space-2xs py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric text-[10px]">Numerically fitted</span><span class="px-space-2xs py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric text-[10px]">Model-generated</span><span class="px-space-2xs py-0.5 rounded bg-surface-container text-on-surface-variant font-code-metric text-[10px]">Unverified</span></div>
+</div>
+<!-- Detailed Provenance Record Table -->
+<div class="p-space-xs rounded-lg bg-surface-container-low flex flex-col gap-space-2xs border border-slate-200 text-[11px] font-code-metric"><div class="flex items-center justify-between"><span class="text-on-surface-variant">Equation ID &amp; Version:</span><span class="text-primary font-semibold">#EQ-098-B2 (Version: v2.4)</span></div><div class="flex flex-col gap-0.5 border-t border-slate-200 pt-1"><span class="text-on-surface-variant">Parent Equation:</span><span class="text-on-surface font-medium">#EQ-098-B1 — Classical incompressible Navier–Stokes momentum balance</span></div><div class="flex flex-col gap-0.5 border-t border-slate-200 pt-1"><span class="text-on-surface-variant">Derived Representation:</span><span class="text-on-surface font-medium">Reduced-order 2D point-mass projectile model with quadratic drag</span></div><div class="flex flex-col gap-0.5 border-t border-slate-200 pt-1"><span class="text-on-surface-variant">Transformation Applied:</span><span class="text-on-surface font-medium">Symbolic boundary-layer drag projection and state-vector decomposition</span></div><div class="flex items-center justify-between border-t border-slate-200 pt-1"><span class="text-on-surface-variant">Transformation Author / Agent:</span><span class="text-on-surface">Model Builder Agent (Simulated)</span></div><div class="flex items-center justify-between border-t border-slate-200 pt-1"><span class="text-on-surface-variant">Source Citation:</span><span class="font-body-dense text-[12px] text-on-surface font-medium">Navier (1822), Stokes (1845)</span></div><div class="flex flex-col gap-0.5 border-t border-slate-200 pt-1"><span class="text-on-surface-variant">Assumption Set:</span><div class="text-on-surface flex flex-col gap-0.5 pl-1"><span class="leading-tight">• Incompressible reference flow &amp; Newtonian fluid</span><span class="leading-tight">• Constant density and viscosity (ρ₀, ν)</span><span class="leading-tight">• Rigid point-mass body &amp; constant drag coefficient (C_d)</span><span class="leading-tight">• Prescribed cross-sectional area (A) &amp; uniform gravity (-g ĵ)</span><span class="leading-tight">• No wind, negligible lift; explicit initial &amp; boundary conditions</span></div></div><div class="flex flex-col gap-1 border-t border-slate-200 pt-1 bg-surface-container-lowest p-space-2xs rounded border border-slate-200/60"><span class="text-primary font-bold uppercase text-[10px] tracking-wider">Partitioned Validation Profile</span><div class="flex flex-col gap-1 pl-1 border-l-2 border-secondary"><div class="flex items-start justify-between"><span class="font-medium text-on-surface">1. Formal Validation:</span><span class="text-secondary font-semibold bg-secondary-fixed/40 px-1 py-0.2 rounded text-[10px]">Passed</span></div><span class="text-[10px] text-on-surface-variant leading-tight">Scoped to current equation, declared symbol definitions, units, assumptions, and conversion path: Mathematical grammar valid; Dimensional homogeneity [L · T⁻²] verified; Conversion warning logged for Content MathML.</span></div><div class="flex flex-col gap-0.5 pl-1 border-l-2 border-amber-300"><div class="flex items-center justify-between"><span class="font-medium text-on-surface">2. Scientific Validation:</span><span class="text-amber-800 font-semibold bg-amber-100 px-1 py-0.2 rounded text-[10px]">Not established</span></div><div class="flex items-center justify-between"><span class="font-medium text-on-surface">3. Empirical Validation:</span><span class="text-amber-800 font-semibold bg-amber-100 px-1 py-0.2 rounded text-[10px]">Not established</span></div><div class="flex items-center justify-between"><span class="font-medium text-on-surface">4. Model Adequacy:</span><span class="text-amber-800 font-semibold bg-amber-100 px-1 py-0.2 rounded text-[10px]">Pending review</span></div></div></div><div class="flex items-center justify-between border-t border-slate-200 pt-1"><span class="text-on-surface-variant">Human Approval Status:</span><span class="text-amber-800 font-semibold bg-amber-100 px-1 py-0.5 rounded border border-amber-200">Staged — Pending L3 PI Sign-Off</span></div><div class="flex flex-col gap-0.5 border-t border-slate-200 pt-1"><span class="text-on-surface-variant font-semibold text-[10px] uppercase">Provenance Ledger:</span><span class="text-[10px] text-on-surface-variant leading-tight">Source citation, equation lineage, transformation history, assumption set, and version history recorded.</span></div></div>
+</section>
+<!-- Reusable Equation Library & Derivation Templates -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm border border-slate-200 p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-tertiary">auto_stories</span>
+<h2 class="font-headline-sm text-[16px] text-on-surface font-semibold">Derivation Templates</h2>
+</div>
+<span class="font-label-ui text-label-ui text-on-surface-variant hover:text-primary cursor-pointer">Browse All</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<button class="p-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container text-left flex items-center justify-between group transition-colors border border-slate-200/60">
+<div class="flex flex-col min-w-0">
+<span class="font-body-dense text-body-dense text-on-surface font-medium truncate group-hover:text-primary transition-colors">Runge-Kutta 4th Order Tableau</span>
+<span class="font-code-metric text-[10px] text-on-surface-variant">k₁...k₄ intermediate stage equations</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-primary">arrow_forward</span>
+</button>
+<button class="p-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container text-left flex items-center justify-between group transition-colors border border-slate-200/60">
+<div class="flex flex-col min-w-0">
+<span class="font-body-dense text-body-dense text-on-surface font-medium truncate group-hover:text-primary transition-colors">Bernoulli Barometric Lapse Formula</span>
+<span class="font-code-metric text-[10px] text-on-surface-variant">Stratified density profile ρ(z)</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-primary">arrow_forward</span>
+</button>
+<button class="p-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container text-left flex items-center justify-between group transition-colors border border-slate-200/60">
+<div class="flex flex-col min-w-0">
+<span class="font-body-dense text-body-dense text-on-surface font-medium truncate group-hover:text-primary transition-colors">Magnus Cross-Flow Circulation Lift</span>
+<span class="font-code-metric text-[10px] text-on-surface-variant">F_L = S (ω × v) spin tensor formulation</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-primary">arrow_forward</span>
+</button>
+<button class="p-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container text-left flex items-center justify-between group transition-colors border border-slate-200/60">
+<div class="flex flex-col min-w-0">
+<span class="font-body-dense text-body-dense text-on-surface font-medium truncate group-hover:text-primary transition-colors">Harmonic Oscillator Hamiltonian</span>
+<span class="font-code-metric text-[10px] text-on-surface-variant">H = p²/(2m) + ½mω²x² canonical pair</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline group-hover:text-primary">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Architecture Footer Notice -->
+<footer class="p-space-sm rounded-xl bg-surface-container-low border border-slate-200 flex flex-col gap-space-2xs"><div class="flex items-center gap-space-xs text-primary font-semibold font-label-ui text-label-ui"><span class="material-symbols-outlined text-[16px]">verified_user</span><span class="">SANDHANA Mathematical Component Architecture</span></div><p class="font-body-dense text-[12px] leading-relaxed text-on-surface-variant">SANDHANA provides a MathType-style structured equation and derivation interface with a canonical mathematical representation, validated LaTeX and MathML interchange, formal consistency checks, equation lineage, provenance tracking, and staged integration with symbolic and numerical scientific engines. The current prototype represents the authoring and review workflow. Production AST parsing, persistent equation storage, symbolic transformation, dimensional-analysis services, code generation, and solver execution remain separate implementation layers subject to validation and human approval.</p><div class="flex items-center justify-between pt-space-3xs border-t border-surface-container-highest"><span class="font-code-metric text-[10px] text-on-surface-variant">STAGING: Model Formulation</span><span class="font-code-metric text-[10px] text-amber-800 font-semibold bg-amber-100 px-1.5 py-0.5 rounded">[Staged — Pending L3 Principal Investigator Gate Sign-Off]</span></div></footer>
+</aside>
+</div>
+<!-- Micro-interaction Script for Mode Switch Toggles -->
+<script>
+    (function() {
+      const btnVisual = document.getElementById('btn-mode-visual');
+      const btnLatex = document.getElementById('btn-mode-latex');
+      const btnMathml = document.getElementById('btn-mode-mathml');
+
+      const buttons = [btnVisual, btnLatex, btnMathml];
+
+      buttons.forEach(btn => {
+        if (!btn) return;
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => {
+            b.classList.remove('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.add('bg-surface-container-lowest', 'text-primary', 'font-semibold', 'shadow-sm');
+          btn.classList.remove('text-on-surface-variant');
+        });
+      });
+    })();
+  </script>
+</div></main></div>
+
+
+</body></html>

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#2f3032", "surface-dim": "#dbd9dc", "on-background": "#1b1c1e", "on-primary": "#ffffff", "outline": "#747686", "primary-container": "#1d4ed8", "surface-bright": "#faf9fb", "tertiary": "#5700c0", "on-secondary-fixed-variant": "#005137", "on-primary-fixed": "#001551", "outline-variant": "#c4c5d7", "on-secondary": "#ffffff", "on-secondary-fixed": "#002114", "on-tertiary-fixed-variant": "#5a00c6", "surface-tint": "#2151da", "on-primary-container": "#cad3ff", "tertiary-fixed": "#eaddff", "on-tertiary-container": "#dfccff", "surface-container-lowest": "#ffffff", "surface-container-low": "#f5f3f5", "surface-container-high": "#e9e8ea", "inverse-primary": "#b7c4ff", "primary-fixed": "#dce1ff", "surface-variant": "#e3e2e4", "tertiary-fixed-dim": "#d2bbff", "on-tertiary-fixed": "#25005a", "on-error-container": "#93000a", "secondary-fixed-dim": "#68dba9", "inverse-on-surface": "#f2f0f3", "primary": "#0037b0", "on-primary-fixed-variant": "#0039b5", "primary-fixed-dim": "#b7c4ff", "error": "#ba1a1a", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "on-surface": "#1b1c1e", "secondary-fixed": "#85f8c4", "secondary": "#006c4a", "on-surface-variant": "#434655", "secondary-container": "#82f5c1", "surface": "#faf9fb", "tertiary-container": "#712ae2", "on-secondary-container": "#00714e", "on-error": "#ffffff", "surface-container-highest": "#e3e2e4", "background": "#faf9fb", "surface-container": "#efedf0" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-3xl": "4.5rem", "col-gutter": "1rem", "space-sm": "0.75rem", "space-2xl": "3rem", "panel-margin": "1.5rem", "space-xl": "2rem", "space-md": "1rem", "space-3xs": "0.125rem", "space-lg": "1.5rem", "space-xs": "0.5rem", "space-2xs": "0.25rem" }, "fontFamily": { "headline-sm": [ "Newsreader" ], "headline-md": [ "Newsreader" ], "code-formula": [ "JetBrains Mono" ], "headline-lg": [ "Newsreader" ], "display-hero-mobile": [ "Newsreader" ], "headline-lg-mobile": [ "Newsreader" ], "body-editorial": [ "Newsreader" ], "code-metric": [ "JetBrains Mono" ], "display-hero": [ "Newsreader" ], "body-default": [ "Geist" ], "label-ui": [ "Geist" ], "body-dense": [ "Geist" ] }, "fontSize": { "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "code-formula": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "display-hero-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "body-editorial": [ "18px", { "lineHeight": "30px", "fontWeight": "400" } ], "code-metric": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "display-hero": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "body-default": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-ui": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "body-dense": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-default text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-md flex items-center gap-space-xs"><img alt="Brand logo. - Primary color: #1d4ed8 - Font: newsreader - Mode: light - Roundness: rounded-sm" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X4qkNjkOKm3THm2HEZQoyrz0q7ROYQgqXvQkU5lTQ_SM6pPDi9w_IVJ_FU5YRf2V7HXTwHgvO78Q30PBG1VWslxiOU2XRqxyZ6iAxs6oyvrw41UVRLxJCrwuVKAExwp2J9TxXZiCWgxVwe1o2a4FZENdpS7IMue6-N6pfdblgTk0igNicHBZJtfPxJppruXyvg2ee-WK2uDuUPXH0A3HEbZAC4xOdvKBmBK44jp7wByCI6kb0dnWgjOECE"/><div class="flex flex-col leading-none"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">SANDHANA</span><span class="font-label-ui text-label-ui text-on-surface-variant font-medium mt-space-3xs">सन्धान • AI Research</span></div></div><div class="px-space-md"><div class="bg-surface-container px-space-xs py-space-2xs rounded-lg flex items-center justify-between"><div class="flex items-center gap-space-2xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block animate-pulse"></span><span class="font-code-metric text-code-metric text-secondary font-medium tracking-wide uppercase">Core Active</span></div><span class="font-code-metric text-code-metric text-on-surface-variant">v4.2-lab</span></div></div><nav class="flex flex-col gap-space-3xs px-space-xs" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary font-medium rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-path="investigate" href="#"><span class="font-body-dense text-body-dense">Investigate</span><span class="font-code-metric text-code-metric px-space-2xs py-space-3xs rounded bg-surface-container text-on-surface-variant">⌘1</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="research-workspace" href="#"><span class="font-body-dense text-body-dense">Research Workspace</span><span class="font-code-metric text-code-metric px-space-2xs py-space-3xs rounded bg-surface-container text-on-surface-variant">⌘2</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="experiments" href="#"><span class="font-body-dense text-body-dense">Experiments</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="models" href="#"><span class="font-body-dense text-body-dense">Models</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="concepts" href="#"><span class="font-body-dense text-body-dense">Concepts</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notebook" href="#"><span class="font-body-dense text-body-dense">Notebook</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="research-history" href="#"><span class="font-body-dense text-body-dense">Research History</span></a></nav></div><div class="px-space-md flex flex-col gap-space-xs"><div class="bg-surface-container px-space-sm py-space-xs rounded-lg flex flex-col gap-space-3xs"><span class="font-code-metric text-code-metric text-on-surface-variant uppercase tracking-wider">Active Session</span><span class="font-body-dense text-body-dense text-on-surface truncate font-medium">INV-2024-098</span><span class="font-code-metric text-code-metric text-on-surface-variant truncate">Projectile Aerodynamic Regimes</span></div><div class="flex items-center justify-between pt-space-xs"><span class="font-code-metric text-code-metric text-on-surface-variant">Epistemic Engine 3.8</span><span class="font-code-metric text-code-metric text-secondary font-medium">Synced</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 z-40 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="flex-1 flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-2xs rounded-lg"><span class="material-symbols-outlined text-on-surface-variant text-[18px]">terminal</span><input class="bg-transparent w-full font-body-dense text-body-dense text-on-surface placeholder:text-on-surface-variant focus:outline-none" placeholder="Ask an investigative question, search hypotheses, or cite models (⌘K)" type="text"/><kbd class="font-code-metric text-code-metric text-on-surface-variant bg-surface-container px-space-2xs py-space-3xs rounded">⌘K</kbd></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-2xs rounded-full"><span class="font-code-metric text-code-metric font-semibold text-primary">INV-2024-098</span><span class="text-on-surface-variant font-body-dense text-body-dense">•</span><span class="font-body-dense text-body-dense text-on-surface truncate max-w-[200px]">Projectile Aerodynamics</span></div></div><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center gap-space-2xs px-space-xs py-space-2xs bg-surface-container rounded-lg"><span class="w-2 h-2 rounded-full bg-secondary inline-block"></span><span class="font-label-ui text-label-ui text-on-surface-variant">AI Core Active</span></div><button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">tune</span></button><div class="flex items-center gap-space-xs pl-space-xs"><div class="text-right hidden sm:block"><div class="font-body-dense text-body-dense font-medium text-on-surface leading-tight">Dr. A. Sharma</div><div class="font-code-metric text-code-metric text-on-surface-variant">Principal Investigator</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive State Scripts and Controller -->
+<script>
+    function selectInquiry(text) {
+      const input = document.getElementById('investigation-query-input');
+      if (input) {
+        input.value = text;
+        input.focus();
+        // Trigger subtle pulse on primary execute button
+        const btn = document.getElementById('primary-investigate-btn');
+        if (btn) {
+          btn.classList.add('scale-[1.02]');
+          setTimeout(() => btn.classList.remove('scale-[1.02]'), 200);
+        }
+      }
+    }
+
+    function switchMode(button, modeKey) {
+      document.querySelectorAll('.mode-selector-pill').forEach(el => {
+        el.classList.remove('bg-on-surface', 'text-surface', 'font-medium', 'shadow-sm');
+        el.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        const dot = el.querySelector('.status-dot');
+        if (dot) dot.classList.add('hidden');
+      });
+      button.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+      button.classList.add('bg-on-surface', 'text-surface', 'font-medium', 'shadow-sm');
+      const activeDot = button.querySelector('.status-dot');
+      if (activeDot) activeDot.classList.remove('hidden');
+
+      const modeHint = document.getElementById('mode-hint-label');
+      if (modeHint) {
+        const descriptions = {
+          'investigate': 'Unified Pipeline • Hypothesis Framing + Modeling + Verification',
+          'model': 'Symbolic & State-Space Constructor • Euler-Lagrange, Multi-Box, PDE Spec',
+          'experiment': 'Parametric Grid Explorer • Run parallel sweeps across solver backends',
+          'concept': 'First-Principles Ontological Breakdown • Mathematical Derivations',
+          'hypotheses': 'Bayesian Model Odds Comparison • Likelihood ratio mapping',
+          'evidence': 'Literature Retrieval & Synthesized Peer Findings • DOI Indexing',
+          'continue': 'Resume uncommitted execution runs or load snapshot records'
+        };
+        modeHint.textContent = descriptions[modeKey] || 'Active Investigative Mode';
+      }
+    }
+
+    function setActiveStep(stepIndex) {
+      document.querySelectorAll('.workflow-step-item').forEach((step, idx) => {
+        const inner = step.querySelector('.step-container');
+        const marker = step.querySelector('.step-num');
+        if (idx === stepIndex) {
+          inner.classList.add('bg-surface-container-lowest', 'shadow-md', 'scale-[1.02]');
+          inner.classList.remove('bg-surface-container-low', 'opacity-70');
+          if (marker) marker.classList.add('bg-primary', 'text-on-primary');
+        } else {
+          inner.classList.remove('bg-surface-container-lowest', 'shadow-md', 'scale-[1.02]');
+          inner.classList.add('bg-surface-container-low', 'opacity-70');
+          if (marker) marker.classList.remove('bg-primary', 'text-on-primary');
+        }
+      });
+      const descBox = document.getElementById('workflow-step-detail');
+      const stepDetails = [
+        { title: "Stage 01: Epistemic Query Intake", meta: "NLP Intent Parser -> Formal Statement", desc: "User expresses natural research inquiries. The core dissects target observables, boundary constraints, and fundamental dimensional groups (Buckingham Pi theorem)." },
+        { title: "Stage 02: Investigation Decomposition", meta: "Directed Acyclic Research Graph", desc: "Formulates a structured 5-point experimental agenda isolating independent control variables from latent environmental confounders." },
+        { title: "Stage 03: Literature & Ground Truth Retrieval", meta: "Semantic ArXiv + DOI Verification", desc: "Extracts canonical empirical constants, previous peer discrepancies, and establishes mathematical priors across 48,000 indexed publications." },
+        { title: "Stage 04: Formal Hypothesis Generation", meta: "Competing Null & Alternative Models", desc: "Constructs falsifiable competing propositions with quantitative demarcation thresholds (e.g. p < 0.005, Bayes Factor K > 10)." },
+        { title: "Stage 05: Mathematical Model Construction", meta: "Symbolic ODE/PDE & State-Space Defs", desc: "Synthesizes mathematical formulations—differential balance equations, conservation laws, or agent-based interaction matrices." },
+        { title: "Stage 06: Empirical Simulation Solvers", meta: "Dormand-Prince (RK45) / Symplectic Integrators", desc: "Simulates continuous phase trajectories and multi-parameter sweeps with rigorous floating-point error bounds and step-size adaptation." },
+        { title: "Stage 07: Epistemic Divergence Interpretation", meta: "Bayesian Sensitivity Analysis", desc: "Cross-correlates model trajectories with known physics invariants, detecting phase shifts, bifurcations, and asymptotic limit cycles." },
+        { title: "Stage 08: Uncertainty & Error Quantification", meta: "Monte Carlo Markov Chain (MCMC)", desc: "Quantifies structural vs parameter uncertainty, propagation errors, and computes 95% highest posterior density credible intervals." },
+        { title: "Stage 09: Targeted Next-Experiment Proposal", meta: "Optimal Experimental Design (OED)", desc: "Proposes the single most information-dense subsequent sweep to maximize mutual information gain and reduce parametric ambiguity." },
+        { title: "Stage 10: Persistent Research Record Archival", meta: "Cryptographic Run Ledger", desc: "Serializes code, ODE state matrices, synthetic telemetry, and human-readable prose directly to permanent research records." }
+      ];
+      if (descBox && stepDetails[stepIndex]) {
+        descBox.innerHTML = `
+          <div class="flex items-center justify-between gap-space-sm mb-space-2xs">
+            <span class="font-code-metric text-code-metric text-primary uppercase font-semibold">${stepDetails[stepIndex].meta}</span>
+            <span class="font-code-metric text-code-metric text-on-surface-variant">Step ${stepIndex + 1} of 10</span>
+          </div>
+          <h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-2xs">${stepDetails[stepIndex].title}</h4>
+          <p class="font-body-default text-body-default text-on-surface-variant leading-relaxed">${stepDetails[stepIndex].desc}</p>
+        `;
+      }
+    }
+
+    function toggleDisciplineFilter(btn) {
+      const isSelected = btn.getAttribute('data-active') === 'true';
+      if (isSelected) {
+        btn.setAttribute('data-active', 'false');
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      } else {
+        btn.setAttribute('data-active', 'true');
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        btn.classList.add('bg-primary', 'text-on-primary');
+      }
+    }
+  </script>
+<!-- Epistemic Verification Ribbon -->
+<section class="w-full bg-surface-container-low px-space-xl py-space-sm">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+<span class="font-code-metric text-code-metric text-primary uppercase tracking-widest font-semibold">Strict Epistemic Isolation Standard</span>
+<span class="font-label-ui text-label-ui text-on-surface-variant hidden lg:inline">• Symbolic Reasoning Partition v4.2</span>
+</div>
+<p class="font-body-dense text-body-dense text-on-surface-variant max-w-2xl leading-tight">
+        All natural language inferences are mathematically decoupled from numerical simulation outputs. Solvers (Runge-Kutta 4/5, Symplectic) run in sandboxed deterministic execution environments.
+      </p>
+<div class="flex items-center gap-space-xs shrink-0">
+<span class="font-code-metric text-code-metric bg-surface-container-high px-space-xs py-space-3xs rounded text-on-surface font-medium">IEEE-754 Certified</span>
+<span class="font-code-metric text-code-metric bg-secondary/10 text-secondary px-space-xs py-space-3xs rounded font-medium">Lossless Run State</span>
+</div>
+</div>
+</section>
+<!-- Hero Section: Intellectual Rigor & Inquiry Launchpad -->
+<section class="w-full px-space-xl pt-space-2xl pb-space-3xl relative overflow-hidden">
+<!-- Atmospheric subtle ambient mesh -->
+<div class="absolute top-0 right-1/4 w-96 h-96 bg-primary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute bottom-10 left-10 w-80 h-80 bg-secondary-fixed-dim/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-5xl mx-auto flex flex-col items-center text-center">
+<!-- Session & Engine Metadata Line -->
+<div class="inline-flex items-center gap-space-xs bg-surface-container px-space-sm py-space-2xs rounded-full mb-space-lg shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block animate-pulse"></span>
+<span class="font-code-metric text-code-metric text-on-surface uppercase tracking-widest font-semibold">SANDHANA Epistemic Engine</span>
+<span class="font-code-metric text-code-metric text-outline-variant">|</span>
+<span class="font-code-metric text-code-metric text-primary font-medium">Session INV-2024-098 Ready</span>
+</div>
+<!-- Main Scientific Thesis Statement -->
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight max-w-4xl mb-space-md">
+        Think like a scientist. <br/>
+<span class="italic font-normal text-primary">Investigate with AI.</span>
+</h1>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant max-w-3xl mb-space-2xl leading-relaxed">
+        Turn questions and ideas into structured investigations. Explore evidence, construct symbolic models, run deterministic numerical simulations, compare competing hypotheses, and discover what to test next.
+      </p>
+<!-- Investigative Workbench Console (Primary Hero Card) -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-xl p-space-lg sm:p-space-xl text-left relative">
+<!-- Mode Selector Pills -->
+<div class="flex items-center justify-between flex-wrap gap-space-xs mb-space-md pb-space-sm">
+<div class="flex items-center flex-wrap gap-space-2xs">
+<button class="mode-selector-pill flex items-center gap-space-2xs px-space-sm py-space-xs rounded-full bg-on-surface text-surface font-medium text-label-ui font-label-ui transition-all shadow-sm" onclick="switchMode(this, 'investigate')">
+<span class="status-dot w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+              Investigate
+            </button>
+<button class="mode-selector-pill flex items-center gap-space-2xs px-space-sm py-space-xs rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface text-label-ui font-label-ui transition-all" onclick="switchMode(this, 'model')">
+<span class="status-dot hidden w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+              Build a model
+            </button>
+<button class="mode-selector-pill flex items-center gap-space-2xs px-space-sm py-space-xs rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface text-label-ui font-label-ui transition-all" onclick="switchMode(this, 'experiment')">
+<span class="status-dot hidden w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+              Run an experiment
+            </button>
+<button class="mode-selector-pill flex items-center gap-space-2xs px-space-sm py-space-xs rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface text-label-ui font-label-ui transition-all" onclick="switchMode(this, 'concept')">
+<span class="status-dot hidden w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+              Explain a concept
+            </button>
+<button class="mode-selector-pill flex items-center gap-space-2xs px-space-sm py-space-xs rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface text-label-ui font-label-ui transition-all" onclick="switchMode(this, 'hypotheses')">
+<span class="status-dot hidden w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+              Compare hypotheses
+            </button>
+<button class="mode-selector-pill flex items-center gap-space-2xs px-space-sm py-space-xs rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface text-label-ui font-label-ui transition-all" onclick="switchMode(this, 'evidence')">
+<span class="status-dot hidden w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+              Review evidence
+            </button>
+<button class="mode-selector-pill flex items-center gap-space-2xs px-space-sm py-space-xs rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface text-label-ui font-label-ui transition-all" onclick="switchMode(this, 'continue')">
+<span class="status-dot hidden w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+              Continue research
+            </button>
+</div>
+<span class="font-code-metric text-code-metric text-on-surface-variant hidden lg:inline" id="mode-hint-label">
+            Unified Pipeline • Hypothesis Framing + Modeling + Verification
+          </span>
+</div>
+<!-- Prominent Query Input Module -->
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<label class="font-label-ui text-label-ui text-on-surface-variant font-medium flex items-center justify-between" for="investigation-query-input">
+<span>Primary Research Question or Governing Hypothesis</span>
+<span class="font-code-metric text-code-metric text-outline">LaTeX supported ($...$)</span>
+</label>
+<div class="relative flex items-center">
+<textarea class="w-full bg-surface-container-low focus:bg-surface-container-lowest text-on-surface font-body-default text-body-default p-space-md rounded-lg focus:outline-none transition-all resize-none placeholder:text-on-surface-variant/60 shadow-inner" id="investigation-query-input" placeholder="What would you like to investigate? (e.g., How does high Mach Reynolds detachment alter the drag coefficient in non-ideal gas expansions?)" rows="3"></textarea>
+</div>
+</div>
+<!-- Action Execution Row -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pb-space-lg">
+<div class="flex items-center gap-space-xs w-full sm:w-auto">
+<button class="w-full sm:w-auto px-space-lg py-space-sm bg-primary hover:bg-primary-container text-on-primary font-body-dense text-body-dense font-medium rounded-lg shadow-md flex items-center justify-center gap-space-xs transition-all" id="primary-investigate-btn">
+<span class="material-symbols-outlined text-[18px]">explore</span>
+<span>Begin investigation</span>
+</button>
+<button class="w-full sm:w-auto px-space-md py-space-sm bg-surface-container-high hover:bg-surface-container hover:text-on-surface text-on-surface-variant font-body-dense text-body-dense font-medium rounded-lg transition-all flex items-center justify-center gap-space-2xs">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Load previous inquiry</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<span class="font-code-metric text-code-metric text-on-surface-variant">Target Execution Engine:</span>
+<span class="font-code-metric text-code-metric bg-surface-container px-space-xs py-space-2xs rounded font-medium text-on-surface">RK45 Adaptive Float-64</span>
+</div>
+</div>
+<!-- Curated Scientific Prompts -->
+<div class="pt-space-md">
+<div class="font-label-ui text-label-ui text-on-surface-variant uppercase tracking-wider mb-space-sm flex items-center gap-space-2xs font-semibold">
+<span class="material-symbols-outlined text-primary text-[16px]">science</span>
+<span>Canonical Inquiries to Explore</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-xs">
+<button class="text-left p-space-sm bg-surface-container-low hover:bg-surface-container hover:scale-[1.01] transition-all rounded-lg flex flex-col justify-between group" onclick="selectInquiry('Why does increasing atmospheric CO₂ affect global equilibrium temperature and climate sensitivity?')">
+<span class="font-body-dense text-body-dense text-on-surface group-hover:text-primary transition-colors line-clamp-2">"Why does increasing atmospheric CO₂ affect global temperature?"</span>
+<div class="flex items-center gap-space-2xs mt-space-xs">
+<span class="font-code-metric text-code-metric text-secondary font-medium uppercase">Earth &amp; Climate</span>
+<span class="text-on-surface-variant font-code-metric text-code-metric">• 4-Box Model</span>
+</div>
+</button>
+<button class="text-left p-space-sm bg-surface-container-low hover:bg-surface-container hover:scale-[1.01] transition-all rounded-lg flex flex-col justify-between group" onclick="selectInquiry('What happens to a multi-trophic population when apex predators undergo catastrophic collapse?')">
+<span class="font-body-dense text-body-dense text-on-surface group-hover:text-primary transition-colors line-clamp-2">"What happens to a population when predators disappear?"</span>
+<div class="flex items-center gap-space-2xs mt-space-xs">
+<span class="font-code-metric text-code-metric text-secondary font-medium uppercase">Biology &amp; Ecology</span>
+<span class="text-on-surface-variant font-code-metric text-code-metric">• Lotka-Volterra</span>
+</div>
+</button>
+<button class="text-left p-space-sm bg-surface-container-low hover:bg-surface-container hover:scale-[1.01] transition-all rounded-lg flex flex-col justify-between group" onclick="selectInquiry('Could an asymmetric camber airfoil profile enhance laminar lift while suppressing transonic shock wave drag?')">
+<span class="font-body-dense text-body-dense text-on-surface group-hover:text-primary transition-colors line-clamp-2">"Could a different wing shape improve lift while reducing drag?"</span>
+<div class="flex items-center gap-space-2xs mt-space-xs">
+<span class="font-code-metric text-code-metric text-secondary font-medium uppercase">Engineering</span>
+<span class="text-on-surface-variant font-code-metric text-code-metric">• NACA Navier-Stokes</span>
+</div>
+</button>
+<button class="text-left p-space-sm bg-surface-container-low hover:bg-surface-container hover:scale-[1.01] transition-all rounded-lg flex flex-col justify-between group" onclick="selectInquiry('How does non-standard planetary gravitational variation perturb ballistic projectile parabolas with aerodynamic drag?')">
+<span class="font-body-dense text-body-dense text-on-surface group-hover:text-primary transition-colors line-clamp-2">"How does changing gravity affect projectile motion?"</span>
+<div class="flex items-center gap-space-2xs mt-space-xs">
+<span class="font-code-metric text-code-metric text-secondary font-medium uppercase">Physics</span>
+<span class="text-on-surface-variant font-code-metric text-code-metric">• Quadratic Drag</span>
+</div>
+</button>
+<button class="text-left p-space-sm bg-surface-container-low hover:bg-surface-container hover:scale-[1.01] transition-all rounded-lg flex flex-col justify-between group" onclick="selectInquiry('Can pathogen transmission percolation thresholds shift across Scale-Free versus Small-World topological networks?')">
+<span class="font-body-dense text-body-dense text-on-surface group-hover:text-primary transition-colors line-clamp-2">"Can a disease spread differently through different network structures?"</span>
+<div class="flex items-center gap-space-2xs mt-space-xs">
+<span class="font-code-metric text-code-metric text-secondary font-medium uppercase">Complex Systems</span>
+<span class="text-on-surface-variant font-code-metric text-code-metric">• Graph SIR Models</span>
+</div>
+</button>
+<button class="text-left p-space-sm bg-surface-container-low hover:bg-surface-container hover:scale-[1.01] transition-all rounded-lg flex flex-col justify-between group" onclick="selectInquiry('What electronic band-gap variables and recombination parameters dictate the ultimate theoretical efficiency of a perovskite solar cell?')">
+<span class="font-body-dense text-body-dense text-on-surface group-hover:text-primary transition-colors line-clamp-2">"What variables determine the efficiency of a solar cell?"</span>
+<div class="flex items-center gap-space-2xs mt-space-xs">
+<span class="font-code-metric text-code-metric text-secondary font-medium uppercase">Materials Science</span>
+<span class="text-on-surface-variant font-code-metric text-code-metric">• Shockley-Queisser</span>
+</div>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Workflow Progression Visualizer -->
+<section class="w-full bg-surface-container-low px-space-xl py-space-3xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs mb-space-2xs">
+<span class="font-code-metric text-code-metric text-primary uppercase font-bold tracking-wider">Methodology</span>
+<span class="text-on-surface-variant font-body-dense text-body-dense">•</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant uppercase tracking-wider">Autonomous Scientific Epistemology</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">The AI Scientist Workflow Principle</h2>
+<p class="font-body-default text-body-default text-on-surface-variant max-w-2xl mt-space-2xs">
+            SANDHANA does not merely summarize static knowledge. It executes the full formal arc of the scientific method—orchestrating simulations as empirical instruments.
+          </p>
+</div>
+<div class="bg-surface-container px-space-md py-space-sm rounded-lg flex items-center gap-space-sm shrink-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">hub</span>
+<div class="flex flex-col">
+<span class="font-label-ui text-label-ui font-semibold text-on-surface">Active Workflow Paradigm</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Interactive Simulation &amp; Evidence Loop</span>
+</div>
+</div>
+</div>
+<!-- Horizontal Progression Stepper (10 Stages) -->
+<div class="overflow-x-auto pb-space-sm">
+<div class="flex items-stretch gap-space-xs min-w-[1120px]">
+<!-- Step 1 -->
+<button class="workflow-step-item flex-1 text-left group focus:outline-none" onclick="setActiveStep(0)">
+<div class="step-container bg-surface-container-lowest p-space-sm rounded-lg shadow-sm transition-all h-full flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="step-num w-6 h-6 rounded-full bg-primary text-on-primary font-code-metric text-code-metric flex items-center justify-center font-bold">01</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary">help_outline</span>
+</div>
+<div>
+<span class="font-label-ui text-label-ui font-medium text-on-surface block leading-tight">Ask a question</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Inquiry Framing</span>
+</div>
+</div>
+</button>
+<!-- Step 2 -->
+<button class="workflow-step-item flex-1 text-left group focus:outline-none" onclick="setActiveStep(1)">
+<div class="step-container bg-surface-container-low opacity-70 p-space-sm rounded-lg hover:opacity-100 transition-all h-full flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="step-num w-6 h-6 rounded-full bg-surface-container text-on-surface-variant font-code-metric text-code-metric flex items-center justify-center font-bold">02</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary">schema</span>
+</div>
+<div>
+<span class="font-label-ui text-label-ui font-medium text-on-surface block leading-tight">Create plan</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">DAG Decomposition</span>
+</div>
+</div>
+</button>
+<!-- Step 3 -->
+<button class="workflow-step-item flex-1 text-left group focus:outline-none" onclick="setActiveStep(2)">
+<div class="step-container bg-surface-container-low opacity-70 p-space-sm rounded-lg hover:opacity-100 transition-all h-full flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="step-num w-6 h-6 rounded-full bg-surface-container text-on-surface-variant font-code-metric text-code-metric flex items-center justify-center font-bold">03</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary">library_books</span>
+</div>
+<div>
+<span class="font-label-ui text-label-ui font-medium text-on-surface block leading-tight">Review evidence</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Literature Prior</span>
+</div>
+</div>
+</button>
+<!-- Step 4 -->
+<button class="workflow-step-item flex-1 text-left group focus:outline-none" onclick="setActiveStep(3)">
+<div class="step-container bg-surface-container-low opacity-70 p-space-sm rounded-lg hover:opacity-100 transition-all h-full flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="step-num w-6 h-6 rounded-full bg-surface-container text-on-surface-variant font-code-metric text-code-metric flex items-center justify-center font-bold">04</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary">fitbit_push_ups</span>
+</div>
+<div>
+<span class="font-label-ui text-label-ui font-medium text-on-surface block leading-tight">Hypotheses</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Formal Falsifiability</span>
+</div>
+</div>
+</button>
+<!-- Step 5 -->
+<button class="workflow-step-item flex-1 text-left group focus:outline-none" onclick="setActiveStep(4)">
+<div class="step-container bg-surface-container-low opacity-70 p-space-sm rounded-lg hover:opacity-100 transition-all h-full flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="step-num w-6 h-6 rounded-full bg-surface-container text-on-surface-variant font-code-metric text-code-metric flex items-center justify-center font-bold">05</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary">functions</span>
+</div>
+<div>
+<span class="font-label-ui text-label-ui font-medium text-on-surface block leading-tight">Construct model</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Symbolic System</span>
+</div>
+</div>
+</button>
+<!-- Step 6 -->
+<button class="workflow-step-item flex-1 text-left group focus:outline-none" onclick="setActiveStep(5)">
+<div class="step-container bg-surface-container-low opacity-70 p-space-sm rounded-lg hover:opacity-100 transition-all h-full flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="step-num w-6 h-6 rounded-full bg-surface-container text-on-surface-variant font-code-metric text-code-metric flex items-center justify-center font-bold">06</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary">play_circle</span>
+</div>
+<div>
+<span class="font-label-ui text-label-ui font-medium text-on-surface block leading-tight">Run simulation</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Numerical Sweeps</span>
+</div>
+</div>
+</button>
+<!-- Step 7 -->
+<button class="workflow-step-item flex-1 text-left group focus:outline-none" onclick="setActiveStep(6)">
+<div class="step-container bg-surface-container-low opacity-70 p-space-sm rounded-lg hover:opacity-100 transition-all h-full flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="step-num w-6 h-6 rounded-full bg-surface-container text-on-surface-variant font-code-metric text-code-metric flex items-center justify-center font-bold">07</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary">insights</span>
+</div>
+<div>
+<span class="font-label-ui text-label-ui font-medium text-on-surface block leading-tight">Interpret results</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Phase Analysis</span>
+</div>
+</div>
+</button>
+<!-- Step 8 -->
+<button class="workflow-step-item flex-1 text-left group focus:outline-none" onclick="setActiveStep(7)">
+<div class="step-container bg-surface-container-low opacity-70 p-space-sm rounded-lg hover:opacity-100 transition-all h-full flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="step-num w-6 h-6 rounded-full bg-surface-container text-on-surface-variant font-code-metric text-code-metric flex items-center justify-center font-bold">08</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary">query_stats</span>
+</div>
+<div>
+<span class="font-label-ui text-label-ui font-medium text-on-surface block leading-tight">Uncertainty</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">MCMC Bounds</span>
+</div>
+</div>
+</button>
+<!-- Step 9 -->
+<button class="workflow-step-item flex-1 text-left group focus:outline-none" onclick="setActiveStep(8)">
+<div class="step-container bg-surface-container-low opacity-70 p-space-sm rounded-lg hover:opacity-100 transition-all h-full flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="step-num w-6 h-6 rounded-full bg-surface-container text-on-surface-variant font-code-metric text-code-metric flex items-center justify-center font-bold">09</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary">biotech</span>
+</div>
+<div>
+<span class="font-label-ui text-label-ui font-medium text-on-surface block leading-tight">Next experiment</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Optimal Design</span>
+</div>
+</div>
+</button>
+<!-- Step 10 -->
+<button class="workflow-step-item flex-1 text-left group focus:outline-none" onclick="setActiveStep(9)">
+<div class="step-container bg-surface-container-low opacity-70 p-space-sm rounded-lg hover:opacity-100 transition-all h-full flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="step-num w-6 h-6 rounded-full bg-surface-container text-on-surface-variant font-code-metric text-code-metric flex items-center justify-center font-bold">10</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-primary">history_edu</span>
+</div>
+<div>
+<span class="font-label-ui text-label-ui font-medium text-on-surface block leading-tight">Save record</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Immutable Archive</span>
+</div>
+</div>
+</button>
+</div>
+</div>
+<!-- Detail Expansion Surface for Selected Workflow Step -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col" id="workflow-step-detail">
+<div class="flex items-center justify-between gap-space-sm mb-space-2xs">
+<span class="font-code-metric text-code-metric text-primary uppercase font-semibold">Stage 01: Epistemic Query Intake • NLP Intent Parser -&gt; Formal Statement</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Step 1 of 10</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-2xs">Inquiry Intake &amp; State Decomposition</h4>
+<p class="font-body-default text-body-default text-on-surface-variant leading-relaxed">
+          The user expresses a question in natural language. The engine's semantic parsing layers dissect target observables, specify initial conditions, establish conservation invariants, and determine dimensional groups using the Buckingham Π theorem before formulating a computational experiment.
+        </p>
+</div>
+</div>
+</section>
+<!-- Scientific Disciplines & Cross-Domain Synthesis -->
+<section class="w-full px-space-xl py-space-3xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs mb-space-2xs">
+<span class="font-code-metric text-code-metric text-secondary uppercase font-bold tracking-wider">Multi-Disciplinary Synthesis</span>
+<span class="text-on-surface-variant font-body-dense text-body-dense">•</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant uppercase tracking-wider">Modular Solver Registry</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Scientific Disciplines &amp; Domain Instruments</h2>
+<p class="font-body-default text-body-default text-on-surface-variant max-w-2xl mt-space-2xs">
+            Disciplines in SANDHANA are lenses and computational toolkits, not silos. The AI investigator combines models across boundaries to answer complex real-world dynamics.
+          </p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-metric text-code-metric text-on-surface-variant">Domain Solver Cross-Talk:</span>
+<span class="font-code-metric text-code-metric bg-secondary/10 text-secondary px-space-xs py-space-2xs rounded font-semibold">Continuous Co-Simulation</span>
+</div>
+</div>
+<!-- Domain Selection Filter Pills -->
+<div class="flex flex-wrap gap-space-2xs">
+<button class="px-space-sm py-space-xs rounded-full bg-primary text-on-primary font-label-ui text-label-ui transition-all flex items-center gap-space-2xs" data-active="true" onclick="toggleDisciplineFilter(this)">
+<span>Physics</span>
+<span class="font-code-metric text-code-metric opacity-80">(Classical, QM, Aero)</span>
+</button>
+<button class="px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-ui text-label-ui transition-all flex items-center gap-space-2xs" data-active="false" onclick="toggleDisciplineFilter(this)">
+<span>Earth &amp; Climate</span>
+<span class="font-code-metric text-code-metric opacity-80">(Energy Balance, Carbon)</span>
+</button>
+<button class="px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-ui text-label-ui transition-all flex items-center gap-space-2xs" data-active="false" onclick="toggleDisciplineFilter(this)">
+<span>Biology &amp; Ecology</span>
+<span class="font-code-metric text-code-metric opacity-80">(Population, Enzyme)</span>
+</button>
+<button class="px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-ui text-label-ui transition-all flex items-center gap-space-2xs" data-active="false" onclick="toggleDisciplineFilter(this)">
+<span>Mathematics</span>
+<span class="font-code-metric text-code-metric opacity-80">(Dynamical Systems, PDEs)</span>
+</button>
+<button class="px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-ui text-label-ui transition-all flex items-center gap-space-2xs" data-active="false" onclick="toggleDisciplineFilter(this)">
+<span>Computer Science</span>
+<span class="font-code-metric text-code-metric opacity-80">(Graph Theory, Automata)</span>
+</button>
+<button class="px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-ui text-label-ui transition-all flex items-center gap-space-2xs" data-active="false" onclick="toggleDisciplineFilter(this)">
+<span>Chemistry</span>
+<span class="font-code-metric text-code-metric opacity-80">(Kinetics, Thermochemistry)</span>
+</button>
+<button class="px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-ui text-label-ui transition-all flex items-center gap-space-2xs" data-active="false" onclick="toggleDisciplineFilter(this)">
+<span>Neuroscience</span>
+<span class="font-code-metric text-code-metric opacity-80">(Hodgkin-Huxley, Networks)</span>
+</button>
+<button class="px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-ui text-label-ui transition-all flex items-center gap-space-2xs" data-active="false" onclick="toggleDisciplineFilter(this)">
+<span>Engineering</span>
+<span class="font-code-metric text-code-metric opacity-80">(Control Theory, Structures)</span>
+</button>
+<button class="px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-ui text-label-ui transition-all flex items-center gap-space-2xs" data-active="false" onclick="toggleDisciplineFilter(this)">
+<span>Economics</span>
+<span class="font-code-metric text-code-metric opacity-80">(Game Theory, Macro Loops)</span>
+</button>
+</div>
+<!-- Domain Instruments Mosaic & Synthesis Demonstration -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Left: Computational Synthesis Flow Card -->
+<div class="lg:col-span-2 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric uppercase text-primary font-semibold">Active Synthesis Demonstration</span>
+<span class="font-code-metric text-code-metric bg-surface-container px-space-xs py-space-3xs rounded text-on-surface-variant">Coupled Solvers: Climate × Economics</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Integrating Carbon Feedback into Optimal Macroeconomic Abatement</h3>
+<p class="font-body-default text-body-default text-on-surface-variant">
+              When investigating carbon pricing, SANDHANA orchestrates the <strong>Geophysical Radiative Balance Model</strong> (Earth Sciences) with the <strong>Ramsey Growth Capital Model</strong> (Economics). Inferences pass continuously through numerical state variables rather than isolated text summaries.
+            </p>
+<!-- Inline SVG Coupling Diagram -->
+<div class="w-full bg-surface-container-low p-space-md rounded-lg my-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant font-code-metric text-code-metric mb-space-2xs">
+<span>Domain A: Radiative Flux (W/m²)</span>
+<span>Coupling State $T_{surface}(t)$</span>
+<span>Domain B: Marginal Abatement ($/tCO₂)</span>
+</div>
+<svg class="w-full h-16 text-primary" fill="none" stroke="currentColor" viewbox="0 0 700 80">
+<!-- Left Sine wave / climate fluctuation -->
+<path d="M 10 40 Q 60 10, 110 40 T 210 40 T 310 40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<!-- Center bridge / transfer function -->
+<circle cx="350" cy="40" fill="#0037b0" r="14" stroke="none"></circle>
+<path d="M 342 40 L 358 40 M 350 32 L 350 48" stroke="#ffffff" stroke-width="2"></path>
+<!-- Right Logistic curve / economic response -->
+<path d="M 390 60 C 450 60, 520 20, 680 20" fill="none" stroke="#006c4a" stroke-dasharray="4 3" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+<div class="flex items-center justify-between font-code-metric text-code-metric mt-space-2xs">
+<span class="text-primary">$\Delta F = 5.35 \ln(C/C_0)$</span>
+<span class="bg-surface-container px-space-xs py-space-3xs rounded text-on-surface">Parametric Bridge $\frac{\partial Y}{\partial T}$</span>
+<span class="text-secondary">$Y(t) = A(t) K(t)^\alpha L(t)^{1-\alpha} - D(T)$</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="font-code-metric text-code-metric text-on-surface-variant">Dimensional Units:</span>
+<span class="font-code-metric text-code-metric text-on-surface">Watts • Kelvin • USD/Ton</span>
+</div>
+<button class="px-space-md py-space-xs bg-surface-container-high hover:bg-surface-container text-on-surface font-body-dense text-body-dense font-medium rounded transition-all">
+              Inspect Coupled Pipeline
+            </button>
+</div>
+</div>
+<!-- Right: Domain Solvers & Instrumentation Stack -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<span class="font-code-metric text-code-metric uppercase text-secondary font-semibold block mb-space-2xs">Built-In Instrumentation</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-md">Scientific Solver Suite</h3>
+<div class="flex flex-col gap-space-sm">
+<div class="p-space-xs bg-surface-container-low rounded flex items-center justify-between">
+<div>
+<div class="font-body-dense text-body-dense font-medium text-on-surface">Symplectic Integrator</div>
+<div class="font-code-metric text-code-metric text-on-surface-variant">Hamiltonian &amp; Orbital Physics</div>
+</div>
+<span class="font-code-metric text-code-metric bg-surface-container px-space-2xs py-space-3xs rounded text-secondary font-medium">Verified</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded flex items-center justify-between">
+<div>
+<div class="font-body-dense text-body-dense font-medium text-on-surface">Dormand-Prince (RK45)</div>
+<div class="font-code-metric text-code-metric text-on-surface-variant">Non-Linear ODE State Spaces</div>
+</div>
+<span class="font-code-metric text-code-metric bg-surface-container px-space-2xs py-space-3xs rounded text-secondary font-medium">Verified</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded flex items-center justify-between">
+<div>
+<div class="font-body-dense text-body-dense font-medium text-on-surface">Finite Difference 2D Solvers</div>
+<div class="font-code-metric text-code-metric text-on-surface-variant">Navier-Stokes &amp; Heat Diffusion</div>
+</div>
+<span class="font-code-metric text-code-metric bg-surface-container px-space-2xs py-space-3xs rounded text-secondary font-medium">Verified</span>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded flex items-center justify-between">
+<div>
+<div class="font-body-dense text-body-dense font-medium text-on-surface">Gillespie Stochastic Engine</div>
+<div class="font-code-metric text-code-metric text-on-surface-variant">Chemical Master Kinetics</div>
+</div>
+<span class="font-code-metric text-code-metric bg-surface-container px-space-2xs py-space-3xs rounded text-secondary font-medium">Verified</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low p-space-sm rounded-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">auto_awesome</span>
+<p class="font-code-metric text-code-metric text-on-surface-variant leading-tight">
+              AI automatically identifies boundary stiffness and selects the optimal solver topology.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent AI Investigations & Research Records -->
+<section class="w-full bg-surface-container-low px-space-xl py-space-3xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Header -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs mb-space-2xs">
+<span class="font-code-metric text-code-metric text-primary uppercase font-bold tracking-wider">Empirical Research Ledger</span>
+<span class="text-on-surface-variant font-body-dense text-body-dense">•</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant uppercase tracking-wider">Session INV-2024</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Recent AI Investigations &amp; Research Records</h2>
+<p class="font-body-default text-body-default text-on-surface-variant max-w-2xl mt-space-2xs">
+            Review active simulation workspaces, parametric results, Bayesian evidence ratios, and pending experimental branches.
+          </p>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-md py-space-xs bg-primary hover:bg-primary-container text-on-primary font-body-dense text-body-dense font-medium rounded-lg shadow-sm transition-all flex items-center gap-space-2xs" href="#">
+<span class="material-symbols-outlined text-[16px]">folder_open</span>
+<span>Open Research Workspace</span>
+</a>
+<button class="px-space-md py-space-xs bg-surface-container hover:bg-surface-container-high text-on-surface font-body-dense text-body-dense font-medium rounded-lg transition-all flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[16px]">summarize</span>
+<span>Convert to Research Report</span>
+</button>
+</div>
+</div>
+<!-- Realistic Research Record Cards -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Card 1: Active In-Flight Ballistics Investigation -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary"></div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric bg-primary/10 text-primary px-space-xs py-space-3xs rounded font-semibold uppercase">Active Investigation</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">ID: INV-2024-098</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Non-linear quadratic drag in atmospheric ballistics
+            </h3>
+<p class="font-body-dense text-body-dense text-on-surface-variant">
+              Exploring velocity-squared drag regime transitions: $F_d = \frac{1}{2}\rho v^2 C_d A$. Testing departure from parabolic trajectories under barometric lapse rates.
+            </p>
+<!-- Telemetry & Status Readout Grid -->
+<div class="grid grid-cols-2 gap-space-2xs bg-surface-container-low p-space-xs rounded-lg my-space-xs font-code-metric text-code-metric">
+<div>
+<span class="text-on-surface-variant block">Sweeps Run:</span>
+<span class="font-bold text-on-surface">12 Completed</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Hypothesis:</span>
+<span class="font-bold text-secondary">H1 Strongly Supported</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Reynolds Range:</span>
+<span class="font-bold text-on-surface">$10^4 \le Re \le 10^6$</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Confidence $R^2$:</span>
+<span class="font-bold text-primary">0.9984</span>
+</div>
+</div>
+<!-- Mini Trajectory Curve SVG -->
+<div class="w-full bg-surface-container-low p-space-xs rounded flex flex-col gap-space-3xs">
+<span class="font-code-metric text-code-metric text-on-surface-variant flex items-center justify-between">
+<span>Phase Space $[v_x, v_y]$</span>
+<span class="text-secondary font-medium">Convergence: $\epsilon &lt; 10^{-6}$</span>
+</span>
+<svg class="w-full h-12 text-primary" fill="none" viewbox="0 0 260 50">
+<!-- Ideal parabola (dashed) -->
+<path d="M 5 45 Q 130 -20, 255 45" stroke="#c4c5d7" stroke-dasharray="3 3" stroke-width="1.5"></path>
+<!-- Quadratic drag curve (solid primary) -->
+<path d="M 5 45 Q 100 -5, 190 45" stroke="#0037b0" stroke-width="2"></path>
+</svg>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-metric text-code-metric">
+<span class="material-symbols-outlined text-primary text-[16px]">arrow_forward</span>
+<span><strong>Next Proposed:</strong> Reynolds Boundary Layer Sweep at Mach 0.85</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md">
+<span class="font-code-metric text-code-metric text-on-surface-variant">Last executed 14m ago</span>
+<a class="font-body-dense text-body-dense font-medium text-primary hover:text-primary-container flex items-center gap-space-3xs" href="#">
+<span>Resume Study</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Card 2: Climate Model Completed Runs -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary"></div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric bg-secondary/10 text-secondary px-space-xs py-space-3xs rounded font-semibold uppercase">Multi-Scenario Verified</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">ID: CLM-2024-042</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Radiative equilibrium sensitivity under exponential CO₂ doubling
+            </h3>
+<p class="font-body-dense text-body-dense text-on-surface-variant">
+              Multi-box climate dynamics quantifying equilibrium climate sensitivity (ECS) between $2.4^\circ\text{C}$ and $3.8^\circ\text{C}$ with ocean thermal inertia lags.
+            </p>
+<div class="grid grid-cols-2 gap-space-2xs bg-surface-container-low p-space-xs rounded-lg my-space-xs font-code-metric text-code-metric">
+<div>
+<span class="text-on-surface-variant block">Model Topology:</span>
+<span class="font-bold text-on-surface">4-Box Compartment</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Status:</span>
+<span class="font-bold text-secondary">4 Scenarios Evaluated</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Timescale:</span>
+<span class="font-bold text-on-surface">0 – 500 Years</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Bayes Factor $BF_{10}$:</span>
+<span class="font-bold text-primary">34.2 (Decisive)</span>
+</div>
+</div>
+<!-- Mini Temperature Curve SVG -->
+<div class="w-full bg-surface-container-low p-space-xs rounded flex flex-col gap-space-3xs">
+<span class="font-code-metric text-code-metric text-on-surface-variant flex items-center justify-between">
+<span>Transient Warming $\Delta T(t)$</span>
+<span class="text-secondary font-medium">Ocean Thermal Lag: 42.1 yr</span>
+</span>
+<svg class="w-full h-12 text-secondary" fill="none" viewbox="0 0 260 50">
+<!-- Warming trajectory curves -->
+<path d="M 5 45 C 50 40, 100 25, 255 15" stroke="#006c4a" stroke-width="2"></path>
+<path d="M 5 45 C 50 42, 100 30, 255 24" stroke="#68dba9" stroke-dasharray="2 2" stroke-width="1.5"></path>
+</svg>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-metric text-code-metric">
+<span class="material-symbols-outlined text-secondary text-[16px]">done_all</span>
+<span><strong>Next Proposed:</strong> Couple Permafrost Methane Positive Feedback</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md">
+<span class="font-code-metric text-code-metric text-on-surface-variant">Archived 2h ago</span>
+<a class="font-body-dense text-body-dense font-medium text-primary hover:text-primary-container flex items-center gap-space-3xs" href="#">
+<span>View Data Report</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Card 3: Ecology Bifurcation Inconclusive Study -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-1 bg-tertiary-container"></div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric bg-tertiary/10 text-tertiary px-space-xs py-space-3xs rounded font-semibold uppercase">Needs Validation</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">ID: ECO-2024-019</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+              Lotka-Volterra phase portrait bifurcation with seasonal capacity
+            </h3>
+<p class="font-body-dense text-body-dense text-on-surface-variant">
+              Periodic carrying capacity $K(t) = K_0 [1 + \epsilon \sin(\omega t)]$ induces torus quasi-periodicity and strange attractors.
+            </p>
+<div class="grid grid-cols-2 gap-space-2xs bg-surface-container-low p-space-xs rounded-lg my-space-xs font-code-metric text-code-metric">
+<div>
+<span class="text-on-surface-variant block">Topology:</span>
+<span class="font-bold text-on-surface">Non-Autonomous 2D ODE</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Status:</span>
+<span class="font-bold text-tertiary">Inconclusive ($\lambda_1 \approx 0$)</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Lyapunov Exponent:</span>
+<span class="font-bold text-on-surface">+0.0034 ± 0.012</span>
+</div>
+<div>
+<span class="text-on-surface-variant block">Uncertainty:</span>
+<span class="font-bold text-error">High Bifurcation Drift</span>
+</div>
+</div>
+<!-- Mini Chaotic Attractor SVG -->
+<div class="w-full bg-surface-container-low p-space-xs rounded flex flex-col gap-space-3xs">
+<span class="font-code-metric text-code-metric text-on-surface-variant flex items-center justify-between">
+<span>Phase Orbit $[x, y]$</span>
+<span class="text-tertiary font-medium">Poincaré Section: Dense</span>
+</span>
+<svg class="w-full h-12 text-tertiary" fill="none" viewbox="0 0 260 50">
+<!-- Orbiting loops -->
+<ellipse cx="70" cy="25" rx="50" ry="18" stroke="#5700c0" stroke-width="1.5"></ellipse>
+<ellipse cx="140" cy="25" rx="45" ry="16" stroke="#712ae2" stroke-dasharray="3 2" stroke-width="1.2"></ellipse>
+<ellipse cx="190" cy="25" rx="35" ry="12" stroke="#93000a" stroke-width="1"></ellipse>
+</svg>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-code-metric text-code-metric">
+<span class="material-symbols-outlined text-tertiary text-[16px]">science</span>
+<span><strong>Required:</strong> Integrate Long-Term Bounded Field Trapping Data</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-md">
+<span class="font-code-metric text-code-metric text-on-surface-variant">Archived yesterday</span>
+<a class="font-body-dense text-body-dense font-medium text-primary hover:text-primary-container flex items-center gap-space-3xs" href="#">
+<span>Recalibrate Model</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- High-Craft Scientific Visual Context Section -->
+<section class="w-full px-space-xl py-space-3xl bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-metric text-code-metric text-primary uppercase font-bold tracking-wider">Visual Laboratory Environment</span>
+<span class="text-on-surface-variant font-body-dense text-body-dense">•</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant uppercase tracking-wider">Dynamic Instrumentation</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface leading-tight">
+          Where computational models meet mathematical peer review.
+        </h2>
+<p class="font-body-editorial text-body-editorial text-on-surface-variant leading-relaxed">
+          Every cell in SANDHANA carries full mathematical derivation, executable numerical solver code, interactive slider dials, and publication-ready vector figures.
+        </p>
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
+<div>
+<span class="font-body-dense text-body-dense font-medium text-on-surface block">Arbitrary Floating Point Precision</span>
+<span class="font-body-dense text-body-dense text-on-surface-variant">Solvers operate in 64-bit and multiprecision symbolic modes to prevent numeric instability near critical bifurcations.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
+<div>
+<span class="font-body-dense text-body-dense font-medium text-on-surface block">Immutable Versioned Snapshots</span>
+<span class="font-body-dense text-body-dense text-on-surface-variant">Every run state records random seed values, solver step-size tolerances, parameter sets, and complete output telemetry.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Laboratory Simulation Montage / Visual Showcase -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Photographic/Rendering Asset 1: Fluid Dynamics Wind Tunnel Simulation -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-md flex flex-col">
+<div class="relative w-full h-48 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="High-resolution scientific laboratory wind tunnel visualization showing supersonic aerodynamic airflow streamlining around a precision sculpted aerospace wing foil. Rendered in deep navy blues, precision laser particle traces, and subtle white stream vectors. Scientific editorial lighting with crisp laboratory aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRT1mfd_tzKuUmdI6rhtsf9fBUcbMGQLogkYb-3X43AJxh4dCEKPAzzNUEdkH7hnzspFsiW1fCr-D74zR-9vnmmxtInsSDCX6o88nF4ZW9nTssHWqf96ref8iXMhIzR36GRRIwdvJ18P64IAvbqGrrNnDz0XHli8t21VwgtVUt5LNuUWYwuYUeVMZdGOsCJMOKL2rh9hDKtMY2j9KkuCsTsMICPIuEk8LrnHe1xDtMP0crT1lYAT2MFA"/>
+<div class="absolute top-space-xs left-space-xs bg-surface/90 backdrop-blur-md px-space-xs py-space-3xs rounded font-code-metric text-code-metric text-on-surface font-semibold">
+              CFD Navier-Stokes Frame 1,420
+            </div>
+</div>
+<div class="p-space-sm flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui font-semibold text-on-surface">Transonic Flow Separation</span>
+<span class="font-code-metric text-code-metric text-secondary font-medium">Re = 2.4×10⁶</span>
+</div>
+<p class="font-code-metric text-code-metric text-on-surface-variant">Boundary layer turbulence simulation with finite element mesh resolution.</p>
+</div>
+</div>
+<!-- Photographic/Rendering Asset 2: Advanced Particle Detector / Quantum Chamber -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-md flex flex-col">
+<div class="relative w-full h-48 overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Clean precision cryostat quantum laboratory instrument with stainless steel optical tables, clean monochromatic laboratory room, laser optics, and holographic mathematical contour overlay in deep cobalt blue and pristine white. Minimalist academic elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmw5ZrvKY9BCZ8tjsP2obbr6s_l_rzYzspiXKBXOgAjtaNchAx4fH6f8xuSbMWo7vRHtV2n71kVX01TkdNmfL62L86XNjdQRI2833E6zZdzlCTK70hwF4wxOUd8OGiV4trZWLtQ9wnmGxGvxPQKjWhJOUTcBOZxuNRtBuSwtFMF61Lbx2D_WoyP7YjoQB5pejbwpB5PgCCrCFUfyNEHgJ1BWyxGmoaPnAETT4FeE6JY5Oltx0X1t9MKw"/>
+<div class="absolute top-space-xs left-space-xs bg-surface/90 backdrop-blur-md px-space-xs py-space-3xs rounded font-code-metric text-code-metric text-on-surface font-semibold">
+              Quantum Cryostat Rig #04
+            </div>
+</div>
+<div class="p-space-sm flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui font-semibold text-on-surface">Superconducting Resonators</span>
+<span class="font-code-metric text-code-metric text-primary font-medium">T = 12.4 mK</span>
+</div>
+<p class="font-code-metric text-code-metric text-on-surface-variant">Josephson junction state dissipation modeling and phase Hamiltonian verification.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Interactive Launch Banner -->
+<section class="w-full bg-surface-container-high px-space-xl py-space-2xl">
+<div class="max-w-5xl mx-auto bg-surface-container-lowest rounded-xl p-space-xl shadow-lg flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-code-metric text-code-metric text-secondary uppercase font-semibold">Ready for Formulation</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Have a hypothesis ready to challenge?</h3>
+<p class="font-body-default text-body-default text-on-surface-variant max-w-xl">
+          Enter any equation, question, or observational anomaly. SANDHANA constructs the investigation scaffold, verifies domain units, and schedules simulation execution.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-lg py-space-sm bg-primary hover:bg-primary-container text-on-primary font-body-dense text-body-dense font-medium rounded-lg shadow-md transition-all flex items-center gap-space-xs" onclick="document.getElementById('investigation-query-input').scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>Start Live Session</span>
+</button>
+</div>
+</div>
+</section>
+</div></main></div></body></html>

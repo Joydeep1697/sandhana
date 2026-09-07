@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;background-color:#0a0e14;color:#f3f4f6;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{width:4px;height:4px;}::-webkit-scrollbar-track{background:#0a0e14;}::-webkit-scrollbar-thumb{background:#223046;border-radius:2px;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#070a0e","on-secondary-container":"#85f8c4","background":"#0a0e14","on-secondary-fixed-variant":"#005137","on-primary-fixed":"#001551","primary":"#3b82f6","on-primary-fixed-variant":"#0039b5","error":"#ef4444","on-tertiary":"#ffffff","secondary-fixed-dim":"#68dba9","on-error-container":"#fee2e2","surface-container-high":"#1c283c","on-surface":"#f3f4f6","primary-fixed":"#dce1ff","on-primary":"#ffffff","secondary-container":"#064e3b","surface-container-low":"#0f1724","surface-variant":"#172131","on-secondary":"#ffffff","inverse-primary":"#b7c4ff","outline-variant":"#1e293b","error-container":"#7f1d1d","surface":"#0a0e14","tertiary-container":"#581c87","on-tertiary-fixed":"#25005a","outline":"#475569","surface-container-highest":"#223046","secondary-fixed":"#85f8c4","tertiary":"#8b5cf6","on-tertiary-container":"#e9d5ff","inverse-surface":"#e2e8f0","surface-container-lowest":"#06080d","primary-fixed-dim":"#b7c4ff","on-background":"#f3f4f6","primary-container":"#1d4ed8","tertiary-fixed":"#eaddff","on-surface-variant":"#94a3b8","surface-tint":"#3b82f6","surface-container":"#101722","on-tertiary-fixed-variant":"#5a00c6","on-secondary-fixed":"#002114","on-error":"#ffffff","tertiary-fixed-dim":"#d2bbff","surface-bright":"#162030","secondary":"#10b981","inverse-on-surface":"#0a0e14","on-primary-container":"#dbeafe"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","space-3xl":"4.5rem","panel-margin":"1.5rem","space-2xs":"0.25rem","space-sm":"0.75rem","col-gutter":"1rem","space-2xl":"3rem","space-xl":"2rem","space-3xs":"0.125rem","space-xs":"0.5rem","space-md":"1rem"},fontFamily:{"label-ui":["Geist"],"code-metric":["JetBrains Mono"],"headline-lg":["Newsreader"],"headline-sm":["Newsreader"],"display-hero":["Newsreader"],"headline-lg-mobile":["Newsreader"],"display-hero-mobile":["Newsreader"],"body-dense":["Geist"],"code-formula":["JetBrains Mono"],"headline-md":["Newsreader"],"body-default":["Geist"],"body-editorial":["Newsreader"]},fontSize:{"label-ui":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"code-metric":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"500"}],"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"400"}],"body-dense":["13px",{"lineHeight":"20px","fontWeight":"400"}],"code-formula":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"500"}],"body-default":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-editorial":["18px",{"lineHeight":"30px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-default text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container border-r border-outline-variant z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="flex items-center gap-space-sm px-space-md py-space-md border-b border-outline-variant bg-surface-container-lowest"><img alt="SANDHANA emblem" class="w-9 h-9 rounded-lg object-cover ring-1 ring-outline-variant shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1X4qkNjkOKm3THm2HEZQoyrz0q7ROYQgqXvQkU5lTQ_SM6pPDi9w_IVJ_FU5YRf2V7HXTwHgvO78Q30PBG1VWslxiOU2XRqxyZ6iAxs6oyvrw41UVRLxJCrwuVKAExwp2J9TxXZiCWgxVwe1o2a4FZENdpS7IMue6-N6pfdblgTk0igNicHBZJtfPxJppruXyvg2ee-WK2uDuUPXH0A3HEbZAC4xOdvKBmBK44jp7wByCI6kb0dnWgjOECE"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-semibold truncate">SANDHANA</span><span class="font-body-dense text-body-dense text-outline font-normal shrink-0">सन्धान</span></div><span class="font-label-ui text-label-ui text-on-surface-variant truncate">Auditable Multi-Agent Co-Scientist</span></div></div><div class="px-space-md pt-space-sm pb-space-xs"><div class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg bg-surface-container-low border border-outline-variant"><span class="font-code-metric text-code-metric text-on-surface-variant uppercase tracking-wider">Active Context</span><span class="font-code-metric text-code-metric font-semibold text-primary">#INV-2024-098</span></div></div><div class="px-space-md py-space-xs"><span class="px-space-xs font-code-metric text-code-metric uppercase text-outline tracking-wider block mb-space-2xs">Lifecycle Navigation</span><nav class="flex flex-col gap-space-3xs" data-active-classes="bg-primary-container text-on-primary font-medium shadow-sm border border-primary/40"><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="research-home" href="#"><span>Research Home</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="ai-scientist-entry" href="#"><span>AI Scientist Entry</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="investigation-command-center" href="#"><span>Investigation Command</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="agent-council" href="#"><span>Agent Council</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="hypothesis-tournament" href="#"><span>Hypothesis Tournament</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg transition-colors bg-primary-container text-on-primary font-medium shadow-sm border border-primary/40" data-path="evidence-knowledge-graph" href="#"><span>Evidence &amp; Graph</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="computational-lab" href="#"><span>Computational Lab</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="experiment-designer" href="#"><span>Experiment Designer</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="results-comparison" href="#"><span>Results &amp; Comparison</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="research-report" href="#"><span>Research Report (LaTeX)</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="audit-log" href="#"><span>Audit Log</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="research-notebook" href="#"><span>Research Notebook</span></a></nav></div></div><div class="px-space-md pb-space-md pt-space-xs flex flex-col gap-space-xs border-t border-outline-variant bg-surface-container-lowest"><button class="flex items-center justify-between px-space-sm py-space-2xs bg-surface-container-low hover:bg-surface-container-high hover:text-on-surface rounded-lg text-on-surface-variant border border-outline-variant transition-colors w-full text-left" type="button"><span class="font-label-ui text-label-ui text-on-surface-variant">Terminal Command</span><kbd class="font-code-metric text-code-metric px-space-2xs py-space-3xs rounded bg-surface-container-highest text-on-surface border border-outline-variant">⌘K</kbd></button><div class="flex items-center justify-between px-space-xs py-space-3xs"><span class="font-code-metric text-code-metric text-secondary flex items-center gap-space-2xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>14 Agents Online</span><span class="font-code-metric text-code-metric uppercase text-outline">Cycle 3</span></div><div class="flex items-center justify-between pt-space-xs border-t border-outline-variant"><div class="flex items-center gap-space-xs min-w-0"><div class="w-8 h-8 rounded-full bg-primary-container border border-primary/30 flex items-center justify-center text-on-primary font-code-metric text-code-metric font-semibold shrink-0">PI</div><div class="flex flex-col min-w-0"><span class="font-label-ui text-label-ui font-medium text-on-surface truncate">Dr. Priya Venkatesh</span><span class="font-code-metric text-code-metric text-outline truncate">Principal Investigator</span></div></div><button class="text-on-surface-variant hover:text-on-surface transition-colors p-space-3xs rounded hover:bg-surface-container-high" type="button"><span class="material-symbols-outlined text-base">tune</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container/90 backdrop-blur-xl border-b border-outline-variant z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-outline text-lg">search</span><input class="w-full pl-9 pr-space-md py-space-xs bg-surface-container-low border border-outline-variant rounded-lg font-body-dense text-body-dense text-on-surface placeholder:text-outline outline-none hover:bg-surface-container focus:bg-surface-container-lowest focus:border-primary transition-all" placeholder="Search hypotheses, proofs, agents, or simulation states (⌘K)" type="text"/></div></div><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-2xs px-space-sm py-space-3xs rounded-full bg-surface-container-low border border-outline-variant text-on-surface-variant font-label-ui text-label-ui"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-code-metric text-code-metric text-on-surface font-medium">#INV-2024-098</span><span class="text-outline">•</span><span class="text-on-surface-variant truncate max-w-[280px]">Ballistic Aerodynamic Drag &amp; Optimal Launch Angle</span></div><div class="flex items-center gap-space-2xs"><button class="flex items-center gap-space-2xs px-space-sm py-space-3xs rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 hover:bg-amber-500/20 transition-colors font-label-ui text-label-ui" title="Human Approval Gate Pending" type="button"><span class="material-symbols-outlined text-sm animate-pulse">gavel</span><span>1 Gate Pending</span></button><button class="p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors relative border border-transparent hover:border-outline-variant" type="button"><span class="material-symbols-outlined text-lg">notifications</span><span class="absolute top-1.5 right-1.5 w-1.5 h-1.5 rounded-full bg-primary ring-2 ring-surface-container"></span></button><button class="p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors border border-transparent hover:border-outline-variant" type="button"><span class="material-symbols-outlined text-lg">hub</span></button><button class="p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors border border-transparent hover:border-outline-variant" type="button"><span class="material-symbols-outlined text-lg">terminal</span></button></div></div></header><main class="relative pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Sub-Header & Epistemic Filter Bar -->
+<section class="bg-surface-container-low px-space-xl py-space-sm shadow-sm">
+<div class="flex flex-col gap-space-sm">
+<!-- Entity Type Ledger Tabs & Search -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-3xs overflow-x-auto py-space-3xs">
+<button class="graph-filter-btn active flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-lg bg-surface-container-highest text-on-surface font-code-metric text-code-metric shadow-sm transition-all" data-type="all" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>All Entities</span>
+<span class="px-space-2xs py-0.5 rounded bg-surface-container font-code-metric text-code-metric text-on-surface-variant">42</span>
+</button>
+<button class="graph-filter-btn flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-code-metric text-code-metric transition-all" data-type="source" type="button">
+<span class="material-symbols-outlined text-xs text-outline">menu_book</span>
+<span>Sources</span>
+<span class="px-space-2xs py-0.5 rounded bg-surface-container font-code-metric text-code-metric">18</span>
+</button>
+<button class="graph-filter-btn flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-code-metric text-code-metric transition-all" data-type="claim" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Claims</span>
+<span class="px-space-2xs py-0.5 rounded bg-surface-container font-code-metric text-code-metric">26</span>
+</button>
+<button class="graph-filter-btn flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-code-metric text-code-metric transition-all" data-type="hypothesis" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>Hypotheses</span>
+<span class="px-space-2xs py-0.5 rounded bg-surface-container font-code-metric text-code-metric">4</span>
+</button>
+<button class="graph-filter-btn flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-code-metric text-code-metric transition-all" data-type="model" type="button">
+<span class="material-symbols-outlined text-xs text-primary">grain</span>
+<span>Models</span>
+<span class="px-space-2xs py-0.5 rounded bg-surface-container font-code-metric text-code-metric">4</span>
+</button>
+<button class="graph-filter-btn flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-lg bg-error-container/40 text-error hover:bg-error-container/70 font-code-metric text-code-metric transition-all" data-type="contradiction" type="button">
+<span class="material-symbols-outlined text-xs">sync_problem</span>
+<span>Contradictions</span>
+<span class="px-space-2xs py-0.5 rounded bg-surface-container-lowest text-error font-code-metric text-code-metric">3</span>
+</button>
+<button class="graph-filter-btn flex items-center gap-space-2xs px-space-sm py-space-2xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-code-metric text-code-metric transition-all" data-type="unresolved" type="button">
+<span class="material-symbols-outlined text-xs text-outline">help_outline</span>
+<span>Unresolved</span>
+<span class="px-space-2xs py-0.5 rounded bg-surface-container font-code-metric text-code-metric">5</span>
+</button>
+</div>
+<!-- Semantic Filter Input -->
+<div class="relative min-w-[280px] max-w-sm flex-1">
+<span class="material-symbols-outlined absolute left-space-xs top-1/2 -translate-y-1/2 text-outline text-sm">filter_alt</span>
+<input class="w-full pl-8 pr-space-sm py-space-2xs bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-dense text-body-dense rounded-lg shadow-sm outline-none focus:bg-surface-container-high transition-all" id="semanticFilterInput" placeholder="Filter graph or semantic evidence claims..." type="text"/>
+</div>
+</div>
+<!-- Epistemic Grounding Classification Toggles -->
+<div class="flex items-center justify-between gap-space-md pt-space-2xs overflow-x-auto">
+<div class="flex items-center gap-space-xs shrink-0">
+<span class="font-code-metric text-code-metric text-outline uppercase tracking-wider">Epistemic Status:</span>
+<label class="flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-surface-container-high cursor-pointer text-on-surface text-label-ui font-label-ui select-none shadow-sm hover:bg-surface-container-highest">
+<input checked="" class="w-3 h-3 rounded accent-primary bg-surface-container-lowest" type="checkbox"/>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Established Knowledge</span>
+</label>
+<label class="flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-surface-container-high cursor-pointer text-on-surface text-label-ui font-label-ui select-none shadow-sm hover:bg-surface-container-highest">
+<input checked="" class="w-3 h-3 rounded accent-primary bg-surface-container-lowest" type="checkbox"/>
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Source-Supported</span>
+</label>
+<label class="flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-surface-container-high cursor-pointer text-on-surface text-label-ui font-label-ui select-none shadow-sm hover:bg-surface-container-highest">
+<input checked="" class="w-3 h-3 rounded accent-primary bg-surface-container-lowest" type="checkbox"/>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span>Model Assumption</span>
+</label>
+<label class="flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-surface-container-high cursor-pointer text-on-surface text-label-ui font-label-ui select-none shadow-sm hover:bg-surface-container-highest">
+<input checked="" class="w-3 h-3 rounded accent-primary bg-surface-container-lowest" type="checkbox"/>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>AI Inference</span>
+</label>
+<label class="flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-surface-container-high cursor-pointer text-on-surface text-label-ui font-label-ui select-none shadow-sm hover:bg-surface-container-highest">
+<input checked="" class="w-3 h-3 rounded accent-primary bg-surface-container-lowest" type="checkbox"/>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>Simulation Result</span>
+</label>
+<label class="flex items-center gap-space-2xs px-space-xs py-space-3xs rounded-full bg-surface-container-high cursor-pointer text-on-surface text-label-ui font-label-ui select-none shadow-sm hover:bg-surface-container-highest">
+<input checked="" class="w-3 h-3 rounded accent-primary bg-surface-container-lowest" type="checkbox"/>
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span>Unverified Hypothesis</span>
+</label>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<span class="font-code-metric text-code-metric text-on-surface-variant">Density: <span class="text-on-surface font-semibold">Normalized 0.74</span></span>
+<button class="p-space-3xs rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Graph Reset" type="button">
+<span class="material-symbols-outlined text-sm">restart_alt</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Workbench Split: Canvas (70%) + Inspection Dossier (30%) -->
+<div class="flex flex-col lg:flex-row w-full min-h-[calc(100vh-8.5rem)]">
+<!-- Interactive Knowledge Graph Canvas Container -->
+<div class="relative flex-1 bg-surface-container-lowest overflow-hidden flex flex-col">
+<!-- Canvas Status Strip -->
+<div class="absolute top-space-md left-space-md z-20 flex items-center gap-space-sm bg-surface-container-high/90 backdrop-blur-md px-space-sm py-space-2xs rounded-lg shadow-sm">
+<div class="flex items-center gap-space-2xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-code-metric text-code-metric font-semibold text-on-surface">COHERENCE ENGINE</span>
+</div>
+<span class="text-outline font-code-metric text-code-metric">|</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Nodes: <span class="text-on-surface font-semibold">18</span> / Edges: <span class="text-on-surface font-semibold">24</span></span>
+<span class="text-outline font-code-metric text-code-metric">|</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Equilibrium: <span class="text-secondary font-semibold">Stable (0.002 eV)</span></span>
+</div>
+<!-- Graph Quick Floating Controls -->
+<div class="absolute bottom-space-md left-space-md z-20 flex items-center gap-space-2xs bg-surface-container-high/90 backdrop-blur-md p-space-2xs rounded-lg shadow-sm">
+<button class="p-space-2xs hover:bg-surface-container-highest rounded text-on-surface-variant hover:text-on-surface transition-colors" id="btnZoomIn" title="Zoom In" type="button">
+<span class="material-symbols-outlined text-sm">zoom_in</span>
+</button>
+<button class="p-space-2xs hover:bg-surface-container-highest rounded text-on-surface-variant hover:text-on-surface transition-colors" id="btnZoomOut" title="Zoom Out" type="button">
+<span class="material-symbols-outlined text-sm">zoom_out</span>
+</button>
+<button class="p-space-2xs hover:bg-surface-container-highest rounded text-on-surface-variant hover:text-on-surface transition-colors" id="btnFitView" title="Recenter Graph" type="button">
+<span class="material-symbols-outlined text-sm">fit_screen</span>
+</button>
+<span class="w-px h-4 bg-outline-variant"></span>
+<button class="flex items-center gap-space-2xs px-space-2xs py-space-3xs hover:bg-surface-container-highest rounded text-on-surface-variant hover:text-on-surface font-code-metric text-code-metric transition-colors" id="btnPhysics" title="Toggle Force Physics" type="button">
+<span class="material-symbols-outlined text-sm text-secondary">motion_photos_on</span>
+<span>Physics: ON</span>
+</button>
+<span class="w-px h-4 bg-outline-variant"></span>
+<button class="flex items-center gap-space-2xs px-space-2xs py-space-3xs hover:bg-surface-container-highest rounded text-on-surface-variant hover:text-on-surface font-code-metric text-code-metric transition-colors" id="btnExport" title="Export JSON Topology" type="button">
+<span class="material-symbols-outlined text-sm">download</span>
+<span>Export JSON</span>
+</button>
+</div>
+<!-- Visual Legend Overlay -->
+<div class="absolute top-space-md right-space-md z-20 bg-surface-container-high/90 backdrop-blur-md px-space-sm py-space-xs rounded-lg shadow-sm flex flex-col gap-space-2xs max-w-[210px]">
+<span class="font-code-metric text-code-metric uppercase text-outline tracking-wider font-semibold">Entity Typology</span>
+<div class="flex items-center gap-space-xs text-label-ui font-label-ui text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span>Inquiry Hub</span>
+</div>
+<div class="flex items-center gap-space-xs text-label-ui font-label-ui text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded bg-surface-container-highest"></span>
+<span>Primary Source</span>
+</div>
+<div class="flex items-center gap-space-xs text-label-ui font-label-ui text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span>Empirical Claim</span>
+</div>
+<div class="flex items-center gap-space-xs text-label-ui font-label-ui text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded bg-primary"></span>
+<span>Formal Model</span>
+</div>
+<div class="flex items-center gap-space-xs text-label-ui font-label-ui text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span>Hypothesis Candidate</span>
+</div>
+<div class="flex items-center gap-space-xs text-label-ui font-label-ui text-error">
+<span class="w-3 h-0.5 bg-error"></span>
+<span>Falsification Link</span>
+</div>
+</div>
+<!-- Graph Canvas SVG & Interactive Node Layout -->
+<div class="relative w-full h-[620px] lg:h-full cursor-grab active:cursor-grabbing select-none overflow-hidden" id="graphCanvasArea">
+<!-- Dot Grid Pattern -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="24" id="graphDotGrid" patternunits="userSpaceOnUse" width="24">
+<circle class="fill-outline-variant/50" cx="2" cy="2" r="0.9"></circle>
+</pattern>
+</defs>
+<rect fill="url(#graphDotGrid)" height="100%" width="100%"></rect>
+<!-- Dynamic Connecting Edges -->
+<g class="transition-opacity duration-300" id="graphEdges">
+<!-- Inquiry -> Models -->
+<path class="stroke-primary-container/40 fill-none" d="M 450 320 C 370 260, 310 210, 230 180" stroke-width="1.7"></path>
+<path class="stroke-primary-container/50 fill-none" d="M 450 320 C 360 330, 280 340, 210 350" stroke-width="2"></path>
+<path class="stroke-primary-container/30 fill-none" d="M 450 320 C 380 390, 310 440, 240 480" stroke-width="1.5"></path>
+<path class="stroke-primary-container/30 fill-none" d="M 450 320 C 390 450, 350 510, 300 550" stroke-width="1.5"></path>
+<!-- Sources -> Claims -->
+<path class="stroke-outline/40 fill-none" d="M 680 140 C 600 150, 560 170, 520 200" stroke-dasharray="3 3" stroke-width="1.5"></path>
+<path class="stroke-outline/60 fill-none" d="M 720 280 C 660 260, 600 240, 550 220" stroke-width="1.5"></path>
+<path class="stroke-outline/60 fill-none" d="M 710 440 C 650 430, 580 400, 530 380" stroke-width="1.5"></path>
+<path class="stroke-outline/40 fill-none" d="M 670 540 C 600 520, 540 490, 480 460" stroke-dasharray="3 3" stroke-width="1.5"></path>
+<!-- Claims -> Models & Hypotheses -->
+<path class="stroke-secondary/60 fill-none" d="M 520 200 C 420 190, 320 180, 230 180" stroke-width="1.8"></path>
+<path class="stroke-secondary/80 fill-none" d="M 550 220 C 430 250, 320 310, 210 350" stroke-width="2.2"></path>
+<path class="stroke-secondary/50 fill-none" d="M 530 380 C 470 380, 400 370, 350 360" stroke-width="1.5"></path>
+<!-- Hypotheses to Claims / Models -->
+<path class="stroke-tertiary/60 fill-none" d="M 450 320 C 510 300, 570 300, 640 310" stroke-width="2"></path>
+<path class="stroke-tertiary/50 fill-none" d="M 640 310 C 600 260, 570 230, 550 220" stroke-width="1.5"></path>
+<!-- CONTRADICTION / FALSIFICATION EDGE (Red Dash) -->
+<!-- NASA TM-84223 (710, 440) to H2 Inertial Invariance (630, 470) -->
+<path class="stroke-error fill-none" d="M 710 440 C 680 450, 660 460, 630 470" stroke-dasharray="4 4" stroke-width="2"></path>
+<!-- H2 Falsification to Model A Vacuum Symmetry -->
+<path class="stroke-error fill-none" d="M 630 470 C 480 430, 320 370, 210 350" stroke-dasharray="3 3" stroke-width="1.8"></path>
+</g>
+</svg>
+<!-- Node 1: Primary Target Inquiry Hub (Center) -->
+<div class="graph-node group absolute top-[300px] left-[400px] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10 transition-transform hover:scale-105" data-id="node-inquiry" data-type="inquiry" id="node-inquiry">
+<div class="relative bg-surface-container-highest p-space-sm rounded-xl shadow-md flex items-center gap-space-sm max-w-[260px]">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-on-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-lg">psychology</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-code-metric text-code-metric text-primary uppercase font-bold tracking-wider">#INV-2024-098 TARGET</span>
+<span class="font-label-ui text-label-ui font-semibold text-on-surface truncate">Aerodynamic Drag &amp; Optimal Angle</span>
+<span class="font-code-metric text-code-metric text-outline truncate">Active Epistemic Core</span>
+</div>
+</div>
+</div>
+<!-- Node 2: Source - Newton Principia (Active Selected) -->
+<div class="graph-node active-node group absolute top-[255px] left-[700px] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10 transition-transform hover:scale-105" data-id="node-newton" data-type="source" id="node-newton">
+<div class="relative bg-surface-container-lowest hover:bg-surface-container p-space-sm rounded-xl shadow-lg flex items-center gap-space-xs max-w-[240px]">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-base">auto_stories</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-2xs">
+<span class="font-code-metric text-code-metric text-on-surface-variant font-bold">SRC-01</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+<span class="font-label-ui text-label-ui font-medium text-on-surface truncate">Newton, I. (1687)</span>
+<span class="font-code-metric text-code-metric text-outline truncate">Principia Book II §Resisting</span>
+</div>
+</div>
+</div>
+<!-- Node 3: Source - Landau & Lifshitz -->
+<div class="graph-node group absolute top-[120px] left-[660px] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10 transition-transform hover:scale-105" data-id="node-landau" data-type="source" id="node-landau">
+<div class="relative bg-surface-container-lowest hover:bg-surface-container p-space-xs rounded-xl shadow-md flex items-center gap-space-xs max-w-[220px]">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-outline shrink-0">
+<span class="material-symbols-outlined text-sm">menu_book</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-code-metric text-code-metric text-outline">SRC-04 • Fluid Mech</span>
+<span class="font-label-ui text-label-ui font-medium text-on-surface truncate">Landau &amp; Lifshitz §16</span>
+</div>
+</div>
+</div>
+<!-- Node 4: Source - NASA TM-84223 -->
+<div class="graph-node group absolute top-[430px] left-[700px] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10 transition-transform hover:scale-105" data-id="node-nasa" data-type="source" id="node-nasa">
+<div class="relative bg-surface-container-lowest hover:bg-surface-container p-space-xs rounded-xl shadow-md flex items-center gap-space-xs max-w-[220px]">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-outline shrink-0">
+<span class="material-symbols-outlined text-sm">public</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-code-metric text-code-metric text-error">SRC-09 • Empirical</span>
+<span class="font-label-ui text-label-ui font-medium text-on-surface truncate">NASA TM-84223 (1982)</span>
+</div>
+</div>
+</div>
+<!-- Node 5: Source - Galileo Discorsi 1638 -->
+<div class="graph-node group absolute top-[530px] left-[650px] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10 transition-transform hover:scale-105" data-id="node-galileo" data-type="source" id="node-galileo">
+<div class="relative bg-surface-container-lowest hover:bg-surface-container p-space-xs rounded-xl shadow-md flex items-center gap-space-xs max-w-[210px]">
+<div class="w-7 h-7 rounded-lg bg-surface-container-high flex items-center justify-center text-outline shrink-0">
+<span class="material-symbols-outlined text-sm">history_edu</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-code-metric text-code-metric text-outline">SRC-02 • Classical</span>
+<span class="font-label-ui text-label-ui font-medium text-on-surface truncate">Galileo Discorsi (1638)</span>
+</div>
+</div>
+</div>
+<!-- Node 6: Claim - Quadratic Drag Fd ∝ v² -->
+<div class="graph-node group absolute top-[195px] left-[520px] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10 transition-transform hover:scale-105" data-id="node-claim-quadratic" data-type="claim" id="node-claim-quadratic">
+<div class="relative bg-surface-container p-space-xs rounded-full shadow-md flex items-center gap-space-2xs max-w-[230px]">
+<span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+<span class="font-code-metric text-code-metric text-on-surface truncate">F_d ∝ v² @ Re &gt; 10⁴</span>
+<span class="font-code-metric text-code-metric text-outline">CLM-08</span>
+</div>
+</div>
+<!-- Node 7: Claim - Energy Dissipation Ascent Peak -->
+<div class="graph-node group absolute top-[365px] left-[520px] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10 transition-transform hover:scale-105" data-id="node-claim-energy" data-type="claim" id="node-claim-energy">
+<div class="relative bg-surface-container p-space-xs rounded-full shadow-md flex items-center gap-space-2xs max-w-[240px]">
+<span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+<span class="font-label-ui text-label-ui text-on-surface truncate">Ascent Peak Energy Loss</span>
+<span class="font-code-metric text-code-metric text-outline">CLM-12</span>
+</div>
+</div>
+<!-- Node 8: Model A - Ideal Vacuum Parabola -->
+<div class="graph-node group absolute top-[170px] left-[210px] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10 transition-transform hover:scale-105" data-id="node-model-a" data-type="model" id="node-model-a">
+<div class="relative bg-surface-container-high p-space-xs rounded-xl shadow-md flex items-center gap-space-xs max-w-[210px]">
+<div class="w-7 h-7 rounded bg-primary-container text-on-primary flex items-center justify-center font-code-metric text-code-metric font-bold shrink-0">A</div>
+<div class="flex flex-col min-w-0">
+<span class="font-code-metric text-code-metric text-outline">Null Baseline</span>
+<span class="font-label-ui text-label-ui font-medium text-on-surface truncate">Vacuum Parabola (θ=45°)</span>
+</div>
+</div>
+</div>
+<!-- Node 9: Model B - Stokes-Quadratic ODE (Core Active Model) -->
+<div class="graph-node group absolute top-[340px] left-[190px] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10 transition-transform hover:scale-105" data-id="node-model-b" data-type="model" id="node-model-b">
+<div class="relative bg-surface-container p-space-sm rounded-xl shadow-lg flex items-center gap-space-xs max-w-[230px]">
+<div class="w-8 h-8 rounded bg-primary text-on-primary flex items-center justify-center font-code-metric text-code-metric font-bold shrink-0">B</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-2xs">
+<span class="font-code-metric text-code-metric text-primary font-bold">MODEL-B</span>
+<span class="px-space-3xs py-0.5 rounded bg-secondary/15 text-secondary text-code-metric font-code-metric">Verified</span>
+</div>
+<span class="font-label-ui text-label-ui font-semibold text-on-surface truncate">Stokes-Quadratic ODE</span>
+<span class="font-code-metric text-code-metric text-outline truncate">Optimal θ* ≈ 38.4°</span>
+</div>
+</div>
+</div>
+<!-- Node 10: Model C - Barometric Lapse Layer -->
+<div class="graph-node group absolute top-[470px] left-[220px] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10 transition-transform hover:scale-105" data-id="node-model-c" data-type="model" id="node-model-c">
+<div class="relative bg-surface-container-high p-space-xs rounded-xl shadow-md flex items-center gap-space-xs max-w-[210px]">
+<div class="w-7 h-7 rounded bg-surface-container-highest text-on-surface flex items-center justify-center font-code-metric text-code-metric font-bold shrink-0">C</div>
+<div class="flex flex-col min-w-0">
+<span class="font-code-metric text-code-metric text-outline">Atmospheric</span>
+<span class="font-label-ui text-label-ui font-medium text-on-surface truncate">Barometric Lapse Layer</span>
+</div>
+</div>
+</div>
+<!-- Node 11: Hypothesis H1 - Kinetic Dissipation -->
+<div class="graph-node group absolute top-[300px] left-[630px] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10 transition-transform hover:scale-105" data-id="node-h1" data-type="hypothesis" id="node-h1">
+<div class="relative bg-surface-container p-space-xs rounded-xl shadow-md flex items-center gap-space-xs max-w-[210px]">
+<div class="w-7 h-7 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-code-metric text-code-metric font-bold shrink-0">H1</div>
+<div class="flex flex-col min-w-0">
+<span class="font-code-metric text-code-metric text-tertiary">CONFIRMED</span>
+<span class="font-label-ui text-label-ui font-medium text-on-surface truncate">Kinetic Dissipation Dominance</span>
+</div>
+</div>
+</div>
+<!-- Node 12: Hypothesis H2 - Inertial Invariance (FALSIFIED / Contradiction) -->
+<div class="graph-node group absolute top-[460px] left-[610px] -translate-x-1/2 -translate-y-1/2 cursor-pointer z-10 transition-transform hover:scale-105" data-id="node-h2" data-type="hypothesis" id="node-h2">
+<div class="relative bg-error-container/40 p-space-xs rounded-xl shadow-md flex items-center gap-space-xs max-w-[230px]">
+<div class="w-7 h-7 rounded-full bg-error text-on-error flex items-center justify-center font-code-metric text-code-metric font-bold shrink-0">H2</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-2xs">
+<span class="font-code-metric text-code-metric text-error font-bold">FALSIFIED</span>
+<span class="material-symbols-outlined text-xs text-error">warning</span>
+</div>
+<span class="font-label-ui text-label-ui font-medium text-error truncate">Inertial Invariance (θ=45°)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Inspection Dossier Panel -->
+<aside class="w-full lg:w-[420px] bg-surface-container-low shadow-sm flex flex-col justify-between overflow-y-auto" id="inspectionDossier">
+<div class="flex flex-col p-space-lg gap-space-lg">
+<!-- Dossier Header & Entity Badges -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-2xs">
+<span class="px-space-xs py-space-3xs rounded bg-primary-container text-on-primary font-code-metric text-code-metric font-semibold uppercase">Source Record</span>
+<span class="font-code-metric text-code-metric text-outline">ID: SRC-NEWTON-1687-B2</span>
+</div>
+<button class="p-space-3xs rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Bookmark Entity" type="button">
+<span class="material-symbols-outlined text-base">bookmark</span>
+</button>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">
+            Newton, I. (1687) Philosophiae Naturalis Principia Mathematica
+          </h2>
+<span class="font-body-dense text-body-dense text-on-surface-variant italic">
+            Book II: The Motion of Bodies in Resisting Mediums, Section II: 'The motion of bodies that are resisted in the duplicate ratio of their velocities'.
+          </span>
+</div>
+<!-- Epistemic Grounding Classification Banner -->
+<div class="flex items-center justify-between px-space-md py-space-sm rounded-lg bg-surface-container shadow-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-base">verified</span>
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric text-outline uppercase">Epistemic Status</span>
+<span class="font-label-ui text-label-ui font-semibold text-on-surface">Source-Supported Finding</span>
+</div>
+</div>
+<span class="px-space-xs py-space-3xs rounded-full bg-secondary/15 text-secondary font-code-metric text-code-metric font-semibold">Tier-1 Classical</span>
+</div>
+<!-- Methodological Scrutiny by Agent Source Critic -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric uppercase text-outline tracking-wider font-semibold flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-xs text-primary">gavel</span>
+              Agent Scrutiny Audit
+            </span>
+<span class="font-code-metric text-code-metric text-secondary">Passed (4/4 Critics)</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg text-body-dense font-body-dense text-on-surface-variant flex flex-col gap-space-xs leading-relaxed">
+<p>
+<strong class="text-on-surface font-medium">Methodological Appraisal:</strong> Peer-reviewed historical foundation. Geometrical fluxional proofs accurately anticipate momentum exchange in incompressible fluid flow at supercritical Reynolds regime ($Re &gt; 10^4$).
+            </p>
+<p class="text-on-surface-variant/80">
+<strong class="text-on-surface font-medium">Epistemic Boundary:</strong> Does not incorporate compressible Mach effects ($Ma &gt; 0.3$) or barometric exponential decay. Model scope valid for sea-level low-altitude ballistic envelope.
+            </p>
+</div>
+</div>
+<!-- Key Extracted Claim -->
+<div class="flex flex-col gap-space-2xs">
+<span class="font-code-metric text-code-metric uppercase text-outline tracking-wider font-semibold">Extracted Empirical Claim</span>
+<div class="p-space-sm rounded-lg bg-surface-container-high shadow-sm flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric font-semibold text-secondary">CLM-08 (Formalized)</span>
+<span class="font-code-metric text-code-metric text-outline">Confidence: 99.8%</span>
+</div>
+<p class="font-body-dense text-body-dense text-on-surface">
+              "Resistance of spherical bodies in fluid medium is proportional to the square of velocity in the supercritical turbulent regime."
+            </p>
+<div class="px-space-xs py-space-2xs rounded bg-surface-container font-code-formula text-code-formula text-primary">
+              F_d = \frac{1}{2} \rho v^2 C_d A
+            </div>
+</div>
+</div>
+<!-- Supporting Passage with Verbatim Proof Excerpt -->
+<div class="flex flex-col gap-space-2xs">
+<span class="font-code-metric text-code-metric uppercase text-outline tracking-wider font-semibold">Supporting Verbatim Passage</span>
+<div class="p-space-sm rounded-lg bg-surface-container text-body-dense font-body-dense text-on-surface-variant flex flex-col gap-space-2xs">
+<p class="font-body-editorial text-body-editorial text-on-surface italic">
+              "If a body be resisted in the duplicate ratio of its velocity, the spaces described in times which are in arithmetical progression will be in harmonical progression; and the forces of resistance in geometrical progression."
+            </p>
+<div class="flex items-center justify-between pt-space-2xs text-code-metric font-code-metric text-outline">
+<span>Section II, Proposition IV, Theorem IV</span>
+<a class="text-primary hover:underline flex items-center gap-space-3xs" href="#">
+<span>View Latin Folio</span>
+<span class="material-symbols-outlined text-xs">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Cross-Epistemic Graph Linkages -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-code-metric text-code-metric uppercase text-outline tracking-wider font-semibold">Active Graph Linkages</span>
+<!-- Linked Hypotheses -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-code-metric font-code-metric text-outline">
+<span>Impact on Hypotheses:</span>
+<span>2 Links</span>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between p-space-xs rounded bg-surface-container shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+<span class="font-body-dense text-body-dense text-on-surface truncate">H1: Kinetic Dissipation Peak</span>
+</div>
+<span class="font-code-metric text-code-metric text-secondary font-semibold uppercase">Supports (+0.84)</span>
+</div>
+<div class="flex items-center justify-between p-space-xs rounded bg-surface-container shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-2 h-2 rounded-full bg-error shrink-0"></span>
+<span class="font-body-dense text-body-dense text-on-surface truncate">H2: Inertial Invariance θ=45°</span>
+</div>
+<span class="font-code-metric text-code-metric text-error font-semibold uppercase">Falsifies (-1.00)</span>
+</div>
+</div>
+</div>
+<!-- Linked Computational Models -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-code-metric font-code-metric text-outline">
+<span>Parameterizes Models:</span>
+<span>1 Direct Link</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-2 h-2 rounded bg-primary shrink-0"></span>
+<span class="font-body-dense text-body-dense text-on-surface truncate">Model B: Stokes-Quadratic ODE</span>
+</div>
+<span class="font-code-metric text-code-metric text-primary font-mono">C_d = 0.47</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Verification Notice -->
+<div class="p-space-md bg-surface-container shadow-sm flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-outline text-base shrink-0 mt-0.5">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-ui text-label-ui font-semibold text-on-surface">Demonstration Evidence Ledger</span>
+<p class="font-code-metric text-code-metric text-on-surface-variant leading-tight">
+            Bibliographic retrieval indexed for prototype demonstration. Cryptographic merkle root verified against SHA-256 state ledger.
+          </p>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<script>
+  (function() {
+    // Dynamic entity catalog for dossier inspection
+    const entityLedger = {
+      'node-newton': {
+        type: 'Source Record',
+        id: 'SRC-NEWTON-1687-B2',
+        title: 'Newton, I. (1687) Philosophiae Naturalis Principia Mathematica',
+        subtitle: 'Book II: The Motion of Bodies in Resisting Mediums, Section II: Duplicate ratio of velocity resistance.',
+        status: 'Source-Supported Finding',
+        statusTier: 'Tier-1 Classical',
+        methodology: 'Peer-reviewed historical foundation. Geometrical fluxional proofs accurately anticipate momentum exchange in incompressible fluid flow at supercritical Reynolds regime (Re > 10⁴).',
+        boundary: 'Does not incorporate compressible Mach effects (Ma > 0.3) or barometric exponential decay. Model scope valid for sea-level low-altitude ballistic envelope.',
+        claimTitle: 'CLM-08 (Formalized)',
+        claimText: '"Resistance of spherical bodies in fluid medium is proportional to the square of velocity in the supercritical turbulent regime."',
+        formula: 'F_d = \\frac{1}{2} \\rho v^2 C_d A',
+        verbatim: '"If a body be resisted in the duplicate ratio of its velocity, the spaces described in times which are in arithmetical progression will be in harmonical progression; and the forces of resistance in geometrical progression."',
+        passageRef: 'Section II, Proposition IV, Theorem IV',
+        supports: 'H1: Kinetic Dissipation Peak (+0.84)',
+        falsifies: 'H2: Inertial Invariance θ=45° (-1.00)',
+        modelRef: 'Model B: Stokes-Quadratic ODE (Cd = 0.47)'
+      },
+      'node-nasa': {
+        type: 'Source Record',
+        id: 'SRC-NASA-1982-TM',
+        title: 'NASA TM-84223: Transonic & Supersonic Drag Measurements',
+        subtitle: 'National Aeronautics and Space Administration (1982), Atmospheric Trajectory & Surface Skin Drag Analysis.',
+        status: 'Empirical Observation',
+        statusTier: 'Tier-1 Calibrated',
+        methodology: 'Wind tunnel measurements across Mach 0.1 to 1.8. Laser Doppler Velocimetry and piezoelectric balance load sensors.',
+        boundary: 'Calibrated specifically for smooth projectile geometry with standard atmospheric density profiles.',
+        claimTitle: 'CLM-14 (Empirical Data)',
+        claimText: '"Optimal trajectory launch angle shifts monotonically downwards from 45.0° toward 38.2° under continuous aerodynamic resistance."',
+        formula: '\\theta^* = \\arctan(1 - \\kappa v_0 / g)',
+        verbatim: '"Experimental ballistic test flights confirm maximum ground reach occurs between 37.8° and 38.6° for spherical projectiles launched at v0 > 80 m/s."',
+        passageRef: 'NASA TM-84223, pg. 42, Fig 11',
+        supports: 'Model B ODE Predictions (+0.97)',
+        falsifies: 'H2: Galilean Symmetry (-1.00)',
+        modelRef: 'Model B & Model C Aerodynamic Deck'
+      },
+      'node-h2': {
+        type: 'Hypothesis Candidate',
+        id: 'HYP-02-INVARIANCE',
+        title: 'H2: Velocity-Independent Parabolic Invariance',
+        subtitle: 'Conjecture claiming optimal trajectory remains strictly invariant at 45.0° regardless of initial release velocity.',
+        status: 'Falsified Hypothesis',
+        statusTier: 'Epistemically Rejected',
+        methodology: 'Null hypothesis constructed as counter-claim during Agent Council Round 1 tournament to test aerodynamic dissipation limits.',
+        boundary: 'Invalid for all non-vacuum physical environments.',
+        claimTitle: 'CLM-03 (Rejected)',
+        claimText: '"Projectile range symmetry is invariant under fluid drag transformations."',
+        formula: 'R(\\theta) \\neq R_0 \\sin(2\\theta)',
+        verbatim: '"Conjecture definitively disproven by both Newtonian quadratic drag derivations and NASA TM-84223 supersonic range firing metrics."',
+        passageRef: 'Audit Gate #AG-24-098-Falsify',
+        supports: 'None',
+        falsifies: 'Internal Logic Contradiction',
+        modelRef: 'Falsifies Model A Applicability'
+      },
+      'node-model-b': {
+        type: 'Computational Model',
+        id: 'MOD-STOKES-QUAD-ODE',
+        title: 'Model B: Stokes-Quadratic Runge-Kutta 4 ODE',
+        subtitle: 'Coupled non-linear differential equations integrating gravitational field and velocity-squared drag vector.',
+        status: 'Simulation Result',
+        statusTier: 'Validated Core',
+        methodology: 'Fourth-order adaptive Runge-Kutta time integration with step-size dt = 0.001s and boundary event horizon at ground collision (y=0).',
+        boundary: 'Assumes uniform density medium rho = 1.225 kg/m³ without barometric vertical lapse.',
+        claimTitle: 'CLM-19 (Simulated Result)',
+        claimText: '"Calculated global optimum trajectory launch angle is 38.41° ± 0.05° for steel sphere at initial velocity 120 m/s."',
+        formula: 'm\\ddot{\\vec{r}} = -mg\\hat{j} - \\frac{1}{2}\\rho C_d A |\\vec{v}|\\vec{v}',
+        verbatim: '"Numerical integration over 10,000 launch instances confirms asymmetry in time-of-flight: ascent duration is 18.2% shorter than descent duration."',
+        passageRef: 'Simulation Notebook Cell In [14]',
+        supports: 'H1: Kinetic Dissipation Dominance (+0.95)',
+        falsifies: 'H2: Symmetry (-1.00)',
+        modelRef: 'Direct Engine for Sandhana Computational Lab'
+      }
+    };
+
+    // Node click inspector updates
+    const nodes = document.querySelectorAll('.graph-node');
+    nodes.forEach(node => {
+      node.addEventListener('click', function() {
+        nodes.forEach(n => n.classList.remove('active-node'));
+        this.classList.add('active-node');
+
+        const nodeId = this.getAttribute('data-id');
+        const entity = entityLedger[nodeId];
+        if (!entity) return;
+
+        const dossier = document.getElementById('inspectionDossier');
+        if (!dossier) return;
+
+        // Populate fields cleanly
+        const titleEl = dossier.querySelector('h2');
+        if (titleEl) titleEl.textContent = entity.title;
+
+        const subEl = dossier.querySelector('.font-body-dense.italic');
+        if (subEl) subEl.textContent = entity.subtitle;
+
+        const idBadge = dossier.querySelector('.font-code-metric.text-outline');
+        if (idBadge) idBadge.textContent = 'ID: ' + entity.id;
+
+        const statusBadge = dossier.querySelector('.font-label-ui.font-semibold.text-on-surface');
+        if (statusBadge) statusBadge.textContent = entity.status;
+
+        const methodologyP = dossier.querySelectorAll('.text-body-dense p');
+        if (methodologyP.length >= 2) {
+          methodologyP[0].innerHTML = '<strong class="text-on-surface font-medium">Methodological Appraisal:</strong> ' + entity.methodology;
+          methodologyP[1].innerHTML = '<strong class="text-on-surface font-medium">Epistemic Boundary:</strong> ' + entity.boundary;
+        }
+
+        const claimP = dossier.querySelector('.bg-surface-container-high p');
+        if (claimP) claimP.textContent = entity.claimText;
+
+        const formulaBox = dossier.querySelector('.font-code-formula');
+        if (formulaBox) formulaBox.textContent = entity.formula;
+
+        const verbatimP = dossier.querySelector('.font-body-editorial');
+        if (verbatimP) verbatimP.textContent = entity.verbatim;
+
+        const passageSpan = dossier.querySelector('.pt-space-2xs span');
+        if (passageSpan) passageSpan.textContent = entity.passageRef;
+      });
+    });
+
+    // Simple Filter button interactions
+    const filterButtons = document.querySelectorAll('.graph-filter-btn');
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-surface-container-highest', 'text-on-surface');
+          b.classList.add('text-on-surface-variant');
+        });
+        this.classList.add('bg-surface-container-highest', 'text-on-surface');
+        this.classList.remove('text-on-surface-variant');
+
+        const filterType = this.getAttribute('data-type');
+        nodes.forEach(node => {
+          const nType = node.getAttribute('data-type');
+          if (filterType === 'all' || nType === filterType) {
+            node.style.opacity = '1';
+            node.style.pointerEvents = 'auto';
+          } else {
+            node.style.opacity = '0.2';
+            node.style.pointerEvents = 'none';
+          }
+        });
+      });
+    });
+
+    // Semantic search input filter
+    const searchInput = document.getElementById('semanticFilterInput');
+    if (searchInput) {
+      searchInput.addEventListener('input', function(e) {
+        const query = e.target.value.toLowerCase().trim();
+        nodes.forEach(node => {
+          const text = node.textContent.toLowerCase();
+          if (!query || text.includes(query)) {
+            node.style.opacity = '1';
+            node.style.pointerEvents = 'auto';
+          } else {
+            node.style.opacity = '0.2';
+            node.style.pointerEvents = 'none';
+          }
+        });
+      });
+    }
+
+    // Zoom and pan mock states
+    let zoomLevel = 1;
+    const canvasArea = document.getElementById('graphCanvasArea');
+    const zoomInBtn = document.getElementById('btnZoomIn');
+    const zoomOutBtn = document.getElementById('btnZoomOut');
+    const fitViewBtn = document.getElementById('btnFitView');
+
+    if (zoomInBtn && canvasArea) {
+      zoomInBtn.addEventListener('click', () => {
+        zoomLevel = Math.min(zoomLevel + 0.15, 1.6);
+        canvasArea.style.transform = `scale(${zoomLevel})`;
+        canvasArea.style.transformOrigin = 'center center';
+        canvasArea.style.transition = 'transform 0.2s ease-out';
+      });
+    }
+
+    if (zoomOutBtn && canvasArea) {
+      zoomOutBtn.addEventListener('click', () => {
+        zoomLevel = Math.max(zoomLevel - 0.15, 0.65);
+        canvasArea.style.transform = `scale(${zoomLevel})`;
+        canvasArea.style.transformOrigin = 'center center';
+        canvasArea.style.transition = 'transform 0.2s ease-out';
+      });
+    }
+
+    if (fitViewBtn && canvasArea) {
+      fitViewBtn.addEventListener('click', () => {
+        zoomLevel = 1;
+        canvasArea.style.transform = 'scale(1)';
+        canvasArea.style.transition = 'transform 0.3s ease-out';
+      });
+    }
+
+    // Export graph mock action
+    const exportBtn = document.getElementById('btnExport');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        const payload = JSON.stringify({
+          investigationId: 'INV-2024-098',
+          timestamp: new Date().toISOString(),
+          entities: Object.keys(entityLedger).length,
+          status: 'verified_audit_ready'
+        }, null, 2);
+        const blob = new Blob([payload], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'sandhana-knowledge-graph-INV-2024-098.json';
+        a.click();
+        URL.revokeObjectURL(url);
+      });
+    }
+  })();
+</script></main></div></body></html>

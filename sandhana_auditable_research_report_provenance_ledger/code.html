@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;background-color:#0a0e14;color:#f3f4f6;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{width:4px;height:4px;}::-webkit-scrollbar-track{background:#0a0e14;}::-webkit-scrollbar-thumb{background:#223046;border-radius:2px;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-dim":"#070a0e","on-secondary-container":"#85f8c4","background":"#0a0e14","on-secondary-fixed-variant":"#005137","on-primary-fixed":"#001551","primary":"#3b82f6","on-primary-fixed-variant":"#0039b5","error":"#ef4444","on-tertiary":"#ffffff","secondary-fixed-dim":"#68dba9","on-error-container":"#fee2e2","surface-container-high":"#1c283c","on-surface":"#f3f4f6","primary-fixed":"#dce1ff","on-primary":"#ffffff","secondary-container":"#064e3b","surface-container-low":"#0f1724","surface-variant":"#172131","on-secondary":"#ffffff","inverse-primary":"#b7c4ff","outline-variant":"#1e293b","error-container":"#7f1d1d","surface":"#0a0e14","tertiary-container":"#581c87","on-tertiary-fixed":"#25005a","outline":"#475569","surface-container-highest":"#223046","secondary-fixed":"#85f8c4","tertiary":"#8b5cf6","on-tertiary-container":"#e9d5ff","inverse-surface":"#e2e8f0","surface-container-lowest":"#06080d","primary-fixed-dim":"#b7c4ff","on-background":"#f3f4f6","primary-container":"#1d4ed8","tertiary-fixed":"#eaddff","on-surface-variant":"#94a3b8","surface-tint":"#3b82f6","surface-container":"#101722","on-tertiary-fixed-variant":"#5a00c6","on-secondary-fixed":"#002114","on-error":"#ffffff","tertiary-fixed-dim":"#d2bbff","surface-bright":"#162030","secondary":"#10b981","inverse-on-surface":"#0a0e14","on-primary-container":"#dbeafe"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","space-3xl":"4.5rem","panel-margin":"1.5rem","space-2xs":"0.25rem","space-sm":"0.75rem","col-gutter":"1rem","space-2xl":"3rem","space-xl":"2rem","space-3xs":"0.125rem","space-xs":"0.5rem","space-md":"1rem"},fontFamily:{"label-ui":["Geist"],"code-metric":["JetBrains Mono"],"headline-lg":["Newsreader"],"headline-sm":["Newsreader"],"display-hero":["Newsreader"],"headline-lg-mobile":["Newsreader"],"display-hero-mobile":["Newsreader"],"body-dense":["Geist"],"code-formula":["JetBrains Mono"],"headline-md":["Newsreader"],"body-default":["Geist"],"body-editorial":["Newsreader"]},fontSize:{"label-ui":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"code-metric":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"500"}],"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"400"}],"body-dense":["13px",{"lineHeight":"20px","fontWeight":"400"}],"code-formula":["13px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"500"}],"body-default":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-editorial":["18px",{"lineHeight":"30px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-default text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container border-r border-outline-variant z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="flex items-center gap-space-sm px-space-md py-space-md border-b border-outline-variant bg-surface-container-lowest"><img alt="SANDHANA emblem" class="w-9 h-9 rounded-lg object-cover ring-1 ring-outline-variant shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1X4qkNjkOKm3THm2HEZQoyrz0q7ROYQgqXvQkU5lTQ_SM6pPDi9w_IVJ_FU5YRf2V7HXTwHgvO78Q30PBG1VWslxiOU2XRqxyZ6iAxs6oyvrw41UVRLxJCrwuVKAExwp2J9TxXZiCWgxVwe1o2a4FZENdpS7IMue6-N6pfdblgTk0igNicHBZJtfPxJppruXyvg2ee-WK2uDuUPXH0A3HEbZAC4xOdvKBmBK44jp7wByCI6kb0dnWgjOECE"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface font-semibold truncate">SANDHANA</span><span class="font-body-dense text-body-dense text-outline font-normal shrink-0">सन्धान</span></div><span class="font-label-ui text-label-ui text-on-surface-variant truncate">Auditable Multi-Agent Co-Scientist</span></div></div><div class="px-space-md pt-space-sm pb-space-xs"><div class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg bg-surface-container-low border border-outline-variant"><span class="font-code-metric text-code-metric text-on-surface-variant uppercase tracking-wider">Active Context</span><span class="font-code-metric text-code-metric font-semibold text-primary">#INV-2024-098</span></div></div><div class="px-space-md py-space-xs"><span class="px-space-xs font-code-metric text-code-metric uppercase text-outline tracking-wider block mb-space-2xs">Lifecycle Navigation</span><nav class="flex flex-col gap-space-3xs" data-active-classes="bg-primary-container text-on-primary font-medium shadow-sm border border-primary/40"><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="research-home" href="#"><span>Research Home</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="ai-scientist-entry" href="#"><span>AI Scientist Entry</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="investigation-command-center" href="#"><span>Investigation Command</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="agent-council" href="#"><span>Agent Council</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="hypothesis-tournament" href="#"><span>Hypothesis Tournament</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="evidence-knowledge-graph" href="#"><span>Evidence &amp; Graph</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="computational-lab" href="#"><span>Computational Lab</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="experiment-designer" href="#"><span>Experiment Designer</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="results-comparison" href="#"><span>Results &amp; Comparison</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg transition-colors bg-primary-container text-on-primary font-medium shadow-sm border border-primary/40" data-path="research-report" href="#"><span>Research Report (LaTeX)</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="audit-log" href="#"><span>Audit Log</span></a><a class="flex items-center justify-between px-space-sm py-space-2xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-dense text-body-dense" data-path="research-notebook" href="#"><span>Research Notebook</span></a></nav></div></div><div class="px-space-md pb-space-md pt-space-xs flex flex-col gap-space-xs border-t border-outline-variant bg-surface-container-lowest"><button class="flex items-center justify-between px-space-sm py-space-2xs bg-surface-container-low hover:bg-surface-container-high hover:text-on-surface rounded-lg text-on-surface-variant border border-outline-variant transition-colors w-full text-left" type="button"><span class="font-label-ui text-label-ui text-on-surface-variant">Terminal Command</span><kbd class="font-code-metric text-code-metric px-space-2xs py-space-3xs rounded bg-surface-container-highest text-on-surface border border-outline-variant">⌘K</kbd></button><div class="flex items-center justify-between px-space-xs py-space-3xs"><span class="font-code-metric text-code-metric text-secondary flex items-center gap-space-2xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>14 Agents Online</span><span class="font-code-metric text-code-metric uppercase text-outline">Cycle 3</span></div><div class="flex items-center justify-between pt-space-xs border-t border-outline-variant"><div class="flex items-center gap-space-xs min-w-0"><div class="w-8 h-8 rounded-full bg-primary-container border border-primary/30 flex items-center justify-center text-on-primary font-code-metric text-code-metric font-semibold shrink-0">PI</div><div class="flex flex-col min-w-0"><span class="font-label-ui text-label-ui font-medium text-on-surface truncate">Dr. Priya Venkatesh</span><span class="font-code-metric text-code-metric text-outline truncate">Principal Investigator</span></div></div><button class="text-on-surface-variant hover:text-on-surface transition-colors p-space-3xs rounded hover:bg-surface-container-high" type="button"><span class="material-symbols-outlined text-base">tune</span></button></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container/90 backdrop-blur-xl border-b border-outline-variant z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-outline text-lg">search</span><input class="w-full pl-9 pr-space-md py-space-xs bg-surface-container-low border border-outline-variant rounded-lg font-body-dense text-body-dense text-on-surface placeholder:text-outline outline-none hover:bg-surface-container focus:bg-surface-container-lowest focus:border-primary transition-all" placeholder="Search hypotheses, proofs, agents, or simulation states (⌘K)" type="text"/></div></div><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-2xs px-space-sm py-space-3xs rounded-full bg-surface-container-low border border-outline-variant text-on-surface-variant font-label-ui text-label-ui"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-code-metric text-code-metric text-on-surface font-medium">#INV-2024-098</span><span class="text-outline">•</span><span class="text-on-surface-variant truncate max-w-[280px]">Ballistic Aerodynamic Drag &amp; Optimal Launch Angle</span></div><div class="flex items-center gap-space-2xs"><button class="flex items-center gap-space-2xs px-space-sm py-space-3xs rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-400 hover:bg-amber-500/20 transition-colors font-label-ui text-label-ui" title="Human Approval Gate Pending" type="button"><span class="material-symbols-outlined text-sm animate-pulse">gavel</span><span>1 Gate Pending</span></button><button class="p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors relative border border-transparent hover:border-outline-variant" type="button"><span class="material-symbols-outlined text-lg">notifications</span><span class="absolute top-1.5 right-1.5 w-1.5 h-1.5 rounded-full bg-primary ring-2 ring-surface-container"></span></button><button class="p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors border border-transparent hover:border-outline-variant" type="button"><span class="material-symbols-outlined text-lg">hub</span></button><button class="p-space-xs text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors border border-transparent hover:border-outline-variant" type="button"><span class="material-symbols-outlined text-lg">terminal</span></button></div></div></header><main class="relative pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Investigation Report Top Action Strip -->
+<header class="bg-surface-container-low px-space-xl py-space-md shadow-sm">
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md">
+<div class="flex flex-col gap-space-2xs min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-code-metric text-code-metric uppercase px-space-2xs py-space-3xs rounded bg-surface-container-highest text-primary font-semibold">
+            #INV-2024-098
+          </span>
+<span class="font-label-ui text-label-ui text-outline">/</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">
+            Classical Mechanics &amp; Continuum Aerodynamics
+          </span>
+<span class="font-label-ui text-label-ui text-outline">•</span>
+<span class="inline-flex items-center gap-space-2xs font-code-metric text-code-metric text-secondary px-space-xs py-space-3xs rounded-full bg-secondary-container/20">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Preprint Draft — Peer Review &amp; Falsification Complete
+          </span>
+</div>
+<div class="flex items-baseline gap-space-sm flex-wrap">
+<h1 class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">
+            Investigation Report: Effect of Quadratic Aerodynamic Drag on Optimal Ballistic Trajectory
+          </h1>
+<span class="font-code-metric text-code-metric text-outline">rev. 4c-alpha-2024</span>
+</div>
+</div>
+<!-- Action Button Group -->
+<div class="flex items-center gap-space-xs shrink-0 flex-wrap">
+<button class="flex items-center gap-space-2xs px-space-sm py-space-xs rounded bg-primary text-on-primary font-label-ui text-label-ui hover:bg-primary-container transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-base">code</span>
+<span>Download LaTeX (.tex)</span>
+</button>
+<button class="flex items-center gap-space-2xs px-space-sm py-space-xs rounded bg-surface-container text-on-surface font-label-ui text-label-ui hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-base">picture_as_pdf</span>
+<span>Export PDF</span>
+</button>
+<button class="flex items-center gap-space-2xs px-space-sm py-space-xs rounded bg-surface-container text-on-surface font-label-ui text-label-ui hover:bg-surface-container-high transition-colors" id="toggleLedgerBtn" type="button">
+<span class="material-symbols-outlined text-base">token</span>
+<span>Audit Merkle Ledger</span>
+</button>
+<button class="p-space-xs rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Re-run Investigation Pipeline" type="button">
+<span class="material-symbols-outlined text-base">replay</span>
+</button>
+<button class="p-space-xs rounded bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" title="Fork Investigation" type="button">
+<span class="material-symbols-outlined text-base">fork_right</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Two-Column Workbench Split -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg px-space-xl py-space-lg">
+<!-- Academic Paper Narrative Column (Left & Center) -->
+<article class="xl:col-span-8 flex flex-col gap-space-xl">
+<!-- Paper Header Surface -->
+<div class="bg-surface-container-lowest p-space-xl rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-code-metric text-code-metric uppercase text-outline">Manuscript Reference</span>
+<span class="font-code-metric text-code-metric text-primary">SANDHANA-PR-2024-098-BETA</span>
+</div>
+<span class="font-code-metric text-code-metric text-outline">Date of Seal: 2024-10-28 14:02:11 UTC</span>
+</div>
+<h2 class="font-display-hero text-display-hero text-on-surface leading-tight">
+          Departure from Galilean Parabola: Quadratic Aerodynamic Drag Induces Asymmetric Dissipation and Lowers Optimal Launch Angle
+        </h2>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-space-2xs font-body-dense text-body-dense text-on-surface-variant">
+<span class="font-medium text-on-surface">Dr. Priya Venkatesh</span>
+<span class="text-outline">·</span>
+<span>Lead Computational Ballistics Agent</span>
+<span class="text-outline">·</span>
+<span>Verification &amp; Proof Auditor v3</span>
+<span class="text-outline">·</span>
+<span>Epistemic Falsification Synth</span>
+</div>
+<!-- Abstract Module -->
+<div class="bg-surface-container-low p-space-lg rounded flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric uppercase text-primary font-semibold tracking-wider">
+              Abstract &amp; Epistemic Scope
+            </span>
+<span class="font-code-metric text-code-metric text-outline">Word count: 218</span>
+</div>
+<p class="font-body-editorial text-body-editorial text-on-surface text-justify">
+            Classical projectile dynamics in a vacuum establish an invariant optimal elevation angle of $\theta = 45^\circ$ for maximal horizontal displacement over flat ground. In dense continuum fluids, quadratic velocity damping ($F_d = \frac{1}{2} C_d \rho A v^2$) disrupts time-reversal symmetry along the flight trajectory. Here we present numerical and phase-space evaluations demonstrating a monotonic negative departure from the Galilean baseline: for standard spherical particulates ($m = 2.5\text{ kg}$, $C_d = 0.47$, $v_0 = 75\text{ m/s}$), the optimal range trajectory peaks at $\theta^* = 41.8^\circ \pm 0.2^\circ$. This departure is directly driven by non-linear kinetic dissipation concentrated in the initial high-velocity ascent branch. Crucially, we distinguish numerical model-predicted invariants from physical ground truth, identifying clear falsification limits where transonic shock waves ($M \ge 0.85$) render pure quadratic models unrepresentative.
+          </p>
+<div class="pt-space-2xs flex items-center gap-space-xs flex-wrap font-code-metric text-code-metric text-outline">
+<span class="text-on-surface-variant">Keywords:</span>
+<span class="px-space-2xs py-space-3xs rounded bg-surface-container text-on-surface">Quadratic Drag</span>
+<span class="px-space-2xs py-space-3xs rounded bg-surface-container text-on-surface">Adaptive Runge-Kutta 4(5)</span>
+<span class="px-space-2xs py-space-3xs rounded bg-surface-container text-on-surface">Asymmetric Dissipation</span>
+<span class="px-space-2xs py-space-3xs rounded bg-surface-container text-on-surface">Trajectory Departure</span>
+</div>
+</div>
+</div>
+<!-- Section 1: Research Question & Decomposition -->
+<section class="bg-surface-container-lowest p-space-xl rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-code-metric text-code-metric text-primary font-semibold">01</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-medium">Research Question &amp; Problem Decomposition</h3>
+</div>
+<p class="font-body-default text-body-default text-on-surface">
+          The core investigation interrogates how aerodynamic drag alters the foundational symmetries of Newtonian exterior ballistics. Specifically:
+        </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric text-outline">Q-1.1</span>
+<span class="font-code-metric text-code-metric text-secondary font-semibold">Solved</span>
+</div>
+<h4 class="font-label-ui text-label-ui font-semibold text-on-surface">Departure Magnitude</h4>
+<p class="font-body-dense text-body-dense text-on-surface-variant">
+              What is the precise relationship between the drag-to-inertia ratio ($\gamma = C_d \rho A / 2m$) and the angular displacement $\Delta \theta = \theta^* - 45^\circ$?
+            </p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric text-outline">Q-1.2</span>
+<span class="font-code-metric text-code-metric text-secondary font-semibold">Verified</span>
+</div>
+<h4 class="font-label-ui text-label-ui font-semibold text-on-surface">Ascent/Descent Skew</h4>
+<p class="font-body-dense text-body-dense text-on-surface-variant">
+              Does energy dissipation concentrate preferentially along the initial ascent arc or the descent terminal approach?
+            </p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric text-outline">Q-1.3</span>
+<span class="font-code-metric text-code-metric text-tertiary font-semibold">Bounded</span>
+</div>
+<h4 class="font-label-ui text-label-ui font-semibold text-on-surface">Regime Boundary</h4>
+<p class="font-body-dense text-body-dense text-on-surface-variant">
+              At what launch velocity does the incompressible quadratic approximation fail against compressible shockwave formation?
+            </p>
+</div>
+</div>
+</section>
+<!-- Section 2: Epistemic Grounding & Literature Review -->
+<section class="bg-surface-container-lowest p-space-xl rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-code-metric text-code-metric text-primary font-semibold">02</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-medium">Epistemic Grounding &amp; Foundational Literature</h3>
+</div>
+<p class="font-body-editorial text-body-editorial text-on-surface">
+          Theoretical treatment of resistance began with Galileo’s <em>Dialogues Concerning Two New Sciences</em> (1638), which recognized the practical deviation of cannonball tracks from pure parabolic curves while explicitly restricting theoretical derivation to vacuum conditions. Newton’s <em>Principia</em> (Book II, Section I–III) laid the mathematical groundwork for resistance proportional to $v$ and $v^2$, demonstrating that no simple closed-form elementary transcendental solution exists for the general quadratic case with constant gravity.
+        </p>
+<div class="bg-surface-container-low p-space-md rounded space-y-space-xs font-body-dense text-body-dense">
+<div class="flex items-start gap-space-sm">
+<span class="font-code-metric text-code-metric text-outline shrink-0">[1]</span>
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Galilei, G. (1638). <em>Discorsi e dimostrazioni matematiche intorno a due nuove scienze</em>. Elzevir.</span>
+<span class="text-outline">Vacuum trajectory theorem; introduces non-dispersive parabolic kinematic baseline.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="font-code-metric text-code-metric text-outline shrink-0">[2]</span>
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Newton, I. (1687). <em>Philosophiae Naturalis Principia Mathematica</em>. Royal Society.</span>
+<span class="text-outline">Quadratic resistance formulation and hodograph construction for fluid damping.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="font-code-metric text-code-metric text-outline shrink-0">[3]</span>
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Landau, L. D., &amp; Lifshitz, E. M. (1987). <em>Fluid Mechanics</em> (Vol. 6). Pergamon Press.</span>
+<span class="text-outline">High-Reynolds boundary layer detachment and drag coefficient invariance regimes.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="font-code-metric text-code-metric text-outline shrink-0">[4]</span>
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">NASA TM-85642 (1984). <em>Atmospheric Entry and Exterior Aerodynamics Reference Databook</em>.</span>
+<span class="text-outline">Empirical cross-sectional coefficients for spherical and spheroidal geometries.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Mathematical Model Formulation -->
+<section class="bg-surface-container-lowest p-space-xl rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-code-metric text-code-metric text-primary font-semibold">03</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-medium">Mathematical Model Formulation</h3>
+</div>
+<p class="font-body-default text-body-default text-on-surface">
+          We formalize four distinct computational candidate systems to evaluate parametric sensitivity and quantify the exact locus of departure:
+        </p>
+<!-- ODE System Comparison Tabs/Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Model A -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric font-semibold text-outline">Model A · Vacuum Baseline</span>
+<span class="font-code-metric text-code-metric text-outline">Analytical</span>
+</div>
+<div class="bg-surface-container-highest p-space-xs rounded font-code-formula text-code-formula text-on-surface overflow-x-auto">
+<p>$$\ddot{x} = 0$$</p>
+<p>$$\ddot{y} = -g$$</p>
+</div>
+<p class="font-body-dense text-body-dense text-on-surface-variant">
+              Pure Galilean symmetry. Trajectory is symmetric about apogee; $\theta^* = 45.0^\circ$ identically for all velocities.
+            </p>
+</div>
+<!-- Model B -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric font-semibold text-primary">Model B · Quadratic Drag (Active)</span>
+<span class="font-code-metric text-code-metric text-primary">Non-linear ODE</span>
+</div>
+<div class="bg-surface-container-highest p-space-xs rounded font-code-formula text-code-formula text-on-surface overflow-x-auto">
+<p>$$\ddot{x} = -\frac{1}{2m} C_d \rho A \dot{x}\sqrt{\dot{x}^2 + \dot{y}^2}$$</p>
+<p>$$\ddot{y} = -g - \frac{1}{2m} C_d \rho A \dot{y}\sqrt{\dot{x}^2 + \dot{y}^2}$$</p>
+</div>
+<p class="font-body-dense text-body-dense text-on-surface-variant">
+              Coupled non-linear system. No closed-form elementary solution. Asymmetric energy extraction along $\vec{v}$.
+            </p>
+</div>
+<!-- Model C -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric font-semibold text-outline">Model C · Density Lapse</span>
+<span class="font-code-metric text-code-metric text-outline">Barometric</span>
+</div>
+<div class="bg-surface-container-highest p-space-xs rounded font-code-formula text-code-formula text-on-surface overflow-x-auto">
+<p>$$\rho(y) = \rho_0 \exp\left(-\frac{M_0 g y}{R^* T}\right)$$</p>
+<p>$$\vec{a} = \vec{g} - \gamma \rho(y) \|\vec{v}\| \vec{v}$$</p>
+</div>
+<p class="font-body-dense text-body-dense text-on-surface-variant">
+              Incorporates altitude-dependent atmospheric thinning. Crucial for high-altitude apogee trajectories ($y &gt; 2000\text{m}$).
+            </p>
+</div>
+<!-- Model D -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric font-semibold text-outline">Model D · Magnus Spin Vector</span>
+<span class="font-code-metric text-code-metric text-outline">Coupled Vortex</span>
+</div>
+<div class="bg-surface-container-highest p-space-xs rounded font-code-formula text-code-formula text-on-surface overflow-x-auto">
+<p>$$\vec{F}_M = \frac{1}{2} C_L \rho A \frac{\vec{\omega} \times \vec{v}}{\|\vec{\omega}\|}$$</p>
+<p>$$\vec{a}_{net} = \vec{g} + \vec{a}_{drag} + \vec{F}_M / m$$</p>
+</div>
+<p class="font-body-dense text-body-dense text-on-surface-variant">
+              Cross-product lift force induced by rotational angular velocity $\vec{\omega}$.
+            </p>
+</div>
+</div>
+<!-- Numerical Solver Specifications Box -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui font-semibold text-on-surface">Numerical Integration Specifications (RK45)</span>
+<span class="font-code-metric text-code-metric text-secondary font-medium">Float64 Native</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-2xs">
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric text-outline">Algorithm</span>
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">Dormand-Prince 5(4)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric text-outline">Local Tolerance ($\epsilon$)</span>
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">$1.0 \times 10^{-6}$</span>
+</div>
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric text-outline">Time Step Adaptive</span>
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">$\Delta t \in [10^{-5}, 10^{-2}]\text{ s}$</span>
+</div>
+<div class="flex flex-col">
+<span class="font-code-metric text-code-metric text-outline">Conservation Audit</span>
+<span class="font-code-metric text-code-metric text-primary font-semibold">Tracked Non-Symplectic</span>
+</div>
+</div>
+<p class="font-body-dense text-body-dense text-on-surface-variant pt-space-2xs">
+<em>Audit Note:</em> Explicit non-symplectic Runge-Kutta discretization does not conserve phase volume by default; numerical energy dissipation is tracked at every step to verify that algorithmic drift accounts for &lt; $0.0004\%$ of physical aerodynamic dissipation.
+          </p>
+</div>
+</section>
+<!-- Section 4: Experimental Design & Simulation Results -->
+<section class="bg-surface-container-lowest p-space-xl rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-baseline justify-between flex-wrap gap-space-xs">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-code-metric text-code-metric text-primary font-semibold">04</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-medium">Experimental Design &amp; Simulation Results</h3>
+</div>
+<span class="font-code-metric text-code-metric text-outline">
+            Demonstration data — computed via adaptive Runge-Kutta 4(5) ODE integration
+          </span>
+</div>
+<p class="font-body-editorial text-body-editorial text-on-surface">
+          We deployed an exhaustive sweep over 16 parameter combinations varying launch elevation $\theta \in [35^\circ, 55^\circ]$, initial velocity $v_0 \in [30, 120]\text{ m/s}$, and sphere mass $m \in [0.5, 25.0]\text{ kg}$ in dry atmospheric conditions ($\rho = 1.225\text{ kg/m}^3, g = 9.80665\text{ m/s}^2$).
+        </p>
+<!-- Rich Visual Trajectory Comparison Plot -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-ui text-label-ui font-semibold text-on-surface">Phase Trajectory &amp; Asymmetry Profile ($y(x)$)</span>
+<span class="font-code-metric text-code-metric text-outline">v0 = 75 m/s, m = 2.5 kg</span>
+</div>
+<div class="flex items-center gap-space-md font-code-metric text-code-metric">
+<span class="flex items-center gap-space-2xs text-outline">
+<span class="w-2.5 h-0.5 bg-outline inline-block"></span> Model A (Vacuum 45°)
+              </span>
+<span class="flex items-center gap-space-2xs text-primary">
+<span class="w-2.5 h-0.5 bg-primary inline-block"></span> Model B (Drag 41.8° Opt)
+              </span>
+<span class="flex items-center gap-space-2xs text-error">
+<span class="w-2.5 h-0.5 bg-error inline-block"></span> Model B (Drag 45° Non-Opt)
+              </span>
+</div>
+</div>
+<!-- Inline SVG Visual Chart (Trajectory Curve comparison) -->
+<div class="w-full bg-surface-container-lowest p-space-sm rounded overflow-hidden">
+<svg class="w-full h-auto text-on-surface" preserveaspectratio="xMidYMid meet" viewbox="0 0 740 260">
+<defs>
+<pattern height="40" id="grid" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" stroke-opacity="0.04" stroke-width="1"></path>
+</pattern>
+<lineargradient id="optShade" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#1d4ed8" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<rect fill="url(#grid)" height="260" width="740"></rect>
+<!-- Axes -->
+<line stroke="currentColor" stroke-opacity="0.2" stroke-width="1.5" x1="50" x2="710" y1="220" y2="220"></line>
+<line stroke="currentColor" stroke-opacity="0.2" stroke-width="1.5" x1="50" x2="50" y1="20" y2="220"></line>
+<!-- Axis ticks & labels -->
+<text fill="currentColor" font-family="JetBrains Mono" font-size="10" opacity="0.5" text-anchor="middle" x="45" y="240">0m</text>
+<text fill="currentColor" font-family="JetBrains Mono" font-size="10" opacity="0.5" text-anchor="middle" x="215" y="240">150m</text>
+<text fill="currentColor" font-family="JetBrains Mono" font-size="10" opacity="0.5" text-anchor="middle" x="385" y="240">300m</text>
+<text fill="currentColor" font-family="JetBrains Mono" font-size="10" opacity="0.5" text-anchor="middle" x="555" y="240">450m</text>
+<text fill="currentColor" font-family="JetBrains Mono" font-size="10" opacity="0.5" text-anchor="middle" x="700" y="240">573m</text>
+<text fill="currentColor" font-family="JetBrains Mono" font-size="10" opacity="0.5" text-anchor="end" x="35" y="224">0</text>
+<text fill="currentColor" font-family="JetBrains Mono" font-size="10" opacity="0.5" text-anchor="end" x="35" y="140">75m</text>
+<text fill="currentColor" font-family="JetBrains Mono" font-size="10" opacity="0.5" text-anchor="end" x="35" y="45">145m</text>
+<!-- Model A: Vacuum 45 deg parabola (R ~ 573m, H ~ 143m) -->
+<path d="M 50 220 Q 380 -50 710 220" fill="none" stroke="#747686" stroke-dasharray="4 4" stroke-width="1.5"></path>
+<!-- Model B: Drag 45 deg (asymmetric, steep fall, R ~ 285m) -->
+<path d="M 50 220 Q 180 30 260 110 T 360 220" fill="none" stroke="#ef4444" stroke-width="1.5"></path>
+<!-- Model B: Optimal 41.8 deg (longer range, lower peak, R ~ 308m) -->
+<path d="M 50 220 Q 170 55 255 125 T 390 220" fill="url(#optShade)"></path>
+<path d="M 50 220 Q 170 55 255 125 T 390 220" fill="none" stroke="#1d4ed8" stroke-width="2"></path>
+<!-- Annotations & Invariants -->
+<circle cx="215" cy="98" fill="#1d4ed8" r="3.5"></circle>
+<text fill="#1d4ed8" font-family="JetBrains Mono" font-size="10" font-weight="600" x="225" y="95">Apogee (x=165m, y=86m)</text>
+<circle cx="390" cy="220" fill="#006c4a" r="4"></circle>
+<text fill="#006c4a" font-family="JetBrains Mono" font-size="10" font-weight="600" text-anchor="middle" x="390" y="205">R_opt = 308.4m</text>
+<circle cx="360" cy="220" fill="#ef4444" r="3.5"></circle>
+<text fill="#ef4444" font-family="JetBrains Mono" font-size="9" text-anchor="end" x="330" y="200">R_45 = 286.1m</text>
+</svg>
+</div>
+</div>
+<!-- Parameter Sweep Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-dense text-body-dense">
+<thead class="bg-surface-container text-on-surface-variant font-code-metric text-code-metric uppercase">
+<tr>
+<th class="py-space-2xs px-space-sm">Mass ($m$)</th>
+<th class="py-space-2xs px-space-sm">Launch $v_0$</th>
+<th class="py-space-2xs px-space-sm">Vacuum $R_{45}$</th>
+<th class="py-space-2xs px-space-sm">Drag $R_{45}$</th>
+<th class="py-space-2xs px-space-sm">Optimal $\theta^*$</th>
+<th class="py-space-2xs px-space-sm">Max Range $R^*$</th>
+<th class="py-space-2xs px-space-sm">Shift ($\Delta \theta$)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-2xs px-space-sm font-code-metric">0.5 kg</td>
+<td class="py-space-2xs px-space-sm font-code-metric">45 m/s</td>
+<td class="py-space-2xs px-space-sm font-code-metric text-outline">206.5 m</td>
+<td class="py-space-2xs px-space-sm font-code-metric text-on-surface">88.2 m</td>
+<td class="py-space-2xs px-space-sm font-code-metric text-primary font-semibold">38.4°</td>
+<td class="py-space-2xs px-space-sm font-code-metric font-semibold text-secondary">95.1 m</td>
+<td class="py-space-2xs px-space-sm font-code-metric text-error">-6.6°</td>
+</tr>
+<tr class="bg-surface-container-lowest/60 hover:bg-surface-container-low transition-colors">
+<td class="py-space-2xs px-space-sm font-code-metric">2.5 kg</td>
+<td class="py-space-2xs px-space-sm font-code-metric">75 m/s</td>
+<td class="py-space-2xs px-space-sm font-code-metric text-outline">573.5 m</td>
+<td class="py-space-2xs px-space-sm font-code-metric text-on-surface">286.1 m</td>
+<td class="py-space-2xs px-space-sm font-code-metric text-primary font-semibold">41.8°</td>
+<td class="py-space-2xs px-space-sm font-code-metric font-semibold text-secondary">308.4 m</td>
+<td class="py-space-2xs px-space-sm font-code-metric text-error">-3.2°</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-2xs px-space-sm font-code-metric">10.0 kg</td>
+<td class="py-space-2xs px-space-sm font-code-metric">90 m/s</td>
+<td class="py-space-2xs px-space-sm font-code-metric text-outline">825.9 m</td>
+<td class="py-space-2xs px-space-sm font-code-metric text-on-surface">548.0 m</td>
+<td class="py-space-2xs px-space-sm font-code-metric text-primary font-semibold">43.2°</td>
+<td class="py-space-2xs px-space-sm font-code-metric font-semibold text-secondary">562.7 m</td>
+<td class="py-space-2xs px-space-sm font-code-metric text-error">-1.8°</td>
+</tr>
+<tr class="bg-surface-container-lowest/60 hover:bg-surface-container-low transition-colors">
+<td class="py-space-2xs px-space-sm font-code-metric">25.0 kg</td>
+<td class="py-space-2xs px-space-sm font-code-metric">120 m/s</td>
+<td class="py-space-2xs px-space-sm font-code-metric text-outline">1468.3 m</td>
+<td class="py-space-2xs px-space-sm font-code-metric text-on-surface">982.4 m</td>
+<td class="py-space-2xs px-space-sm font-code-metric text-primary font-semibold">43.9°</td>
+<td class="py-space-2xs px-space-sm font-code-metric font-semibold text-secondary">998.1 m</td>
+<td class="py-space-2xs px-space-sm font-code-metric text-error">-1.1°</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Section 5: Epistemic Review & Dual-Perspective Audit -->
+<section class="bg-surface-container-lowest p-space-xl rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-code-metric text-code-metric text-primary font-semibold">05</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-medium">Epistemic Review &amp; Dual-Perspective Audit</h3>
+</div>
+<p class="font-body-default text-body-default text-on-surface">
+          In keeping with SANDHANA's auditable epistemic safety standard, results are strictly partitioned into mathematically established consequences and known physical domain boundaries.
+        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- What It Demonstrates -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-secondary font-label-ui text-label-ui font-semibold">
+<span class="material-symbols-outlined text-base">check_circle</span>
+<span>What the Model-Predicted Results Demonstrate</span>
+</div>
+<ul class="space-y-space-2xs font-body-dense text-body-dense text-on-surface list-disc list-inside">
+<li><strong>Monotonic Angular Shift:</strong> $\theta_{opt}$ uniformly shifts downwards from $45.0^\circ$ toward smaller angles as the velocity squared drag coefficient $\gamma$ increases.</li>
+<li><strong>Asymmetric Dissipation Principle:</strong> More than $64.2\%$ of total energy dissipation occurs prior to apogee, meaning higher initial launch angles suffer punitive drag penalties during the early ascent stage.</li>
+<li><strong>Terminal Descent Angle:</strong> Impact angle $\theta_{impact}$ consistently exceeds $\theta_{launch}$, confirming the non-parabolic steepening of late-stage ballistic paths.</li>
+</ul>
+</div>
+<!-- What It DOES NOT Demonstrate -->
+<div class="bg-surface-container-low p-space-md rounded flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-error font-label-ui text-label-ui font-semibold">
+<span class="material-symbols-outlined text-base">warning</span>
+<span>What the Results DO NOT Demonstrate</span>
+</div>
+<ul class="space-y-space-2xs font-body-dense text-body-dense text-on-surface list-disc list-inside">
+<li><strong>Transonic Shock Regimes:</strong> Model assumes constant $C_d = 0.47$. At $v_0 \ge 280\text{ m/s}$ ($M &gt; 0.85$), wave drag causes sudden $C_d$ spikes which are not captured.</li>
+<li><strong>Magnus Cross-Lift:</strong> Does not predict deflection from spin stabilization or lateral crosswind vortex shedding.</li>
+<li><strong>Boundary-Layer Separation Fluctuation:</strong> Sub-critical to supercritical Reynolds transition ($Re \approx 3 \times 10^5$) drag crisis is outside the scope of Model B.</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Section 6: Next Recommended Experiment -->
+<section class="bg-surface-container-lowest p-space-xl rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-code-metric text-code-metric text-primary font-semibold">06</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-medium">Next Recommended Experiment</h3>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui font-semibold text-primary uppercase tracking-wider">
+              Experiment Proposal: Magnus Vector Coupling &amp; Transonic Drag Crisis
+            </span>
+<span class="font-code-metric text-code-metric text-outline">P-Priority: 0.94</span>
+</div>
+<p class="font-body-editorial text-body-editorial text-on-surface">
+            SANDHANA Agent Council recommends forking this investigation into <strong>#INV-2024-099</strong>. The primary objective will couple 3-axis rotational angular velocity $\vec{\omega}$ into the RK45 integration loop, evaluating how backspin can counteract the negative $\Delta\theta$ deviation by generating altitude-prolonging Magnus lift.
+          </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="px-space-sm py-space-xs rounded bg-primary text-on-primary font-label-ui text-label-ui hover:bg-primary-container transition-colors shadow-sm" type="button">
+              Launch Experiment Designer for #INV-2024-099
+            </button>
+<span class="font-code-metric text-code-metric text-outline">Requires 4 GPU-hours allocation</span>
+</div>
+</div>
+</section>
+<!-- Section 7: References & Agent Council Contributions -->
+<section class="bg-surface-container-lowest p-space-xl rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-code-metric text-code-metric text-primary font-semibold">07</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-medium">Agent Council Contributions &amp; Attribution</h3>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm font-body-dense text-body-dense">
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-on-surface">Hypothesis Architect (Agent HA-04)</span>
+<span class="font-code-metric text-code-metric text-secondary">32% Share</span>
+</div>
+<p class="text-on-surface-variant">Formulated quadratic dissipation divergence hypothesis; mapped analytical vacuum boundary conditions.</p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-on-surface">Numerical Integration Bot (Agent NUM-09)</span>
+<span class="font-code-metric text-code-metric text-secondary">28% Share</span>
+</div>
+<p class="text-on-surface-variant">Authored Float64 Dormand-Prince kernel; verified kinetic energy non-symplectic error boundaries.</p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-on-surface">Epistemic Skeptic / Falsifier (Agent FAL-02)</span>
+<span class="font-code-metric text-code-metric text-secondary">25% Share</span>
+</div>
+<p class="text-on-surface-variant">Constructed transonic regime warnings and delimited valid Reynolds envelope.</p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-on-surface">LaTeX Synthesizer (Agent PUB-01)</span>
+<span class="font-code-metric text-code-metric text-secondary">15% Share</span>
+</div>
+<p class="text-on-surface-variant">Typeset equation systems, formatted citation bibtex keys, validated cross-references.</p>
+</div>
+</div>
+</section>
+</article>
+<!-- Cryptographic Provenance & Reproducibility Ledger (Right Rail) -->
+<aside class="xl:col-span-4 flex flex-col gap-space-md" id="provenanceRail">
+<!-- Determinism Status Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric uppercase text-secondary font-semibold flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+            Reproducibility Ledger
+          </span>
+<span class="font-code-metric text-code-metric px-space-2xs py-space-3xs rounded bg-secondary-container/20 text-secondary font-medium">
+            100% Deterministic
+          </span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded flex flex-col gap-space-3xs font-code-metric text-code-metric">
+<div class="flex items-center justify-between text-outline">
+<span>Canonical Seed:</span>
+<span class="text-on-surface font-semibold">0x9B4E8F27CA9</span>
+</div>
+<div class="flex items-center justify-between text-outline">
+<span>Compiler:</span>
+<span class="text-on-surface font-semibold">Julia 1.10 (WASM / Float64)</span>
+</div>
+<div class="flex items-center justify-between text-outline">
+<span>Sandbox ID:</span>
+<span class="text-on-surface font-semibold">sbx-aerodyn-098-live</span>
+</div>
+</div>
+<!-- Merkle Root Hash Block -->
+<div class="flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui text-outline">Merkle Root Hash</span>
+<span class="font-code-metric text-code-metric text-outline">Demonstration provenance hash</span>
+</div>
+<div class="bg-surface-container-highest p-space-xs rounded font-code-metric text-code-metric text-primary break-all select-all flex items-center justify-between">
+<span>e9a8f3c72b014d9e51aa6c40789d342f1b88e051c72f10928a3f8194b1</span>
+<button class="text-outline hover:text-on-surface p-space-3xs" title="Copy Hash" type="button">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Provenance Artifact Chain -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h4 class="font-label-ui text-label-ui font-semibold text-on-surface">Cryptographic Artifact Chain</h4>
+<span class="font-code-metric text-code-metric text-secondary">5 Blocks Sealed</span>
+</div>
+<div class="space-y-space-sm relative">
+<!-- Vertical spine line -->
+<div class="absolute left-3.5 top-2 bottom-2 w-0.5 bg-surface-container-highest"></div>
+<!-- Step 1 -->
+<div class="flex items-start gap-space-sm relative">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0 z-10">
+<span class="material-symbols-outlined text-sm">flag</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui font-medium text-on-surface">Inception: Research Question</span>
+<span class="font-code-metric text-code-metric text-outline">Cycle 1</span>
+</div>
+<span class="font-code-metric text-code-metric text-outline truncate">SHA-256: 7f3a8b...321e</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-space-sm relative">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0 z-10">
+<span class="material-symbols-outlined text-sm">library_books</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui font-medium text-on-surface">Literature Grounding</span>
+<span class="font-code-metric text-code-metric text-outline">Cycle 1</span>
+</div>
+<span class="font-body-dense text-body-dense text-on-surface-variant">24 academic sources indexed</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-space-sm relative">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0 z-10">
+<span class="material-symbols-outlined text-sm">functions</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui font-medium text-on-surface">Model ODE RK45 Compiled</span>
+<span class="font-code-metric text-code-metric text-outline">Cycle 2</span>
+</div>
+<span class="font-code-metric text-code-metric text-outline">Dormand-Prince kernel bytecode sealed</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex items-start gap-space-sm relative">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center text-secondary shrink-0 z-10">
+<span class="material-symbols-outlined text-sm">play_circle</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui font-medium text-on-surface">Simulation Parameter Sweeps</span>
+<span class="font-code-metric text-code-metric text-outline">Cycle 3</span>
+</div>
+<span class="font-body-dense text-body-dense text-on-surface-variant">16 parameter sweep runs logged</span>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="flex items-start gap-space-sm relative">
+<div class="w-7 h-7 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0 z-10 shadow-sm">
+<span class="material-symbols-outlined text-sm">description</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui font-semibold text-primary">Report: LaTeX v1.4 Synced</span>
+<span class="font-code-metric text-code-metric text-primary">Current</span>
+</div>
+<span class="font-code-metric text-code-metric text-outline truncate">Merkle leaf: #7b420f...99d1</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Execution Environment Integrity -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col gap-space-sm">
+<h4 class="font-label-ui text-label-ui font-semibold text-on-surface">Execution Sandbox Enclave</h4>
+<div class="space-y-space-2xs font-body-dense text-body-dense">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Kernel Isolation:</span>
+<span class="font-code-metric text-code-metric text-on-surface">Linux seccomp-bpf enabled</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">External API Leakage:</span>
+<span class="font-code-metric text-code-metric text-secondary font-medium">Zero (Fully Airgapped)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Precision Guarantee:</span>
+<span class="font-code-metric text-code-metric text-on-surface">IEEE 754 Double Precision</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Entropy Source:</span>
+<span class="font-code-metric text-code-metric text-on-surface">ChaCha20 Deterministic PRNG</span>
+</div>
+</div>
+<div class="pt-space-xs border-t border-transparent">
+<button class="w-full flex items-center justify-center gap-space-2xs py-space-xs rounded bg-surface-container text-on-surface font-label-ui text-label-ui hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span>Verify Independent Attestation</span>
+</button>
+</div>
+</div>
+<!-- LaTeX Source Code Excerpt Preview -->
+<div class="bg-surface-container-lowest p-space-lg rounded-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h4 class="font-label-ui text-label-ui font-semibold text-on-surface">LaTeX Source Preview</h4>
+<span class="font-code-metric text-code-metric text-outline">report_v1.4.tex</span>
+</div>
+<div class="bg-surface-container-highest p-space-sm rounded font-code-metric text-code-metric text-on-surface-variant overflow-x-auto text-[11px] leading-relaxed">
+<pre class="font-code-metric"><code>\begin{equation}
+  \frac{d\vec{v}}{dt} = \vec{g} - \frac{1}{2m} C_d \rho A \|\vec{v}\|\vec{v}
+\end{equation}
+\begin{align}
+  \theta^* &amp;= \arg\max_\theta \left\{ R(\theta) \right\} \\
+  \Delta\theta &amp;= \theta^* - \frac{\pi}{4} \approx -0.0558 \text{ rad}
+\end{align}</code></pre>
+</div>
+<button class="text-primary hover:underline font-label-ui text-label-ui self-start" type="button">
+          Open in Full-Screen LaTeX Editor →
+        </button>
+</div>
+</aside>
+</div>
+</div>
+<script>
+  // Simple interactive toggle for Merkle ledger focus on mobile/tablet view
+  const toggleBtn = document.getElementById('toggleLedgerBtn');
+  const ledgerRail = document.getElementById('provenanceRail');
+  if (toggleBtn && ledgerRail) {
+    toggleBtn.addEventListener('click', () => {
+      ledgerRail.scrollIntoView({ behavior: 'smooth' });
+    });
+  }
+</script></main></div></body></html>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-surface": "#2f3032", "surface-dim": "#dbd9dc", "on-background": "#1b1c1e", "on-primary": "#ffffff", "outline": "#747686", "primary-container": "#1d4ed8", "surface-bright": "#faf9fb", "tertiary": "#5700c0", "on-secondary-fixed-variant": "#005137", "on-primary-fixed": "#001551", "outline-variant": "#c4c5d7", "on-secondary": "#ffffff", "on-secondary-fixed": "#002114", "on-tertiary-fixed-variant": "#5a00c6", "surface-tint": "#2151da", "on-primary-container": "#cad3ff", "tertiary-fixed": "#eaddff", "on-tertiary-container": "#dfccff", "surface-container-lowest": "#ffffff", "surface-container-low": "#f5f3f5", "surface-container-high": "#e9e8ea", "inverse-primary": "#b7c4ff", "primary-fixed": "#dce1ff", "surface-variant": "#e3e2e4", "tertiary-fixed-dim": "#d2bbff", "on-tertiary-fixed": "#25005a", "on-error-container": "#93000a", "secondary-fixed-dim": "#68dba9", "inverse-on-surface": "#f2f0f3", "primary": "#0037b0", "on-primary-fixed-variant": "#0039b5", "primary-fixed-dim": "#b7c4ff", "error": "#ba1a1a", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "on-surface": "#1b1c1e", "secondary-fixed": "#85f8c4", "secondary": "#006c4a", "on-surface-variant": "#434655", "secondary-container": "#82f5c1", "surface": "#faf9fb", "tertiary-container": "#712ae2", "on-secondary-container": "#00714e", "on-error": "#ffffff", "surface-container-highest": "#e3e2e4", "background": "#faf9fb", "surface-container": "#efedf0" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-3xl": "4.5rem", "col-gutter": "1rem", "space-sm": "0.75rem", "space-2xl": "3rem", "panel-margin": "1.5rem", "space-xl": "2rem", "space-md": "1rem", "space-3xs": "0.125rem", "space-lg": "1.5rem", "space-xs": "0.5rem", "space-2xs": "0.25rem" }, "fontFamily": { "headline-sm": [ "Newsreader" ], "headline-md": [ "Newsreader" ], "code-formula": [ "JetBrains Mono" ], "headline-lg": [ "Newsreader" ], "display-hero-mobile": [ "Newsreader" ], "headline-lg-mobile": [ "Newsreader" ], "body-editorial": [ "Newsreader" ], "code-metric": [ "JetBrains Mono" ], "display-hero": [ "Newsreader" ], "body-default": [ "Geist" ], "label-ui": [ "Geist" ], "body-dense": [ "Geist" ] }, "fontSize": { "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "code-formula": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "display-hero-mobile": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "body-editorial": [ "18px", { "lineHeight": "30px", "fontWeight": "400" } ], "code-metric": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" } ], "display-hero": [ "48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400" } ], "body-default": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-ui": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "body-dense": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ] } } } };</script></head><body class="bg-background font-body-default text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low z-50 flex flex-col justify-between py-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-md flex items-center gap-space-xs"><img alt="Brand logo. - Primary color: #1d4ed8 - Font: newsreader - Mode: light - Roundness: rounded-sm" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X4qkNjkOKm3THm2HEZQoyrz0q7ROYQgqXvQkU5lTQ_SM6pPDi9w_IVJ_FU5YRf2V7HXTwHgvO78Q30PBG1VWslxiOU2XRqxyZ6iAxs6oyvrw41UVRLxJCrwuVKAExwp2J9TxXZiCWgxVwe1o2a4FZENdpS7IMue6-N6pfdblgTk0igNicHBZJtfPxJppruXyvg2ee-WK2uDuUPXH0A3HEbZAC4xOdvKBmBK44jp7wByCI6kb0dnWgjOECE"/><div class="flex flex-col leading-none"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-semibold">SANDHANA</span><span class="font-label-ui text-label-ui text-on-surface-variant font-medium mt-space-3xs">सन्धान • AI Research</span></div></div><div class="px-space-md"><div class="bg-surface-container px-space-xs py-space-2xs rounded-lg flex items-center justify-between"><div class="flex items-center gap-space-2xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block animate-pulse"></span><span class="font-code-metric text-code-metric text-secondary font-medium tracking-wide uppercase">Core Active</span></div><span class="font-code-metric text-code-metric text-on-surface-variant">v4.2-lab</span></div></div><nav class="flex flex-col gap-space-3xs px-space-xs" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="investigate" href="#"><span class="font-body-dense text-body-dense">Investigate</span><span class="font-code-metric text-code-metric px-space-2xs py-space-3xs rounded bg-surface-container text-on-surface-variant">⌘1</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary font-medium rounded-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]" data-path="research-workspace" href="#"><span class="font-body-dense text-body-dense">Research Workspace</span><span class="font-code-metric text-code-metric px-space-2xs py-space-3xs rounded bg-surface-container text-on-surface-variant">⌘2</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="experiments" href="#"><span class="font-body-dense text-body-dense">Experiments</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="models" href="#"><span class="font-body-dense text-body-dense">Models</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="concepts" href="#"><span class="font-body-dense text-body-dense">Concepts</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notebook" href="#"><span class="font-body-dense text-body-dense">Notebook</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="research-history" href="#"><span class="font-body-dense text-body-dense">Research History</span></a></nav></div><div class="px-space-md flex flex-col gap-space-xs"><div class="bg-surface-container px-space-sm py-space-xs rounded-lg flex flex-col gap-space-3xs"><span class="font-code-metric text-code-metric text-on-surface-variant uppercase tracking-wider">Active Session</span><span class="font-body-dense text-body-dense text-on-surface truncate font-medium">INV-2024-098</span><span class="font-code-metric text-code-metric text-on-surface-variant truncate">Projectile Aerodynamic Regimes</span></div><div class="flex items-center justify-between pt-space-xs"><span class="font-code-metric text-code-metric text-on-surface-variant">Epistemic Engine 3.8</span><span class="font-code-metric text-code-metric text-secondary font-medium">Synced</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 z-40 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-2xl"><div class="flex-1 flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-2xs rounded-lg"><span class="material-symbols-outlined text-on-surface-variant text-[18px]">terminal</span><input class="bg-transparent w-full font-body-dense text-body-dense text-on-surface placeholder:text-on-surface-variant focus:outline-none" placeholder="Ask an investigative question, search hypotheses, or cite models (⌘K)" type="text"/><kbd class="font-code-metric text-code-metric text-on-surface-variant bg-surface-container px-space-2xs py-space-3xs rounded">⌘K</kbd></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-2xs rounded-full"><span class="font-code-metric text-code-metric font-semibold text-primary">INV-2024-098</span><span class="text-on-surface-variant font-body-dense text-body-dense">•</span><span class="font-body-dense text-body-dense text-on-surface truncate max-w-[200px]">Projectile Aerodynamics</span></div></div><div class="flex items-center gap-space-sm"><div class="hidden md:flex items-center gap-space-2xs px-space-xs py-space-2xs bg-surface-container rounded-lg"><span class="w-2 h-2 rounded-full bg-secondary inline-block"></span><span class="font-label-ui text-label-ui text-on-surface-variant">AI Core Active</span></div><button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><button class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">tune</span></button><div class="flex items-center gap-space-xs pl-space-xs"><div class="text-right hidden sm:block"><div class="font-body-dense text-body-dense font-medium text-on-surface leading-tight">Dr. A. Sharma</div><div class="font-code-metric text-code-metric text-on-surface-variant">Principal Investigator</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- PERSISTENT INVESTIGATION BAR & EPISTEMIC MASTER RAIL -->
+<header class="bg-surface-container-lowest px-space-lg py-space-sm shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<!-- Upper Metadata / Session Diagnostic Grid -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs bg-primary-fixed text-on-primary-fixed rounded font-code-metric text-code-metric font-semibold uppercase tracking-wider">Session Active</span>
+<span class="font-code-metric text-code-metric text-primary font-semibold">#INV-2024-098</span>
+<span class="text-outline-variant font-label-ui text-label-ui">/</span>
+<span class="font-label-ui text-label-ui text-on-surface-variant">Cycle 3: Computational Sensitivity &amp; Validation</span>
+<span class="text-outline-variant font-label-ui text-label-ui">•</span>
+<div class="flex items-center gap-space-2xs bg-surface-container-low px-space-xs py-space-3xs rounded">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-code-metric text-code-metric text-on-surface">RK45 Adaptive ODE (tol: 1e-6, Float64, dt=0.002s)</span>
+</div>
+<span class="px-space-2xs py-space-3xs bg-surface-container-high rounded font-code-metric text-code-metric text-on-surface-variant">Wasm/Julia-1.10</span>
+</div>
+<!-- Research Top Actions -->
+<div class="flex items-center gap-space-2xs">
+<button class="px-space-sm py-space-2xs bg-surface-container hover:bg-surface-container-high text-on-surface font-label-ui text-label-ui rounded flex items-center gap-space-2xs transition-colors">
+<span class="material-symbols-outlined text-[15px] text-primary">article</span>
+            Compile Formal Paper (LaTeX)
+          </button>
+<button class="px-space-sm py-space-2xs bg-surface-container hover:bg-surface-container-high text-on-surface font-label-ui text-label-ui rounded flex items-center gap-space-2xs transition-colors">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">alt_route</span>
+            Fork Branch
+          </button>
+<button class="px-space-sm py-space-2xs bg-surface-container hover:bg-surface-container-high text-on-surface font-label-ui text-label-ui rounded flex items-center gap-space-2xs transition-colors">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">download</span>
+            .jsonl Ledger
+          </button>
+<button class="px-space-sm py-space-2xs bg-primary text-on-primary hover:bg-primary-container font-label-ui text-label-ui font-medium rounded flex items-center gap-space-2xs shadow-sm transition-colors">
+<span class="material-symbols-outlined text-[15px]">share</span>
+            Share Capsule
+          </button>
+</div>
+</div>
+<!-- Core Scientific Inquiry Statement -->
+<div class="flex items-baseline justify-between gap-space-md pt-space-3xs">
+<div class="flex items-baseline gap-space-xs max-w-5xl">
+<span class="font-code-metric text-code-metric uppercase text-primary tracking-widest font-semibold">Persistent Inquiry:</span>
+<h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-serif italic">
+            “How does non-linear atmospheric drag shift the optimal ballistic launch angle away from Galileo’s 45° vacuum parabola across variable projectile masses?”
+          </h1>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<span class="font-code-metric text-code-metric text-on-surface-variant">Epistemic Entropy:</span>
+<span class="font-code-metric text-code-metric font-semibold text-secondary">0.142 nats (Converged)</span>
+</div>
+</div>
+<!-- Investigative Modes / Lens Bar -->
+<div class="flex items-center gap-space-2xs overflow-x-auto pt-space-xs">
+<button class="px-space-sm py-space-2xs rounded text-on-surface-variant hover:bg-surface-container font-label-ui text-label-ui flex items-center gap-space-2xs transition-colors">
+<span class="font-code-metric text-code-metric text-outline">01</span>
+          Investigation Plan &amp; Epistemic Ledger
+        </button>
+<button class="px-space-sm py-space-2xs rounded bg-surface-container text-primary font-label-ui text-label-ui font-semibold flex items-center gap-space-2xs shadow-sm">
+<span class="font-code-metric text-code-metric text-primary">02</span>
+          Computational Laboratory &amp; Solver Canvas
+          <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+</button>
+<button class="px-space-sm py-space-2xs rounded text-on-surface-variant hover:bg-surface-container font-label-ui text-label-ui flex items-center gap-space-2xs transition-colors">
+<span class="font-code-metric text-code-metric text-outline">03</span>
+          Competing Hypotheses &amp; Model Matrix
+        </button>
+<button class="px-space-sm py-space-2xs rounded text-on-surface-variant hover:bg-surface-container font-label-ui text-label-ui flex items-center gap-space-2xs transition-colors">
+<span class="font-code-metric text-code-metric text-outline">04</span>
+          Empirical Sweeps &amp; Sensitivity
+        </button>
+<button class="px-space-sm py-space-2xs rounded text-on-surface-variant hover:bg-surface-container font-label-ui text-label-ui flex items-center gap-space-2xs transition-colors">
+<span class="font-code-metric text-code-metric text-outline">05</span>
+          Living Research Record &amp; Synthesis
+        </button>
+</div>
+</div>
+</header>
+<!-- MULTI-PANE RESEARCH WORKBENCH -->
+<div class="p-space-md grid grid-cols-1 xl:grid-cols-12 gap-space-md items-start">
+<!-- LEFT PANEL: Epistemic Hierarchy & Knowledge Graph Context (3-Cols, 320px class equivalent) -->
+<aside class="xl:col-span-3 flex flex-col gap-space-md">
+<!-- Epistemic Hierarchy Block -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-2xs">
+<div class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-primary text-[18px]">account_tree</span>
+<span class="font-label-ui text-label-ui uppercase tracking-wider font-semibold text-on-surface">Epistemic Hierarchy</span>
+</div>
+<span class="font-code-metric text-code-metric text-outline">5 Assertions</span>
+</div>
+<!-- 1. Established Knowledge -->
+<article class="bg-surface-container-low rounded-lg p-space-xs flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="px-space-2xs py-space-3xs rounded bg-surface-container-high font-code-metric text-code-metric uppercase text-on-surface-variant font-semibold">Established Knowledge</span>
+<span class="font-code-metric text-code-metric text-outline">p = 1.00</span>
+</div>
+<p class="font-body-dense text-body-dense text-on-surface font-medium">Classical Parabolic Trajectory</p>
+<p class="font-body-dense text-body-dense text-on-surface-variant leading-relaxed">Galileo (1638). In an ideal frictionless vacuum with uniform gravitational acceleration \(g\), maximum horizontal ballistic range occurs identically at \(\theta = 45^\circ\).</p>
+</article>
+<!-- 2. Source-Supported Finding -->
+<article class="bg-surface-container-low rounded-lg p-space-xs flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="px-space-2xs py-space-3xs rounded bg-primary-fixed font-code-metric text-code-metric uppercase text-on-primary-fixed-variant font-semibold">Source-Supported Finding</span>
+<span class="font-code-metric text-code-metric text-primary">Principia II</span>
+</div>
+<p class="font-body-dense text-body-dense text-on-surface font-medium">Fluid Viscous/Form Resistance</p>
+<p class="font-body-dense text-body-dense text-on-surface-variant leading-relaxed">Non-linear aerodynamic drag: \(F_d = \frac{1}{2} \rho v^2 C_d A\). Quadratic dissipation regime verified for \(Re &gt; 10^4\) (Landau &amp; Lifshitz Fluid Mech. Vol 6 §45).</p>
+</article>
+<!-- 3. Model Assumptions -->
+<article class="bg-surface-container-low rounded-lg p-space-xs flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="px-space-2xs py-space-3xs rounded bg-surface-container-high font-code-metric text-code-metric uppercase text-on-surface-variant font-semibold">Model Assumptions</span>
+<span class="font-code-metric text-code-metric text-outline">Fixed Boundary</span>
+</div>
+<ul class="font-code-metric text-code-metric text-on-surface-variant flex flex-col gap-space-3xs pl-space-xs list-disc">
+<li>Isotropic barometric layer: \(\rho_0 = 1.225\,\text{kg/m}^3\)</li>
+<li>Rigid spherical projectile (zero Magnus lift, \(\vec{\omega} = \vec{0}\))</li>
+<li>Constant \(g = 9.80665\,\text{m/s}^2\) over trajectory altitude</li>
+</ul>
+</article>
+<!-- 4. AI Epistemic Inference -->
+<article class="bg-primary-fixed/30 rounded-lg p-space-xs flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="px-space-2xs py-space-3xs rounded bg-primary text-on-primary font-code-metric text-code-metric uppercase font-semibold">AI Synthesized Inference</span>
+<span class="font-code-metric text-code-metric text-primary font-semibold">Bayes: 14.2</span>
+</div>
+<p class="font-body-dense text-body-dense text-on-surface leading-snug">
+            “Peak energy dissipation occurs during the high-velocity ascent phase (\(dE/dt \propto v^3\)), inducing trajectory asymmetry and pulling the range-maximizing angle monotonically lower than 45°.”
+          </p>
+</article>
+<!-- 5. Hypotheses Under Test -->
+<div class="flex flex-col gap-space-2xs pt-space-2xs">
+<span class="font-label-ui text-label-ui uppercase tracking-wider text-on-surface-variant font-semibold">Hypotheses Under Active Evaluation</span>
+<div class="p-space-xs bg-surface-container-low rounded-lg flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric font-semibold text-secondary">H1: Kinetic Dissipation Shift</span>
+<span class="px-space-2xs py-space-3xs bg-secondary-container text-on-secondary-container rounded font-code-metric text-code-metric font-bold">SUPPORTED</span>
+</div>
+<p class="font-code-metric text-code-metric text-on-surface-variant">Optimal angle shifts to 41.8° ± 0.2° for m=2.5kg spherical shell.</p>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric font-semibold text-error">H2: Inertial Invariance</span>
+<span class="px-space-2xs py-space-3xs bg-error-container text-on-error-container rounded font-code-metric text-code-metric font-bold">DISPROVEN</span>
+</div>
+<p class="font-code-metric text-code-metric text-on-surface-variant">Angle does NOT remain fixed at 45° for \(m \ge 10\,\text{kg}\); asymptotes smoothly.</p>
+</div>
+<div class="p-space-xs bg-surface-container-low rounded-lg flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric font-semibold text-tertiary">H3: Transonic Bifurcation</span>
+<span class="px-space-2xs py-space-3xs bg-tertiary-fixed text-on-tertiary-fixed-variant rounded font-code-metric text-code-metric font-bold">INCONCLUSIVE</span>
+</div>
+<p class="font-code-metric text-code-metric text-on-surface-variant">Requires Mach sweep beyond current subsonic ODE formulation (\(v &gt; 250\,\text{m/s}\)).</p>
+</div>
+</div>
+</section>
+<!-- Connected Concept Graph Nodes -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui uppercase tracking-wider font-semibold text-on-surface">Connected Concept Nodes</span>
+<span class="font-code-metric text-code-metric text-outline">Graph v4</span>
+</div>
+<div class="flex flex-wrap gap-space-2xs">
+<button class="px-space-xs py-space-3xs bg-surface-container hover:bg-surface-container-high rounded text-on-surface font-code-metric text-code-metric flex items-center gap-space-3xs transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+            Quadratic Drag
+          </button>
+<button class="px-space-xs py-space-3xs bg-surface-container hover:bg-surface-container-high rounded text-on-surface font-code-metric text-code-metric flex items-center gap-space-3xs transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Runge-Kutta 4th Order
+          </button>
+<button class="px-space-xs py-space-3xs bg-surface-container hover:bg-surface-container-high rounded text-on-surface font-code-metric text-code-metric flex items-center gap-space-3xs transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Reynolds Re &gt; 10⁴
+          </button>
+<button class="px-space-xs py-space-3xs bg-surface-container hover:bg-surface-container-high rounded text-on-surface font-code-metric text-code-metric flex items-center gap-space-3xs transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+            Phase Space Trajectory
+          </button>
+<button class="px-space-xs py-space-3xs bg-surface-container hover:bg-surface-container-high rounded text-on-surface font-code-metric text-code-metric flex items-center gap-space-3xs transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+            Symplectic Conservation
+          </button>
+</div>
+</section>
+<!-- Empirical Run Status Mini-Ledger -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui uppercase tracking-wider font-semibold text-on-surface">Sweep Verification</span>
+<span class="px-space-2xs py-space-3xs bg-secondary-container text-on-secondary-container rounded font-code-metric text-code-metric font-bold">16 / 16 COMPLETE</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded overflow-hidden">
+<div class="bg-secondary h-full w-full"></div>
+</div>
+<p class="font-code-metric text-code-metric text-on-surface-variant">Optimal localized: \(\theta^* = 41.8^\circ\), range \(x^* = 196.8\,\text{m}\). Maximum curvature at \(\tau = 1.94\,\text{s}\).</p>
+</section>
+</aside>
+<!-- CENTER PANEL: Real Computational Laboratory & Live Solver Instrument (6-Cols) -->
+<main class="xl:col-span-6 flex flex-col gap-space-md">
+<!-- Model Formulation & Differential Equation Rail -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-3xs bg-surface-container text-on-surface font-code-metric text-code-metric uppercase font-semibold rounded">Model Definition</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-serif">2D Atmospheric Ballistic Navier-Stokes Reduced ODE</h2>
+</div>
+<span class="font-code-metric text-code-metric text-primary bg-primary-fixed px-space-xs py-space-3xs rounded">RK45 Adaptive Form</span>
+</div>
+<!-- System of Coupled Differential Equations -->
+<div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-space-xs font-code-formula text-code-formula text-on-surface overflow-x-auto">
+<div class="flex items-center justify-between text-outline-variant font-code-metric text-code-metric pb-space-3xs">
+<span>STATE VECTOR: \(\mathbf{u}(t) = [x, y, v_x, v_y]^T\)</span>
+<span>JACOBIAN: CONTINUOUS 4x4</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-xs">
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="text-on-surface-variant font-semibold">\(\frac{dx}{dt} = v_x\)</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="text-on-surface-variant font-semibold">\(\frac{dy}{dt} = v_y\)</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="text-primary font-semibold">\(\frac{dv_x}{dt} = - \left(\frac{\rho_0 C_d A}{2m}\right) \sqrt{v_x^2 + v_y^2} \cdot v_x\)</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="text-primary font-semibold">\(\frac{dv_y}{dt} = - g - \left(\frac{\rho_0 C_d A}{2m}\right) \sqrt{v_x^2 + v_y^2} \cdot v_y\)</span>
+</div>
+</div>
+</div>
+<!-- AI Rationale on Solver Choice -->
+<div class="flex items-start gap-space-xs bg-surface-container-low p-space-xs rounded">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">psychology</span>
+<p class="font-body-dense text-body-dense text-on-surface-variant leading-relaxed">
+<span class="text-on-surface font-semibold">AI Solver Selection:</span> Euler integration exhibits non-conservative energy accumulation \(O(\Delta t)\); RK45 adaptive fifth-order Runge-Kutta was chosen to preserve dissipation accuracy under strong quadratic velocity coupling (\(\Delta E_{\text{error}} &lt; 10^{-7}\)).
+          </p>
+</div>
+<!-- Interactive Real Parameter Controls Grid -->
+<div class="pt-space-xs">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-ui text-label-ui uppercase tracking-wider font-semibold text-on-surface">Simulation State Vector Inputs</span>
+<span class="font-code-metric text-code-metric text-secondary font-semibold">Ready to Integrate</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-xs">
+<!-- Parameter 1: Mass -->
+<div class="bg-surface-container-low p-space-xs rounded-lg flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric text-on-surface font-medium">Mass \(m\)</span>
+<span class="font-code-metric text-code-metric font-semibold text-primary">2.50 kg</span>
+</div>
+<input class="w-full accent-primary h-1.5 bg-surface-container-high rounded appearance-none cursor-pointer" max="25.0" min="0.5" step="0.25" type="range" value="2.5"/>
+<div class="flex justify-between font-code-metric text-code-metric text-outline">
+<span>0.5 kg</span>
+<span>25.0 kg</span>
+</div>
+</div>
+<!-- Parameter 2: Launch Velocity -->
+<div class="bg-surface-container-low p-space-xs rounded-lg flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric text-on-surface font-medium">Velocity \(v_0\)</span>
+<span class="font-code-metric text-code-metric font-semibold text-primary">65.0 m/s</span>
+</div>
+<input class="w-full accent-primary h-1.5 bg-surface-container-high rounded appearance-none cursor-pointer" max="150.0" min="20.0" step="1.0" type="range" value="65.0"/>
+<div class="flex justify-between font-code-metric text-code-metric text-outline">
+<span>20 m/s</span>
+<span>150 m/s</span>
+</div>
+</div>
+<!-- Parameter 3: Launch Angle (Optimal Candidate) -->
+<div class="bg-surface-container-low p-space-xs rounded-lg flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric text-on-surface font-medium">Angle \(\theta\)</span>
+<span class="font-code-metric text-code-metric font-bold text-secondary">41.8° (Opt)</span>
+</div>
+<input class="w-full accent-secondary h-1.5 bg-surface-container-high rounded appearance-none cursor-pointer" max="60.0" min="30.0" step="0.1" type="range" value="41.8"/>
+<div class="flex justify-between font-code-metric text-code-metric text-outline">
+<span>30.0°</span>
+<span>60.0°</span>
+</div>
+</div>
+<!-- Parameter 4: Drag Coefficient -->
+<div class="bg-surface-container-low p-space-xs rounded-lg flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric text-on-surface font-medium">Drag \(C_d\)</span>
+<span class="font-code-metric text-code-metric font-semibold text-primary">0.470 (Sphere)</span>
+</div>
+<input class="w-full accent-primary h-1.5 bg-surface-container-high rounded appearance-none cursor-pointer" max="1.20" min="0.10" step="0.01" type="range" value="0.47"/>
+<div class="flex justify-between font-code-metric text-code-metric text-outline">
+<span>0.10 (streamlined)</span>
+<span>1.20</span>
+</div>
+</div>
+<!-- Parameter 5: Cross-Section Area -->
+<div class="bg-surface-container-low p-space-xs rounded-lg flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric text-on-surface font-medium">Area \(A = \pi r^2\)</span>
+<span class="font-code-metric text-code-metric font-semibold text-primary">0.0182 m²</span>
+</div>
+<input class="w-full accent-primary h-1.5 bg-surface-container-high rounded appearance-none cursor-pointer" max="0.1" min="0.005" step="0.001" type="range" value="0.0182"/>
+<div class="flex justify-between font-code-metric text-code-metric text-outline">
+<span>r=4cm</span>
+<span>r=18cm</span>
+</div>
+</div>
+<!-- Parameter 6: Air Density -->
+<div class="bg-surface-container-low p-space-xs rounded-lg flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric text-on-surface font-medium">Density \(\rho_0\)</span>
+<span class="font-code-metric text-code-metric font-semibold text-primary">1.225 kg/m³</span>
+</div>
+<input class="w-full accent-primary h-1.5 bg-surface-container-high rounded appearance-none cursor-pointer" max="1.4" min="0.0" step="0.025" type="range" value="1.225"/>
+<div class="flex justify-between font-code-metric text-code-metric text-outline">
+<span>0.000 (Vacuum)</span>
+<span>1.400</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Precision Simulation Plotting Canvas -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">show_chart</span>
+<span class="font-label-ui text-label-ui uppercase tracking-wider font-semibold text-on-surface">Integrated Trajectory Vector Field &amp; Sweep Space</span>
+</div>
+<div class="flex items-center gap-space-xs font-code-metric text-code-metric">
+<span class="px-space-xs py-space-3xs bg-surface-container rounded text-on-surface">FPS: 60.0</span>
+<span class="px-space-xs py-space-3xs bg-surface-container rounded text-on-surface">dt: 0.002s</span>
+<span class="px-space-xs py-space-3xs bg-surface-container rounded text-secondary font-semibold">Symplectic OK</span>
+</div>
+</div>
+<!-- Technical Plot Area (SVG) -->
+<div class="relative bg-surface-container-low rounded-lg p-space-sm overflow-hidden">
+<!-- Legend Header inside Plot -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs pb-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm font-code-metric text-code-metric">
+<div class="flex items-center gap-space-2xs">
+<span class="w-3 h-0.5 bg-outline inline-block"></span>
+<span class="text-outline font-medium">Galileo Vacuum (45°, R: 430.7m)</span>
+</div>
+<div class="flex items-center gap-space-2xs">
+<span class="w-3 h-1 bg-error inline-block"></span>
+<span class="text-error font-medium">Run #12 (45°, R: 184.2m)</span>
+</div>
+<div class="flex items-center gap-space-2xs">
+<span class="w-3 h-1 bg-primary inline-block"></span>
+<span class="text-primary font-bold">Run #16 Optimal (41.8°, R: 196.8m)</span>
+</div>
+<div class="flex items-center gap-space-2xs">
+<span class="w-3 h-1 bg-secondary inline-block"></span>
+<span class="text-secondary font-medium">Heavy 15kg (43.9°, R: 284.1m)</span>
+</div>
+</div>
+<span class="font-code-metric text-code-metric text-outline">Scale: 1m = 1.65px</span>
+</div>
+<!-- SVG Trajectory Plot -->
+<div class="w-full aspect-[2.1/1] bg-surface-container-lowest rounded relative overflow-hidden flex items-end">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 740 340">
+<!-- Grid lines -->
+<defs>
+<pattern height="40" id="grid" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e3e2e4" stroke-dasharray="2,2" stroke-width="0.7"></path>
+</pattern>
+<!-- Vector Arrow Marker -->
+<marker id="arrow" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="5" refy="5" viewbox="0 0 10 10">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#0037b0"></path>
+</marker>
+<marker id="drag-arrow" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="5" refy="5" viewbox="0 0 10 10">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#ba1a1a"></path>
+</marker>
+</defs>
+<rect fill="url(#grid)" height="340" width="740"></rect>
+<!-- Ground Horizon Line -->
+<line stroke="#747686" stroke-width="1.5" x1="30" x2="720" y1="310" y2="310"></line>
+<!-- Coordinate Axis Labels -->
+<text class="font-code-metric text-[9px]" fill="#747686" x="35" y="325">x = 0m</text>
+<text class="font-code-metric text-[9px]" fill="#747686" x="210" y="325">100m</text>
+<text class="font-code-metric text-[9px]" fill="#747686" x="350" y="325">200m</text>
+<text class="font-code-metric text-[9px]" fill="#747686" x="490" y="325">300m</text>
+<text class="font-code-metric text-[9px]" fill="#747686" x="630" y="325">400m</text>
+<text class="font-code-metric text-[9px]" fill="#747686" x="695" y="325">450m</text>
+<text class="font-code-metric text-[9px]" fill="#747686" x="8" y="240">y=40m</text>
+<text class="font-code-metric text-[9px]" fill="#747686" x="8" y="160">y=80m</text>
+<text class="font-code-metric text-[9px]" fill="#747686" x="5" y="75">y=120m</text>
+<!-- CURVE A: Galileo Vacuum Reference (Dashed Outline) -->
+<path d="M 30 310 Q 365 25 700 310" fill="none" opacity="0.65" stroke="#747686" stroke-dasharray="4,4" stroke-width="1.5"></path>
+<circle cx="700" cy="310" fill="#747686" r="3"></circle>
+<text class="font-code-metric text-[9px] font-semibold" fill="#747686" x="640" y="300">Vac: 430.7m</text>
+<!-- CURVE D: Heavy Inertial 15kg (Teal) -->
+<path d="M 30 310 Q 250 85 470 310" fill="none" stroke="#006c4a" stroke-width="2"></path>
+<circle cx="470" cy="310" fill="#006c4a" r="3.5"></circle>
+<text class="font-code-metric text-[9px] font-bold" fill="#006c4a" x="445" y="295">15kg: 284.1m</text>
+<!-- CURVE B: Drag Run #12 (45 deg - Suboptimal under drag) -->
+<path d="M 30 310 Q 185 130 315 310" fill="none" opacity="0.8" stroke="#ba1a1a" stroke-width="2"></path>
+<circle cx="315" cy="310" fill="#ba1a1a" r="3"></circle>
+<text class="font-code-metric text-[9px] font-semibold" fill="#ba1a1a" x="270" y="295">45°: 184.2m</text>
+<!-- CURVE C: OPTIMAL RUN #16 (41.8 deg - Blue, Highlighted) -->
+<path d="M 30 310 Q 195 145 335 310" fill="none" stroke="#0037b0" stroke-width="3"></path>
+<circle cx="335" cy="310" fill="#0037b0" r="4.5"></circle>
+<text class="font-code-metric text-[10px] font-bold" fill="#0037b0" x="325" y="280">41.8° Opt: 196.8m (+12.6m)</text>
+<!-- APEX VECTOR INSTRUMENTATION (on Curve C at apex) -->
+<circle cx="178" cy="198" fill="#0037b0" r="4"></circle>
+<!-- Velocity vector -->
+<line marker-end="url(#arrow)" stroke="#0037b0" stroke-width="2" x1="178" x2="238" y1="198" y2="198"></line>
+<text class="font-code-metric text-[9px] font-bold" fill="#0037b0" x="242" y="195">v_x = 38.6 m/s</text>
+<!-- Drag vector pointing opposite -->
+<line marker-end="url(#drag-arrow)" stroke="#ba1a1a" stroke-width="1.8" x1="178" x2="135" y1="198" y2="198"></line>
+<text class="font-code-metric text-[9px] font-semibold" fill="#ba1a1a" x="80" y="195">F_drag = 18.4 N</text>
+<!-- Scrubbing Indicator Cursor at t = 2.84s -->
+<line opacity="0.7" stroke="#5700c0" stroke-dasharray="2,2" stroke-width="1" x1="245" x2="245" y1="40" y2="310"></line>
+<circle cx="245" cy="226" fill="#5700c0" r="4.5"></circle>
+</svg>
+<!-- Floating Scrubber Tooltip -->
+<div class="absolute top-space-xs right-space-xs bg-surface-container-lowest/95 backdrop-blur px-space-xs py-space-2xs rounded shadow-md font-code-metric text-code-metric flex flex-col gap-space-3xs text-on-surface">
+<div class="flex items-center justify-between gap-space-sm">
+<span class="text-tertiary font-bold">State @ t = 2.84s</span>
+<span class="text-secondary font-semibold">RK45 Evaluated</span>
+</div>
+<div class="grid grid-cols-2 gap-x-space-sm gap-y-0.5 text-on-surface-variant">
+<span>x: <strong class="text-on-surface">142.1 m</strong></span>
+<span>y: <strong class="text-on-surface">32.4 m</strong></span>
+<span>|v|: <strong class="text-on-surface">38.6 m/s</strong></span>
+<span>F_drag: <strong class="text-error">18.4 N</strong></span>
+<span>Dissipated: <strong class="text-on-surface">42.1%</strong></span>
+<span>Re: <strong class="text-on-surface">1.82 × 10⁵</strong></span>
+</div>
+</div>
+</div>
+<!-- Canvas Interactive Playback & Solver Actions -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs pt-space-xs">
+<div class="flex items-center gap-space-2xs">
+<button class="w-8 h-8 rounded bg-primary text-on-primary hover:bg-primary-container flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+<button class="w-8 h-8 rounded bg-surface-container hover:bg-surface-container-high text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[18px]">skip_next</span>
+</button>
+<button class="px-space-xs py-space-2xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-code-metric text-code-metric transition-colors">
+                Step \(\Delta t = 0.002\,\text{s}\)
+              </button>
+<button class="px-space-xs py-space-2xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-code-metric text-code-metric transition-colors">
+                Reset State
+              </button>
+</div>
+<div class="flex items-center gap-space-2xs">
+<button class="px-space-sm py-space-2xs bg-primary text-on-primary rounded font-label-ui text-label-ui font-medium flex items-center gap-space-2xs shadow-sm hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-[15px]">model_training</span>
+                Run Full 100-Step Sensitivity Sweep
+              </button>
+<button class="p-space-2xs rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" title="Compute Sensitivity Jacobian">
+<span class="material-symbols-outlined text-[18px]">functions</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Multi-Run Parameter Sweep & Sensitivity Matrix Table -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div>
+<span class="font-label-ui text-label-ui uppercase tracking-wider font-semibold text-on-surface">Parameter Sensitivity Sweep Matrix</span>
+<p class="font-code-metric text-code-metric text-on-surface-variant">Iso-mass \(m = 2.50\,\text{kg}\), \(v_0 = 65.0\,\text{m/s}\), \(\rho_0 = 1.225\,\text{kg/m}^3\)</p>
+</div>
+<span class="px-space-xs py-space-3xs bg-surface-container font-code-metric text-code-metric text-on-surface rounded">6 Selected Iterations</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-code-metric text-code-metric">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant uppercase">
+<th class="py-space-2xs px-space-xs rounded-l font-semibold">Run ID</th>
+<th class="py-space-2xs px-space-xs font-semibold">Angle \(\theta\)</th>
+<th class="py-space-2xs px-space-xs font-semibold">Range (\(x_{\max}\))</th>
+<th class="py-space-2xs px-space-xs font-semibold">Apex (\(y_{\max}\))</th>
+<th class="py-space-2xs px-space-xs font-semibold">Time (\(t_f\))</th>
+<th class="py-space-2xs px-space-xs font-semibold">\(\Delta E\) Loss</th>
+<th class="py-space-2xs px-space-xs rounded-r font-semibold">Epistemic Status</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-2xs px-space-xs font-semibold">RUN-010</td>
+<td class="py-space-2xs px-space-xs">38.0°</td>
+<td class="py-space-2xs px-space-xs">191.4 m</td>
+<td class="py-space-2xs px-space-xs">48.2 m</td>
+<td class="py-space-2xs px-space-xs">5.82 s</td>
+<td class="py-space-2xs px-space-xs">68.4%</td>
+<td class="py-space-2xs px-space-xs"><span class="text-outline">Suboptimal (-5.4m)</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-2xs px-space-xs font-semibold">RUN-011</td>
+<td class="py-space-2xs px-space-xs">40.0°</td>
+<td class="py-space-2xs px-space-xs">195.1 m</td>
+<td class="py-space-2xs px-space-xs">52.8 m</td>
+<td class="py-space-2xs px-space-xs">6.12 s</td>
+<td class="py-space-2xs px-space-xs">70.1%</td>
+<td class="py-space-2xs px-space-xs"><span class="text-on-surface-variant">Ascending</span></td>
+</tr>
+<!-- OPTIMAL ROW HIGHLIGHTED -->
+<tr class="bg-primary-fixed/20 font-semibold text-primary hover:bg-primary-fixed/30 transition-colors">
+<td class="py-space-2xs px-space-xs font-bold flex items-center gap-space-3xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  RUN-016
+                </td>
+<td class="py-space-2xs px-space-xs font-bold text-secondary">41.8°</td>
+<td class="py-space-2xs px-space-xs font-bold text-primary">196.8 m</td>
+<td class="py-space-2xs px-space-xs">57.1 m</td>
+<td class="py-space-2xs px-space-xs">6.38 s</td>
+<td class="py-space-2xs px-space-xs">71.8%</td>
+<td class="py-space-2xs px-space-xs"><span class="px-space-2xs py-space-3xs bg-secondary-container text-on-secondary-container rounded text-[10px] uppercase font-bold">Global Maximum</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-2xs px-space-xs font-semibold">RUN-014</td>
+<td class="py-space-2xs px-space-xs">43.0°</td>
+<td class="py-space-2xs px-space-xs">193.7 m</td>
+<td class="py-space-2xs px-space-xs">60.4 m</td>
+<td class="py-space-2xs px-space-xs">6.54 s</td>
+<td class="py-space-2xs px-space-xs">72.9%</td>
+<td class="py-space-2xs px-space-xs"><span class="text-on-surface-variant">Descending</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors text-error">
+<td class="py-space-2xs px-space-xs font-semibold">RUN-012</td>
+<td class="py-space-2xs px-space-xs font-semibold">45.0°</td>
+<td class="py-space-2xs px-space-xs font-bold">184.2 m</td>
+<td class="py-space-2xs px-space-xs">65.8 m</td>
+<td class="py-space-2xs px-space-xs">6.82 s</td>
+<td class="py-space-2xs px-space-xs">74.6%</td>
+<td class="py-space-2xs px-space-xs"><span class="px-space-2xs py-space-3xs bg-error-container text-on-error-container rounded text-[10px] font-semibold">Galileo Ineffective (-12.6m)</span></td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors text-outline">
+<td class="py-space-2xs px-space-xs font-semibold">RUN-015</td>
+<td class="py-space-2xs px-space-xs">47.0°</td>
+<td class="py-space-2xs px-space-xs">171.3 m</td>
+<td class="py-space-2xs px-space-xs">70.9 m</td>
+<td class="py-space-2xs px-space-xs">7.09 s</td>
+<td class="py-space-2xs px-space-xs">76.3%</td>
+<td class="py-space-2xs px-space-xs">Excessive Vertical Drag</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</main>
+<!-- RIGHT PANEL: AI Scientific Synthesis, Uncertainty & Next Experiments (3-Cols, 360px class equivalent) -->
+<aside class="xl:col-span-3 flex flex-col gap-space-md">
+<!-- AI Scientific Interpretation (Synthesis Card) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-primary text-[20px]">psychology_alt</span>
+<span class="font-label-ui text-label-ui uppercase tracking-wider font-semibold text-on-surface">Scientific Synthesis</span>
+</div>
+<span class="font-code-metric text-code-metric text-secondary font-semibold">Engine v3.8</span>
+</div>
+<!-- What the Result Demonstrates -->
+<div class="bg-surface-container-low rounded-lg p-space-xs flex flex-col gap-space-3xs">
+<div class="flex items-center gap-space-2xs text-secondary font-semibold font-label-ui text-label-ui">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>What the Result Demonstrates</span>
+</div>
+<p class="font-body-dense text-body-dense text-on-surface leading-relaxed">
+            Empirical numerical ODE sweeps demonstrate that quadratic air drag shifts optimal launch angle monotonically downward from <strong class="text-on-surface">45.0° → 41.8°</strong> for standard 2.5kg projectiles. Initial kinetic energy loss is cubic in velocity during early ascent, punishing high vertical trajectories with severe drag integration times.
+          </p>
+</div>
+<!-- What the Result DOES NOT Demonstrate -->
+<div class="bg-surface-container-low rounded-lg p-space-xs flex flex-col gap-space-3xs">
+<div class="flex items-center gap-space-2xs text-error font-semibold font-label-ui text-label-ui">
+<span class="material-symbols-outlined text-[16px]">cancel</span>
+<span>What the Result Does NOT Demonstrate</span>
+</div>
+<p class="font-body-dense text-body-dense text-on-surface-variant leading-relaxed">
+            This simulation assumes zero rotation (\(\vec{\omega} = \vec{0}\)) and continuum subsonic flow. It does <em class="text-on-surface font-serif">not</em> capture boundary layer turbulence transitions (drag crisis at \(Re \approx 3 \times 10^5\)) or Magnus-induced vertical lift forces.
+          </p>
+</div>
+</section>
+<!-- Epistemic Uncertainty & Validation Envelope -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui uppercase tracking-wider font-semibold text-on-surface">Validation Envelope</span>
+<span class="material-symbols-outlined text-outline text-[18px]">verified</span>
+</div>
+<div class="p-space-xs bg-surface-container-high rounded-lg flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">Numerical Precision</span>
+<span class="font-code-metric text-code-metric text-secondary font-bold">± 0.0004%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1 rounded overflow-hidden">
+<div class="bg-secondary h-full w-[98%]"></div>
+</div>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Validated against RK4 analytical benchmarks.</span>
+</div>
+<div class="p-space-xs bg-surface-container-high rounded-lg flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric text-on-surface font-semibold">Physical Fidelity</span>
+<span class="font-code-metric text-code-metric text-primary font-bold">Subsonic Rigid Only</span>
+</div>
+<p class="font-code-metric text-code-metric text-on-surface-variant leading-tight">
+            Status: <span class="font-semibold text-on-surface">Requires Physical Wind Tunnel Benchmark</span> for trans-Re regime confirmation.
+          </p>
+</div>
+</section>
+<!-- Proactive AI Next Experiments -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-primary text-[18px]">biotech</span>
+<span class="font-label-ui text-label-ui uppercase tracking-wider font-semibold text-on-surface">Recommended Next Inquiries</span>
+</div>
+<span class="px-space-2xs py-space-3xs bg-primary-fixed text-on-primary-fixed-variant rounded font-code-metric text-code-metric font-bold">2 Queued</span>
+</div>
+<!-- Proposed Experiment 2A -->
+<article class="bg-surface-container-low rounded-lg p-space-xs flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric font-semibold text-primary">Experiment 2A</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Aerodynamics</span>
+</div>
+<p class="font-body-dense text-body-dense text-on-surface font-medium leading-snug">Magnus Vector Coupling</p>
+<p class="font-code-metric text-code-metric text-on-surface-variant leading-relaxed">
+            Inject spin vector \(\vec{\omega} = [0, 0, 120\,\text{rad/s}]\) to compute Kutta-Joukowski lift force \(F_L = \frac{1}{2} C_L \rho A v^2\). Hypothesize angle resurgence back toward 44°.
+          </p>
+<button class="w-full py-space-2xs bg-surface-container hover:bg-surface-container-high text-primary font-label-ui text-label-ui font-medium rounded flex items-center justify-center gap-space-2xs transition-colors">
+<span class="material-symbols-outlined text-[15px]">play_circle</span>
+            Configure Magnus Sweep
+          </button>
+</article>
+<!-- Proposed Experiment 2B -->
+<article class="bg-surface-container-low rounded-lg p-space-xs flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-code-metric text-code-metric font-semibold text-tertiary">Experiment 2B</span>
+<span class="font-code-metric text-code-metric text-on-surface-variant">Compressible Gas</span>
+</div>
+<p class="font-body-dense text-body-dense text-on-surface font-medium leading-snug">Transonic Shock Drag Divergence</p>
+<p class="font-code-metric text-code-metric text-on-surface-variant leading-relaxed">
+            Sweep \(v_0\) through Mach 0.75 - 1.25. Incorporate Prandtl-Glauert compressibility correction to test critical angle crash below 36°.
+          </p>
+<button class="w-full py-space-2xs bg-surface-container hover:bg-surface-container-high text-tertiary font-label-ui text-label-ui font-medium rounded flex items-center justify-center gap-space-2xs transition-colors">
+<span class="material-symbols-outlined text-[15px]">speed</span>
+            Configure Shock Model
+          </button>
+</article>
+</section>
+<!-- Connected Live Notebook & Audit Ledger Sync -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-ui text-label-ui uppercase tracking-wider font-semibold text-on-surface">Notebook Ledger Sync</span>
+<span class="font-code-metric text-code-metric text-secondary font-medium">Auto-Sync In [16]</span>
+</div>
+<div class="bg-surface-container-low rounded p-space-xs font-code-metric text-code-metric text-on-surface-variant flex flex-col gap-space-3xs">
+<div class="flex items-center justify-between text-outline">
+<span>SHA: 8f4e22a</span>
+<span>2024-10-18 14:38:09 UTC</span>
+</div>
+<code class="text-on-surface text-[11px] block overflow-x-auto">
+            &gt; inv.hypotheses.H1.update(status="SUPPORTED", theta_opt=41.8, bf=14.2)<br/>
+            &gt; ledger.commit_block(INV_98_CYCLE3)
+          </code>
+</div>
+<button class="w-full py-space-xs bg-primary text-on-primary hover:bg-primary-container font-label-ui text-label-ui font-medium rounded flex items-center justify-center gap-space-2xs shadow-sm transition-colors mt-space-3xs">
+<span class="material-symbols-outlined text-[16px]">bookmark_added</span>
+          Commit Findings to Living Notebook
+        </button>
+</section>
+</aside>
+</div>
+</div></main></div></body></html>
