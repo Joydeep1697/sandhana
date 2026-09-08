@@ -810,8 +810,14 @@ document.addEventListener("DOMContentLoaded", async () => {
             // Diagnostics
             const container = formalValidationSpan.parentElement;
             // clear old diagnostics
-            const oldDiag = container.querySelectorAll('.diagnostic-msg');
-            oldDiag.forEach(e => e.remove());
+            let diagContainer = container.parentElement.querySelector('#dynamic-diagnostics');
+            if (!diagContainer) {
+                diagContainer = document.createElement('div');
+                diagContainer.id = "dynamic-diagnostics";
+                diagContainer.className = "flex flex-col w-full";
+                container.after(diagContainer);
+            }
+            diagContainer.innerHTML = '';
 
             if (!data.validation.passed) {
                 const msgs = [...data.validation.dimension_diagnostics, ...data.validation.undefined_symbols.map(s => `Undefined symbol: ${s}`), ...data.validation.invalid_structures];
@@ -819,7 +825,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     const d = document.createElement('div');
                     d.className = "diagnostic-msg text-error text-[10px] mt-1";
                     d.textContent = "✗ " + msg;
-                    container.appendChild(d);
+                    diagContainer.appendChild(d);
                 });
             }
         }
@@ -830,10 +836,10 @@ document.addEventListener("DOMContentLoaded", async () => {
             el => el.textContent.includes('Fidelity Telemetry:') || el.textContent.includes('Conversion Notification:')
         );
         if (telemetryHeader) {
-            const telemetrySpan = telemetryHeader.parentElement.querySelector('span:not(strong)');
-            if (telemetrySpan && data.validation.warnings && data.validation.warnings.length > 0) {
+            const telemetryContainer = telemetryHeader.parentElement;
+            if (telemetryContainer && data.validation.warnings && data.validation.warnings.length > 0) {
                 const warns = data.validation.warnings.map(w => w.message).join('; ');
-                telemetrySpan.innerHTML = `<strong>Fidelity Telemetry:</strong> Displays synchronization status, conversion results, and warnings. (${data.validation.warnings.length} warning: ${warns}).`;
+                telemetryContainer.innerHTML = `<strong>Fidelity Telemetry:</strong> Displays synchronization status, conversion results, and warnings. (${data.validation.warnings.length} warning: ${warns}).`;
             }
         }
 
