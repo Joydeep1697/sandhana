@@ -822,4 +822,54 @@ The production implementation is intended to use structured AST parsing; the cur
 </div></main></div>
 
 
-</body></html>
+
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+    try {
+        const response = await fetch("http://localhost:8000/api/equation/fixture");
+        const data = await response.json();
+
+        // Find the validation elements in the UI.
+        // We look for elements that might contain the text "Passed" or "Validation"
+
+        // We know from grep:
+        // <span class="font-medium text-on-surface">1. Formal Validation:</span>
+        // <span class="text-secondary font-semibold bg-secondary-fixed/40 px-1 py-0.2 rounded text-[10px]">Passed</span>
+
+        const formalValidationSpan = Array.from(document.querySelectorAll('span')).find(
+            el => el.textContent.includes('Formal Validation:')
+        );
+
+        if (formalValidationSpan) {
+            const statusSpan = formalValidationSpan.nextElementSibling;
+            if (statusSpan && data.validation.passed) {
+                statusSpan.textContent = 'Passed (Scoped)';
+            }
+        }
+
+        // Also ensure the epistemic invariant is displayed.
+        // There is a place: "Staged — Pending L3 PI Sign-Off" and "Scientific Validation: Not established"
+        // Let's just append the epistemic invariant to the validation profile block
+
+        const validationProfileHeader = Array.from(document.querySelectorAll('span')).find(
+            el => el.textContent.includes('Partitioned Validation Profile')
+        );
+
+        if (validationProfileHeader) {
+            const container = validationProfileHeader.parentElement;
+            const invariantDiv = document.createElement('div');
+            invariantDiv.className = "flex flex-col gap-0.5 pl-1 border-l-2 border-purple-400 mt-2";
+            invariantDiv.innerHTML = `
+                <span class="font-medium text-on-surface text-[10px]">Epistemic Invariant:</span>
+                <span class="text-[10px] text-on-surface-variant leading-tight">${data.validation.epistemic_invariant}</span>
+            `;
+            container.appendChild(invariantDiv);
+        }
+
+    } catch (e) {
+        console.error("Failed to load fixture:", e);
+    }
+});
+</script>
+</body>
+</html>
