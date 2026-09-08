@@ -1,4 +1,5 @@
 from core.latex_exporter import LatexExporter
+from core.persistence import EquationPersistence
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -85,7 +86,9 @@ def get_quadratic_drag_fixture():
 
 
 # Global state just for this interactive slice
+db = EquationPersistence()
 current_doc = get_quadratic_drag_fixture()
+db.save_version(current_doc)
 
 @app.get("/api/equation/fixture")
 def get_fixture():
@@ -100,16 +103,14 @@ def get_fixture():
     return {
         "equation": current_doc,
         "validation": validation,
-        "latex": latex
+        "latex": latex,
+        "version_history": db.get_version_history(current_doc.id)
     }
 
 @app.post("/api/equation/edit")
 def edit_equation(req: EditRequest):
     global current_doc
-    # Super simple AST patching for the vertical slice
-    # Supported edits for demo:
-    # - Change 'm' to 'M' (invalidates dimension unless M is defined, wait M is a dimension! Let's just break it with 'invalid_sym')
-    # - Change RHS operator from '-' to '+'
+    old_hash = current_doc.semantic_hash
 
     if req.target_node_path == "rhs.op":
         current_doc.ast.rhs.op = req.new_value
@@ -120,10 +121,19 @@ def edit_equation(req: EditRequest):
          # Change r to v in velocity term
          current_doc.ast.rhs.right.right.right.child.name = req.new_value
 
+    current_doc.provenance.transformation = f"User edit: {req.target_node_path} -> {req.new_value}"
+
+    if current_doc.semantic_hash != old_hash:
+        # Generate a new version label just for UI representation
+        old_v = float(current_doc.version.replace('v', ''))
+        current_doc.version = f"v{old_v + 0.1:.1f}"
+        db.save_version(current_doc, parent_hash=old_hash)
+
     validation = current_doc.validate()
     latex = LatexExporter.export(current_doc.ast)
     return {
         "equation": current_doc,
         "validation": validation,
-        "latex": latex
+        "latex": latex,
+        "version_history": db.get_version_history(current_doc.id)
     }

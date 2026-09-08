@@ -1,6 +1,9 @@
+
 from dataclasses import dataclass, field
 from typing import List, Optional, Union, Dict, Tuple, Any
 import re
+import hashlib
+
 
 @dataclass
 class SymbolDefinition:
@@ -81,16 +84,24 @@ def parse_units_to_dimension(unit_str: str) -> Dimension:
 
 class ASTNode:
     type_name = "ASTNode"
+    def semantic_hash(self) -> str:
+        return hashlib.sha256(self._canonical_repr().encode()).hexdigest()
+    def _canonical_repr(self) -> str:
+        return ""
 
 @dataclass
 class SymbolNode(ASTNode):
     name: str
     type_name = "SymbolNode"
+    def _canonical_repr(self) -> str:
+        return f"Sym({self.name})"
 
 @dataclass
 class NumberNode(ASTNode):
     value: float
     type_name = "NumberNode"
+    def _canonical_repr(self) -> str:
+        return f"Num({self.value})"
 
 @dataclass
 class DerivativeNode(ASTNode):
@@ -98,12 +109,16 @@ class DerivativeNode(ASTNode):
     order: int
     with_respect_to: str = 't'
     type_name = "DerivativeNode"
+    def _canonical_repr(self) -> str:
+        return f"Deriv({self.child._canonical_repr()}, {self.order}, {self.with_respect_to})"
 
 @dataclass
 class UnaryOpNode(ASTNode):
     op: str # '-', 'abs', 'vec'
     child: ASTNode
     type_name = "UnaryOpNode"
+    def _canonical_repr(self) -> str:
+        return f"Unary({self.op}, {self.child._canonical_repr()})"
 
 @dataclass
 class BinaryOpNode(ASTNode):
@@ -111,18 +126,33 @@ class BinaryOpNode(ASTNode):
     left: ASTNode
     right: ASTNode
     type_name = "BinaryOpNode"
+    def _canonical_repr(self) -> str:
+        left_repr = self.left._canonical_repr()
+        right_repr = self.right._canonical_repr()
+        if self.op in ['+', '*']:
+            # Commutative: sort children to ensure deterministic canonical form
+            children = sorted([left_repr, right_repr])
+            return f"Binary({self.op}, {children[0]}, {children[1]})"
+        return f"Binary({self.op}, {left_repr}, {right_repr})"
 
 @dataclass
 class FunctionNode(ASTNode):
     name: str
     args: List[ASTNode]
     type_name = "FunctionNode"
+    def _canonical_repr(self) -> str:
+        args_repr = ",".join([a._canonical_repr() for a in self.args])
+        return f"Func({self.name}, [{args_repr}])"
 
 @dataclass
 class EquationAST(ASTNode):
     lhs: ASTNode
     rhs: ASTNode
     type_name = "EquationAST"
+    def _canonical_repr(self) -> str:
+        # Assuming equation equality is symmetric
+        children = sorted([self.lhs._canonical_repr(), self.rhs._canonical_repr()])
+        return f"Eq({children[0]} = {children[1]})"
 
 @dataclass
 class ProvenanceRecord:
@@ -157,12 +187,16 @@ class ConversionResult:
 
 @dataclass
 class EquationDocument:
-    # STUB: Semantic hashing, persistence layer, and full version lineage are not yet implemented.
+    # Persistence layer and version lineage are implemented via backend/core/persistence.py
     id: str
     version: str
     ast: EquationAST
     symbols: Dict[str, SymbolDefinition]
     provenance: ProvenanceRecord
+
+    @property
+    def semantic_hash(self) -> str:
+        return self.ast.semantic_hash()
 
     def validate(self) -> ValidationStatus:
         undefined = []
