@@ -1,5 +1,13 @@
+from core.latex_exporter import LatexExporter
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+
+from pydantic import BaseModel
+from typing import Optional
+class EditRequest(BaseModel):
+    target_node_path: str # e.g. "rhs.term1.op"
+    new_value: str
+
 from core.equation_ast import (
     EquationDocument, EquationAST, BinaryOpNode, UnaryOpNode,
     DerivativeNode, SymbolNode, NumberNode,
@@ -75,18 +83,47 @@ def get_quadratic_drag_fixture():
         provenance=prov
     )
 
+
+# Global state just for this interactive slice
+current_doc = get_quadratic_drag_fixture()
+
 @app.get("/api/equation/fixture")
 def get_fixture():
-    doc = get_quadratic_drag_fixture()
-    validation = doc.validate()
+    validation = current_doc.validate()
 
-    # In a real system, the telemetry warnings might be merged from various subsystems
-    # Here we simulate the pipeline also performing a MathML conversion
-    conversion_res = doc.convert("Content MathML")
+    conversion_res = current_doc.convert("Content MathML")
     if conversion_res.warnings:
         validation.warnings.extend(conversion_res.warnings)
 
+    latex = LatexExporter.export(current_doc.ast)
+
     return {
-        "equation": doc,
-        "validation": validation
+        "equation": current_doc,
+        "validation": validation,
+        "latex": latex
+    }
+
+@app.post("/api/equation/edit")
+def edit_equation(req: EditRequest):
+    global current_doc
+    # Super simple AST patching for the vertical slice
+    # Supported edits for demo:
+    # - Change 'm' to 'M' (invalidates dimension unless M is defined, wait M is a dimension! Let's just break it with 'invalid_sym')
+    # - Change RHS operator from '-' to '+'
+
+    if req.target_node_path == "rhs.op":
+        current_doc.ast.rhs.op = req.new_value
+    elif req.target_node_path == "rhs.right.left.right.right.name":
+        # This points to 'm' in denominator
+        current_doc.ast.rhs.right.left.right.right.name = req.new_value
+    elif req.target_node_path == "rhs.right.right.right.child.name":
+         # Change r to v in velocity term
+         current_doc.ast.rhs.right.right.right.child.name = req.new_value
+
+    validation = current_doc.validate()
+    latex = LatexExporter.export(current_doc.ast)
+    return {
+        "equation": current_doc,
+        "validation": validation,
+        "latex": latex
     }
