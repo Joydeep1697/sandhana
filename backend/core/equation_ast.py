@@ -157,6 +157,7 @@ class ConversionResult:
 
 @dataclass
 class EquationDocument:
+    # STUB: Semantic hashing, persistence layer, and full version lineage are not yet implemented.
     id: str
     version: str
     ast: EquationAST
@@ -212,7 +213,8 @@ class EquationDocument:
                  message="tensor-index semantics require explicit convention in Content MathML",
                  scope="conversion"
             ))
-        return ConversionResult(target_format=target_format, content="<mathml>...</mathml>", warnings=warnings)
+        # STUB: Content MathML conversion is not yet implemented.
+        return ConversionResult(target_format=target_format, content="<mathml-stub>Not implemented</mathml-stub>", warnings=warnings)
 
     def _extract_symbols(self, node: ASTNode) -> set:
         symbols = set()

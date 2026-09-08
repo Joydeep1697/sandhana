@@ -107,5 +107,30 @@ class TestEquationValidation(unittest.TestCase):
         status = self.doc.validate()
         self.assertIn("Formal mathematical correctness", status.epistemic_invariant)
 
+    def test_genuine_dimension_mismatch(self):
+        # v = d / t^2 (Velocity = Distance / Time^2) -> invalid
+        symbols = {
+            'v': SymbolDefinition('v', 'velocity', 'L/T'),
+            'd': SymbolDefinition('d', 'distance', 'L'),
+            't': SymbolDefinition('t', 'time', 'T'),
+        }
+        # d / t^2
+        rhs = BinaryOpNode('/', SymbolNode('d'), BinaryOpNode('^', SymbolNode('t'), NumberNode(2.0)))
+        ast = EquationAST(lhs=SymbolNode('v'), rhs=rhs)
+        doc = EquationDocument("test-id", "v1", ast, symbols, ProvenanceRecord("", ""))
+
+        status = doc.validate()
+
+        self.assertFalse(status.passed)
+        self.assertFalse(status.dimensional_homogeneity)
+
+        # Diagnostics should mention both sides having unequal dimensions
+        mismatch_msg = next((d for d in status.dimension_diagnostics if "Equation mismatch" in d), None)
+        self.assertIsNotNone(mismatch_msg, "Should produce an equation mismatch diagnostic")
+
+        # LHS is L T^-1.0, RHS is L T^-2.0
+        self.assertIn("L T^-1", mismatch_msg)
+        self.assertIn("L T^-2", mismatch_msg)
+
 if __name__ == '__main__':
     unittest.main()
