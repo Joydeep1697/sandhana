@@ -130,7 +130,7 @@ class BinaryOpNode(ASTNode):
         left_repr = self.left._canonical_repr()
         right_repr = self.right._canonical_repr()
         if self.op in ['+', '*']:
-            # Commutative: sort children to ensure deterministic canonical form
+            # Commutative
             children = sorted([left_repr, right_repr])
             return f"Binary({self.op}, {children[0]}, {children[1]})"
         return f"Binary({self.op}, {left_repr}, {right_repr})"
@@ -150,7 +150,6 @@ class EquationAST(ASTNode):
     rhs: ASTNode
     type_name = "EquationAST"
     def _canonical_repr(self) -> str:
-        # Assuming equation equality is symmetric
         children = sorted([self.lhs._canonical_repr(), self.rhs._canonical_repr()])
         return f"Eq({children[0]} = {children[1]})"
 
@@ -187,7 +186,6 @@ class ConversionResult:
 
 @dataclass
 class EquationDocument:
-    # Persistence layer and version lineage are implemented via backend/core/persistence.py
     id: str
     version: str
     ast: EquationAST
@@ -196,7 +194,12 @@ class EquationDocument:
 
     @property
     def semantic_hash(self) -> str:
-        return self.ast.semantic_hash()
+        # Full semantic hash includes ast, symbols, assumptions
+        ast_hash = self.ast._canonical_repr()
+        sym_hash = ",".join(sorted([f"{k}:{v.units}:{v.type}" for k,v in self.symbols.items()]))
+        assumptions_hash = ",".join(sorted(self.provenance.assumptions))
+        full_repr = f"{ast_hash}|{sym_hash}|{assumptions_hash}"
+        return hashlib.sha256(full_repr.encode()).hexdigest()
 
     def validate(self) -> ValidationStatus:
         undefined = []

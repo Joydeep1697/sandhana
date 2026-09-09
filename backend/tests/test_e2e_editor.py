@@ -98,6 +98,11 @@ class TestE2EEditor(unittest.TestCase):
             self.assertIn("v2.4", history_text)
             self.assertIn("v2.5", history_text)
 
+            # Check version lineage logic appeared
+            history_text = page.locator("#version-history-list").text_content()
+            self.assertIn("v2.4", history_text)
+            self.assertIn("v2.5", history_text)
+
             invariant = page.locator("#epistemic-invariant").text_content()
             self.assertIn("Formal mathematical correctness", invariant)
 

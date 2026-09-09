@@ -124,7 +124,6 @@ def edit_equation(req: EditRequest):
     current_doc.provenance.transformation = f"User edit: {req.target_node_path} -> {req.new_value}"
 
     if current_doc.semantic_hash != old_hash:
-        # Generate a new version label just for UI representation
         old_v = float(current_doc.version.replace('v', ''))
         current_doc.version = f"v{old_v + 0.1:.1f}"
         db.save_version(current_doc, parent_hash=old_hash)

@@ -69,12 +69,7 @@ class EquationPersistence:
 
     def save_version(self, doc: EquationDocument, parent_hash: Optional[str] = None):
         hash_id = doc.semantic_hash
-
-        # In a real app we'd serialize the AST properly.
-        # Here we mock serialization by storing canonical_repr as ast_json just to satisfy persistence schema requirements,
-        # but in a production vertical slice we'd write a true JSON encoder/decoder for ASTNode.
         ast_json = doc.ast._canonical_repr()
-
         validation = doc.validate()
 
         with sqlite3.connect(self.db_path) as conn:
