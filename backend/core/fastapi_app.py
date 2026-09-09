@@ -126,6 +126,7 @@ def edit_equation(req: EditRequest):
     if current_doc.semantic_hash != old_hash:
         old_v = float(current_doc.version.replace('v', ''))
         current_doc.version = f"v{old_v + 0.1:.1f}"
+        current_doc.provenance.parent_id = old_hash
         db.save_version(current_doc, parent_hash=old_hash)
 
     validation = current_doc.validate()
@@ -136,3 +137,6 @@ def edit_equation(req: EditRequest):
         "latex": latex,
         "version_history": db.get_version_history(current_doc.id)
     }
+@app.get("/api/equation/provenance_history")
+def get_provenance_history(equation_id: str):
+    return db.get_provenance_history(equation_id)

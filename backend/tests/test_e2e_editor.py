@@ -91,7 +91,9 @@ class TestE2EEditor(unittest.TestCase):
 
             # 11. Verify Provenance and Epistemic Invariant remain synchronized
             prov_parent = page.locator("#prov-parent").text_content()
-            self.assertIn("#EQ-098-B1", prov_parent)
+            # It should have changed from #EQ-098-B1 to the old semantic hash
+            self.assertNotIn("#EQ-098-B1", prov_parent)
+            self.assertEqual(len(prov_parent), 64) # SHA256 length
 
             # Check version lineage logic appeared
             history_text = page.locator("#version-history-list").text_content()

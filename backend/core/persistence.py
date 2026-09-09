@@ -48,6 +48,8 @@ class EquationPersistence:
                     dimensional_homogeneity BOOLEAN,
                     diagnostics TEXT,
                     epistemic_invariant TEXT,
+                    validator_version TEXT,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                     FOREIGN KEY(hash_id) REFERENCES equation_versions(hash_id)
                 )
             ''')
@@ -95,9 +97,9 @@ class EquationPersistence:
                 "dimension_diagnostics": validation.dimension_diagnostics
             })
             cursor.execute('''
-                INSERT OR IGNORE INTO validation_states (hash_id, passed, grammar_valid, dimensional_homogeneity, diagnostics, epistemic_invariant)
-                VALUES (?, ?, ?, ?, ?, ?)
-            ''', (hash_id, validation.passed, validation.grammar_valid, validation.dimensional_homogeneity, diagnostics_json, validation.epistemic_invariant))
+                INSERT OR IGNORE INTO validation_states (hash_id, passed, grammar_valid, dimensional_homogeneity, diagnostics, epistemic_invariant, validator_version)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            ''', (hash_id, validation.passed, validation.grammar_valid, validation.dimensional_homogeneity, diagnostics_json, validation.epistemic_invariant, 'v1.0.0'))
 
             # Save symbols
             for sym_name, sym_def in doc.symbols.items():
@@ -118,6 +120,21 @@ class EquationPersistence:
                 FROM equation_versions
                 WHERE equation_id = ?
                 ORDER BY created_at ASC
+            ''', (equation_id,))
+
+            return [dict(row) for row in cursor.fetchall()]
+
+    def get_provenance_history(self, equation_id: str) -> List[Dict]:
+        """Returns the provenance history of an equation ID"""
+        with sqlite3.connect(self.db_path) as conn:
+            conn.row_factory = sqlite3.Row
+            cursor = conn.cursor()
+            cursor.execute('''
+                SELECT p.hash_id, p.author, p.transformation, p.citation, p.assumptions, v.created_at
+                FROM provenance_records p
+                JOIN equation_versions v ON p.hash_id = v.hash_id
+                WHERE v.equation_id = ?
+                ORDER BY v.created_at ASC
             ''', (equation_id,))
 
             return [dict(row) for row in cursor.fetchall()]
